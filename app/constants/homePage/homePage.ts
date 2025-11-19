@@ -1,5 +1,5 @@
 export   const slides = [
-    {
+    {// add images from unsplash
       image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&h=600&fit=crop",
       title: "Discover Our Hospital Of",
       highlight: "Clinical Excellence",
