@@ -5,7 +5,7 @@ const WhatSetsUsApart = () => {
     { id: 1, title: "About bloom health", color: "text-black" },
     { id: 2, title: "Why choose us", color: "text-black" },
     { id: 3, title: "Paying for your treatment", color: "text-black" },
-    { id: 4, title: "Your Insurer", color: "text-black" },
+    { id: 4, title: "Insurance", color: "text-black" },
   ];
 
   
