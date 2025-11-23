@@ -1,6 +1,6 @@
 export   const slides = [
     {// add images from unsplash
-      image: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&h=600&fit=crop",
+      image: "/homebg.webp",
       title: "Discover Our Hospital Of",
       highlight: "Clinical Excellence",
       description: "At Bloom Healthcare, our superspecialist doctors provide the highest quality of care through a team-based, doctor-led model."

@@ -7,7 +7,7 @@ export const RegisterButton = () => {
     <div
       className="
         bg-gradient-to-r from-[#157DC1] to-[#5FC1A3]
-        hover:from-[#157DC1] hover:to-[#5FC1A3]
+        hover:from-[#5FC1A3] hover:to-[#157DC1]
         text-white font-medium 
         px-5 py-3 
         rounded-lg 

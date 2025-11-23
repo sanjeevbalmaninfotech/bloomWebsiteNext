@@ -1,23 +1,24 @@
 import React from "react";
+import Link from "next/link";
 
 const OurServices = () => {
   const services = [
     {
-      id: 1,
+      id: "walk-in-centre",
       icon: "/Walkins.svg",
-      title: "Walk-In Centre",
+      title: "GP Walk-In Centre",
       description:
         "Walk-in and same-day appointments for minor injuries, sudden illnesses, and urgent health concerns.",
     },
     {
-      id: 2,
+      id: "planned-care",
       icon: "/Plannedcare.svg",
       title: "Planned Care",
       description:
         "Specialist consultations, follow-up care, chronic disease management, and health screenings.",
     },
     {
-      id: 3,
+      id: "cardiology",
       icon: "/Diagnostics.svg",
       title: "Diagnostics",
       description:
@@ -38,7 +39,10 @@ return (
           {services.map((service, index) => (
             <React.Fragment key={service.id}>
               {/* Card */}
-              <div className="flex-1 rounded-lg hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center p-6 md:p-8">
+              <Link
+                href={`/services/${service.id}`}
+                className="flex-1 rounded-lg hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center p-6 md:p-8"
+              >
                 {/* Icon + Title with background */}
                 <div className="bg-gray-100 rounded-lg p-6 w-full flex flex-col items-center">
                   <div className="w-20 h-20 mb-4 flex items-center justify-center">
@@ -66,7 +70,7 @@ return (
                     className="w-7 h-7 md:w-8 md:h-8"
                   />
                 </button>
-              </div>
+              </Link>
 
               {/* Divider */}
               {index < services.length - 1 && (

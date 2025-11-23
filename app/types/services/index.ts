@@ -6,8 +6,30 @@ export interface TypeServiceItem {
   buttonText: string;
 }
 
-export  interface TypeServicesData {
-  [key: string]: TypeServiceItem;
+export interface AccordionItem {
+  id: string;
+  title: string;
+  content: string;
+}
+
+export interface Specialist {
+  id: string;
+  name: string;
+  title: string;
+  image: string;
+  specialties: string[];
+  consultationFee: string;
+  experience: string;
+}
+
+export interface TypeServiceItemExtended extends TypeServiceItem {
+  accordionItems?: AccordionItem[];
+  relatedTreatments?: string[];
+  specialists?: Specialist[];
+}
+
+export interface TypeServicesData {
+  [key: string]: TypeServiceItemExtended;
 }
 
 export interface TypeServicePageProps {

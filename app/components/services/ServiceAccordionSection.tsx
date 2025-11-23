@@ -1,9 +1,9 @@
-
 "use client";
 
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { RegisterButton } from "../registerButton/RegisterButton";
+import { servicesData } from "@/app/constants/services";
 
 interface AccordionItem {
   id: string;
@@ -15,74 +15,7 @@ interface ServiceAccordionSectionProps {
   serviceId: string;
 }
 
-// Accordion data - Ye dynamic bhi kar sakte ho
-const accordionData: Record<string, AccordionItem[]> = {
-  cardiology: [
-    {
-      id: "what-is",
-      title: "What is cardiac care?",
-      content:
-        "Cardiac care involves comprehensive heart health services including diagnosis, treatment, and prevention of cardiovascular diseases. Our specialists provide expert care for all heart-related conditions.",
-    },
-    {
-      id: "cost",
-      title: "How much does heart treatment cost?",
-      content:
-        "Treatment costs vary depending on the specific procedure and your individual needs. We offer transparent pricing and can provide detailed quotes during your consultation.",
-    },
-    {
-      id: "symptoms",
-      title: "Common symptoms of heart problems",
-      content:
-        "Common symptoms include chest pain, shortness of breath, irregular heartbeat, fatigue, and swelling in legs. If you experience these symptoms, consult a cardiologist immediately.",
-    },
-    {
-      id: "treatment",
-      title: "Cardiology treatment with bloom",
-      content:
-        "We offer state-of-the-art cardiology treatments including ECG, echocardiograms, stress tests, and advanced interventional procedures with experienced consultants.",
-    },
-    {
-      id: "booking",
-      title: "How to book your treatment",
-      content:
-        "Booking is simple - use our online system, call our team, or visit us in person. We offer flexible appointment times to suit your schedule.",
-    },
-    {
-      id: "payment",
-      title: "How to pay for treatment",
-      content:
-        "We accept various payment methods including insurance, self-pay, and financing options. Our team can help you understand your coverage.",
-    },
-    {
-      id: "why-us",
-      title: "Why choose us",
-      content:
-        "We provide expert cardiology care with experienced consultants, modern facilities, and a patient-centered approach focusing on prevention and treatment.",
-    },
-  ],
-};
-
-// Related treatments data
-const relatedTreatments: Record<string, string[]> = {
-  cardiology: [
-    "Abdominal Aortic Aneurysm Screening",
-    "Ambulatory Blood Pressure Monitoring",
-    "Ambulatory Electrocardiogram (ECG) Test",
-    "Amyloid Scan (Cardiac Amyloidosis)",
-    "Atrial Fibrillation Treatment",
-    "Cardiac Catheterisation",
-    "Cardiac Stress Test (Stress ECG)",
-    "Cardiovascular Screening",
-    "Cardioversion",
-    "Catheter Ablation",
-    "Echocardiogram Scan",
-    "Electrocardiogram (ECG)",
-    "Endovascular Aortic Aneurysm Repair",
-    "Heart Bypass Surgery",
-    "Heart Failure Treatment",
-  ],
-};
+// Use centralized service data for accordion items and related treatments
 
 export const ServiceAccordionSection: React.FC<
   ServiceAccordionSectionProps
@@ -90,8 +23,9 @@ export const ServiceAccordionSection: React.FC<
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [showDescription, setShowDescription] = useState(false);
 
-  const accordionItems = accordionData[serviceId] || [];
-  const treatments = relatedTreatments[serviceId] || [];
+  const service = servicesData[serviceId] || servicesData["cardiology"];
+  const accordionItems: AccordionItem[] = service.accordionItems || [];
+  const treatments: string[] = service.relatedTreatments || [];
 
   const toggleAccordion = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
@@ -221,23 +155,22 @@ export const ServiceAccordionSection: React.FC<
             </div>
 
             {/* Related Treatments */}
-          <div className="bg-white p-6 rounded-lg border border-gray-200">
-  <h3 className="text-lg font-bold text-gray-900 mb-4">
-    Related Treatments:
-  </h3>
+            <div className="bg-white p-6 rounded-lg border border-gray-200">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">
+                Related Treatments:
+              </h3>
 
-  <div className="space-y-2">
-    {treatments.map((treatment, index) => (
-      <button
-        key={index}
-        className="w-full text-left bg-[#E8F2F9] px-3 py-2 text-sm text-gray-800 rounded-md hover:bg-[#dbe9f3] transition"
-      >
-        {treatment}
-      </button>
-    ))}
-  </div>
-</div>
-
+              <div className="flex flex-wrap gap-2">
+                {treatments.map((treatment, index) => (
+                  <button
+                    key={index}
+                    className="bg-[#E8F2F9] px-3 py-2 text-sm text-gray-800 rounded-full hover:bg-[#dbe9f3] transition"
+                  >
+                    {treatment}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

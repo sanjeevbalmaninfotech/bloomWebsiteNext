@@ -1,7 +1,9 @@
 // app/components/services/SpecialistsSection.tsx
 "use client";
 
+
 import React from "react";
+import { servicesData } from "@/app/constants/services";
 
 interface Specialist {
   id: string;
@@ -17,86 +19,13 @@ interface SpecialistsSectionProps {
   serviceId: string;
 }
 
-// Specialists data
-const specialistsData: Record<string, Specialist[]> = {
-  cardiology: [
-    {
-      id: "1",
-      name: "Dr Mauro Lencioni",
-      title: "Consultant Cardiologist & Electrophysiologist",
-      image: "/dd1.jpg",
-      specialties: ["Cardiology", "Hypertension", "Catheter Ablatio"],
-      consultationFee: "£300",
-      experience: "12 Years",
-    },
-    {
-      id: "2",
-      name: "Dr Aruna Arujuna",
-      title: "Consultant Cardiologist",
-      image: "/dd2.jpg",
-      specialties: [
-        "Cardiology",
-        "Ambulatory Blood Pressure Monitoring",
-        "Electrocardiogram (ECG)",
-      ],
-      consultationFee: "£300",
-      experience: "8 Years",
-    },
-    {
-      id: "3",
-      name: "Dr Benjamin Brown",
-      title: "Consultant Cardiologist/ Electrophysiologist",
-      image: "/dd3.jpg",
-      specialties: [
-        "Cardiology",
-        "Atrial Fibrillation Treatment",
-        "Electrocardiogram (ECG)",
-      ],
-      consultationFee: "£270",
-      experience: "18 Years",
-    },
-    {
-      id: "4",
-      name: "Dr Sarah Mitchell",
-      title: "Consultant Cardiologist & Electrophysiologist",
-      image: "/dd4.jpg",
-      specialties: ["Cardiology", "Hypertension", "Catheter Ablatio"],
-      consultationFee: "£250",
-      experience: "6 Years",
-    },
-    {
-      id: "5",
-      name: "Dr James Anderson",
-      title: "Consultant Cardiologist",
-      image: "/dd1.jpg",
-      specialties: [
-        "Cardiology",
-        "Ambulatory Blood Pressure Monitoring",
-        "Electrocardiogram (ECG)",
-      ],
-      consultationFee: "£500",
-      experience: "2 Years",
-    },
-    {
-      id: "6",
-      name: "Dr David Collins",
-      title: "Consultant Cardiologist/ Electrophysiologist",
-      image: "/dd2.jpg",
-      specialties: [
-        "Cardiology",
-        "Atrial Fibrillation Treatment",
-        "Electrocardiogram (ECG)",
-      ],
-      consultationFee: "£400",
-      experience: "4 Years",
-    },
-  ],
-};
+// Use specialists from centralized services data
 
 export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
   serviceId,
 }) => {
-  const specialists = specialistsData[serviceId] || [];
+  const service = servicesData[serviceId] || servicesData["cardiology"];
+  const specialists: Specialist[] = service.specialists || [];
 
   return (
 <div className="bg-[rgba(243,248,252,1)] py-12 md:py-16">
@@ -104,7 +33,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
         
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Specialists Offering <span className="text-[#05BFDB]">Cardiology</span>
+          Specialists Offering <span className="text-[#05BFDB]">{service.name}</span>
         </h2>
 
         {/* Specialists Grid */}
@@ -173,16 +102,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
 
               {/* Button ALWAYS at bottom */}
               <button
-                className="
-                  w-full
-                  bg-gradient-to-r from-[#157DC1] to-[#5FC1A3]
-                  hover:opacity-90
-                  text-white font-medium
-                  py-4
-                  rounded-b-lg
-                  transition-all duration-300
-                  mt-auto
-                "
+                className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto"
               >
                 Book An Appointment
               </button>

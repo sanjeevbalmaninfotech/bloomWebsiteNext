@@ -1,21 +1,46 @@
-
-"use client"
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { RegisterButton } from './registerButton/RegisterButton';
-
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { RegisterButton } from "./registerButton/RegisterButton";
 
 const Navbar = () => {
   const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // ---------- Properly Typed Refs ----------
+  const discoverRef = useRef<HTMLDivElement | null>(null);
+  const servicesRef = useRef<HTMLDivElement | null>(null);
+
+  // ---------- CLICK OUTSIDE HANDLER ----------
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      const target = event.target as Node;
+
+      if (
+        discoverRef.current &&
+        !discoverRef.current.contains(target)
+      ) {
+        setIsDiscoverOpen(false);
+      }
+
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(target)
+      ) {
+        setIsServicesOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <nav className="bg-white shadow-sm relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
@@ -28,82 +53,76 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {/* Discover Bloom - Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setIsDiscoverOpen(true)}
-              onMouseLeave={() => setIsDiscoverOpen(false)}
-            >
-              <button className="text-gray-700 hover:text-teal-600 font-medium flex items-center">
+
+            {/* Discover Bloom */}
+            <div className="relative" ref={discoverRef}>
+              <button
+                onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}
+                className="text-gray-700 hover:text-teal-600 font-medium flex items-center"
+              >
                 Discover Bloom
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
+
               {isDiscoverOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
-                  <Link href="/about" className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600">
+                  <Link href="/about" className="block px-4 py-2 text-gray-700 hover:bg-teal-50">
                     About Us
                   </Link>
-                  <Link href="/team" className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600">
+                  <Link href="/team" className="block px-4 py-2 text-gray-700 hover:bg-teal-50">
                     Our Team
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* Services - Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
-            >
-              <button className="text-gray-700 hover:text-teal-600 font-medium flex items-center">
+            {/* Services */}
+            <div className="relative" ref={servicesRef}>
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className="text-gray-700 hover:text-teal-600 font-medium flex items-center"
+              >
                 Services
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
+
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
-                  <Link href="/services/consultation" className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600">
+                  <Link href="/services/consultation" className="block px-4 py-2 text-gray-700 hover:bg-teal-50">
                     Consultation
                   </Link>
-                  <Link href="/services/therapy" className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600">
+                  <Link href="/services/therapy" className="block px-4 py-2 text-gray-700 hover:bg-teal-50">
                     Therapy
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* Careers */}
-            <Link href="/careers" className="text-gray-700 hover:text-teal-600 font-medium">
-              Careers
-            </Link>
+            <Link href="/careers" className="text-gray-700 hover:text-teal-600 font-medium">Careers</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium">Contact</Link>
 
-            {/* Contact */}
-            <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium">
-              Contact
-            </Link>
-
-       <RegisterButton/>
+            <RegisterButton />
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 hover:text-teal-600"
             >
               {isMobileMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg className="w-6 h-6" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/>
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg className="w-6 h-6" fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
               )}
             </button>
@@ -115,71 +134,55 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="px-4 py-3 space-y-3">
-            {/* Discover Bloom Mobile */}
+
+            {/* Mobile Discover */}
             <div>
-              <button 
+              <button
                 onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}
                 className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2"
               >
                 Discover Bloom
-                <svg className={`w-4 h-4 transition-transform ${isDiscoverOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <svg className={`w-4 h-4 transition-transform ${isDiscoverOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
+
               {isDiscoverOpen && (
                 <div className="pl-4 space-y-2">
-                  <Link href="/about" className="block py-2 text-gray-600 hover:text-teal-600">
-                    About Us
-                  </Link>
-                  <Link href="/team" className="block py-2 text-gray-600 hover:text-teal-600">
-                    Our Team
-                  </Link>
+                  <Link href="/about" className="block py-2 text-gray-600 hover:text-teal-600">About Us</Link>
+                  <Link href="/team" className="block py-2 text-gray-600 hover:text-teal-600">Our Team</Link>
                 </div>
               )}
             </div>
 
-            {/* Services Mobile */}
+            {/* Mobile Services */}
             <div>
-              <button 
+              <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2"
               >
                 Services
-                <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
+
               {isServicesOpen && (
                 <div className="pl-4 space-y-2">
-                  <Link href="/services/consultation" className="block py-2 text-gray-600 hover:text-teal-600">
-                    Consultation
-                  </Link>
-                  <Link href="/services/therapy" className="block py-2 text-gray-600 hover:text-teal-600">
-                    Therapy
-                  </Link>
+                  <Link href="/services/consultation" className="block py-2 text-gray-600 hover:text-teal-600">Consultation</Link>
+                  <Link href="/services/therapy" className="block py-2 text-gray-600 hover:text-teal-600">Therapy</Link>
                 </div>
               )}
             </div>
 
-            {/* Careers Mobile */}
-            <Link href="/careers" className="block text-gray-700 hover:text-teal-600 font-medium py-2">
-              Careers
-            </Link>
+            <Link href="/careers" className="block py-2 text-gray-700 hover:text-teal-600 font-medium">Careers</Link>
+            <Link href="/contact" className="block py-2 text-gray-700 hover:text-teal-600 font-medium">Contact</Link>
 
-            {/* Contact Mobile */}
-            <Link href="/contact" className="block text-gray-700 hover:text-teal-600 font-medium py-2">
-              Contact
+            <Link href="/register">
+              <div className="w-full bg-gradient-to-r from-cyan-400 to-teal-400 text-white px-6 py-3 rounded-lg text-center shadow-md">
+                Register Your Interest
+              </div>
             </Link>
-
-            {/* Register Button Mobile */}
-          <Link href="/register" className="block cursor-pointer">
-  <div className="cursor-pointer w-full bg-gradient-to-r from-cyan-400 to-teal-400 hover:from-cyan-500 hover:to-teal-500 text-white font-medium px-6 py-3 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 shadow-md cursor-pointer">
-    <span>Register Your Interest</span>
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-    </svg>
-  </div>
-</Link>
 
           </div>
         </div>

@@ -27,7 +27,7 @@ return (
             {menuItems.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 cursor-pointer group hover:bg-gradient-to-r hover:from-[#157dc1] hover:to-[#5fc1a3]"
+                className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 cursor-pointer group hover:bg-gradient-to-r hover:from-[#126ba8] hover:to-[#4da990]"
               >
                 <h3
                   className={`text-sm sm:text-base md:text-lg font-semibold ${item.color} group-hover:text-white transition-colors duration-300`}
@@ -72,7 +72,7 @@ return (
 
               {/* Button pinned to bottom of this fixed-height box */}
               <div>
-                <button className="bg-gradient-to-r from-[#157dc1] to-[#5fc1a3] hover:from-[#1269a1] hover:to-[#4da890] text-white px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 rounded-lg inline-flex items-center gap-2 sm:gap-3 transition-colors duration-300 cursor-pointer text-base sm:text-lg md:text-xl font-semibold">
+                <button className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 rounded-lg inline-flex items-center gap-2 sm:gap-3 transition-colors duration-300 cursor-pointer text-base sm:text-lg md:text-xl font-semibold">
                   Read More
                   <img
                     src="/Arrow-Right.svg"

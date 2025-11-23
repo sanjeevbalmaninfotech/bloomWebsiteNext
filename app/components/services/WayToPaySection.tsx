@@ -17,13 +17,13 @@ const paymentOptions: PaymentOption[] = [
   {
     id: "treatment",
     title: "Paying For Your Treatment",
-    image: "/temp4.jpg", // Replace with actual image
+    image: 'https://images.unsplash.com/photo-1608286022625-bc07f7a21154?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Replace with actual image
     link: "/payment-options",
   },
   {
     id: "insurance",
     title: "Using Your Health Insurance",
-    image: "/temp3.jpg", // Replace with actual image
+    image: "https://plus.unsplash.com/premium_photo-1681336549470-7ef747f49582?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with actual image
     link: "/health-insurance",
   },
 ];

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { RegisterButton } from "../registerButton/RegisterButton";
-import { slides } from "@/app/constants/homePage/homePage";
+import { slides } from "@/app/constants/homePage";
 
 const HospitalHeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
