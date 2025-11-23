@@ -3,6 +3,7 @@
 
 
 import React from "react";
+import Link from "next/link";
 import { servicesData } from "@/app/constants/services";
 
 interface Specialist {
@@ -39,14 +40,15 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
         {/* Specialists Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {specialists.map((specialist) => (
-            
-            <div
+            <Link
               key={specialist.id}
+              href={`/doctors/${specialist.id}`}
               className="
                 bg-white rounded-lg overflow-hidden 
                 shadow-sm hover:shadow-md 
                 transition-shadow 
                 flex flex-col h-full
+                cursor-pointer
               "
             >
               {/* Content Section */}
@@ -101,13 +103,13 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
               </div>
 
               {/* Button ALWAYS at bottom */}
-              <button
-                className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto"
+              <div
+                className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto text-center"
               >
                 Book An Appointment
-              </button>
+              </div>
 
-            </div>
+            </Link>
           ))}
         </div>
       </div>

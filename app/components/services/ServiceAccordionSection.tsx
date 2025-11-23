@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Plus, Minus } from "lucide-react";
 import { RegisterButton } from "../registerButton/RegisterButton";
 import { servicesData } from "@/app/constants/services";
 
@@ -40,16 +39,28 @@ export const ServiceAccordionSection: React.FC<
             {/* Toggle Button */}
             <button
               onClick={() => setShowDescription(!showDescription)}
-              className="w-full flex items-center justify-between px-5 py-4 text-left bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+              className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-gray-50 transition-colors border border-gray-200 rounded-lg"
             >
-              <span className="font-medium text-gray-900">
+              <span className="text-lg font-semibold text-gray-900">
                 Fast access to private cardiac care with bloom health
               </span>
-              {showDescription ? (
-                <Minus size={20} className="text-gray-600 flex-shrink-0" />
-              ) : (
-                <Plus size={20} className="text-gray-600 flex-shrink-0" />
-              )}
+              <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${
+                showDescription ? 'rotate-180' : ''
+              }`}>
+                <svg
+                  className="w-4 h-4 text-gray-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
             </button>
 
             {/* Description - Only show when toggled */}
@@ -89,31 +100,40 @@ export const ServiceAccordionSection: React.FC<
             )}
 
             {/* Accordion - Always visible */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               {accordionItems.map((item) => (
                 <div
                   key={item.id}
-                  className="border border-gray-200 rounded-lg overflow-hidden"
+                  className="border border-gray-200 rounded-lg"
                 >
                   <button
                     onClick={() => toggleAccordion(item.id)}
-                    className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 transition-colors"
+                    className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-gray-50 transition-colors"
                   >
-                    <span className="font-medium text-gray-900">
+                    <span className="text-lg font-semibold text-gray-900">
                       {item.title}
                     </span>
-                    {expandedId === item.id ? (
-                      <Minus
-                        size={20}
-                        className="text-gray-600 flex-shrink-0"
-                      />
-                    ) : (
-                      <Plus size={20} className="text-gray-600 flex-shrink-0" />
-                    )}
+                    <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${
+                      expandedId === item.id ? 'rotate-180' : ''
+                    }`}>
+                      <svg
+                        className="w-4 h-4 text-gray-600"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </div>
                   </button>
                   {expandedId === item.id && (
-                    <div className="px-5 py-4 bg-gray-50 border-t border-gray-200">
-                      <p className="text-gray-700 leading-relaxed">
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 pt-2">
+                      <p className="text-gray-600 leading-relaxed">
                         {item.content}
                       </p>
                     </div>
@@ -150,7 +170,9 @@ export const ServiceAccordionSection: React.FC<
               </p>
               <button className="w-full inline-flex items-center justify-center gap-2 bg-[#05BFDB] hover:bg-[#04A5C0] text-white font-medium px-5 py-2.5 rounded-md transition-colors duration-200">
                 Discover Bloom Membership
-                <Plus size={18} />
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </div>
 

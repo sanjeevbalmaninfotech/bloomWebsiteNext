@@ -71,7 +71,7 @@ export const servicesData: TypeServicesData = {
     ],
     specialists: [
       {
-        id: "1",
+        id: "mauro-lencioni",
         name: "Dr Mauro Lencioni",
         title: "Consultant Cardiologist & Electrophysiologist",
         image: "/dd1.jpg",
@@ -80,7 +80,7 @@ export const servicesData: TypeServicesData = {
         experience: "12 Years",
       },
       {
-        id: "2",
+        id: "aruna-arujuna",
         name: "Dr Aruna Arujuna",
         title: "Consultant Cardiologist",
         image: "/dd2.jpg",
@@ -93,7 +93,7 @@ export const servicesData: TypeServicesData = {
         experience: "8 Years",
       },
       {
-        id: "3",
+        id: "benjamin-brown",
         name: "Dr Benjamin Brown",
         title: "Consultant Cardiologist/ Electrophysiologist",
         image: "/dd3.jpg",
@@ -179,7 +179,7 @@ export const servicesData: TypeServicesData = {
     ],
     specialists: [
       {
-        id: "1",
+        id: "mauro-lencioni",
         name: "Dr Mauro Lencioni",
         title: "Consultant Cardiologist & Electrophysiologist",
         image: "/dd1.jpg",
@@ -188,7 +188,7 @@ export const servicesData: TypeServicesData = {
         experience: "12 Years",
       },
       {
-        id: "2",
+        id: "aruna-arujuna",
         name: "Dr Aruna Arujuna",
         title: "Consultant Cardiologist",
         image: "/dd2.jpg",
@@ -201,7 +201,7 @@ export const servicesData: TypeServicesData = {
         experience: "8 Years",
       },
       {
-        id: "3",
+        id: "benjamin-brown",
         name: "Dr Benjamin Brown",
         title: "Consultant Cardiologist/ Electrophysiologist",
         image: "/dd3.jpg",
@@ -262,7 +262,7 @@ export const servicesData: TypeServicesData = {
     ],
     specialists: [
       {
-        id: "w1",
+        id: "anna-patel",
         name: "Dr Anna Patel",
         title: "Emergency GP",
         image: "/dd1.jpg",
@@ -271,7 +271,7 @@ export const servicesData: TypeServicesData = {
         experience: "7 Years",
       },
       {
-        id: "w2",
+        id: "marcus-lee",
         name: "Dr Marcus Lee",
         title: "Emergency Medicine",
         image: "/dd2.jpg",
@@ -280,7 +280,7 @@ export const servicesData: TypeServicesData = {
         experience: "10 Years",
       },
       {
-        id: "w3",
+        id: "priya-nair",
         name: "Dr Priya Nair",
         title: "GP & Paediatrics Lead",
         image: "/dd3.jpg",
@@ -289,7 +289,7 @@ export const servicesData: TypeServicesData = {
         experience: "6 Years",
       },
       {
-        id: "w4",
+        id: "oliver-grant",
         name: "Dr Oliver Grant",
         title: "Orthopaedic Practitioner",
         image: "/dd4.jpg",
@@ -298,7 +298,7 @@ export const servicesData: TypeServicesData = {
         experience: "12 Years",
       },
       {
-        id: "w5",
+        id: "sofia-martinez",
         name: "Dr Sofia Martinez",
         title: "Urgent Care Physician",
         image: "/dd5.jpg",
@@ -307,7 +307,7 @@ export const servicesData: TypeServicesData = {
         experience: "9 Years",
       },
       {
-        id: "w6",
+        id: "ethan-brooks",
         name: "Dr Ethan Brooks",
         title: "Clinical Lead - Acute Medicine",
         image: "/dd6.jpg",
@@ -364,7 +364,7 @@ export const servicesData: TypeServicesData = {
     ],
     specialists: [
       {
-        id: "p1",
+        id: "hannah-cole",
         name: "Dr Hannah Cole",
         title: "Consultant Physician",
         image: "/dd1.jpg",
@@ -373,7 +373,7 @@ export const servicesData: TypeServicesData = {
         experience: "15 Years",
       },
       {
-        id: "p2",
+        id: "samuel-okoye",
         name: "Dr Samuel Okoye",
         title: "Endocrinologist",
         image: "/dd2.jpg",
@@ -382,7 +382,7 @@ export const servicesData: TypeServicesData = {
         experience: "11 Years",
       },
       {
-        id: "p3",
+        id: "lucy-wang",
         name: "Dr Lucy Wang",
         title: "Orthopaedic Surgeon",
         image: "/dd3.jpg",
@@ -391,7 +391,7 @@ export const servicesData: TypeServicesData = {
         experience: "13 Years",
       },
       {
-        id: "p4",
+        id: "karim-hassan",
         name: "Dr Karim Hassan",
         title: "Physiotherapist Consultant",
         image: "/dd4.jpg",
@@ -400,7 +400,7 @@ export const servicesData: TypeServicesData = {
         experience: "9 Years",
       },
       {
-        id: "p5",
+        id: "maria-rossi",
         name: "Dr Maria Rossi",
         title: "Consultant Anaesthetist",
         image: "/dd5.jpg",
@@ -409,7 +409,7 @@ export const servicesData: TypeServicesData = {
         experience: "17 Years",
       },
       {
-        id: "p6",
+        id: "tom-edwards",
         name: "Dr Tom Edwards",
         title: "Chronic Pain Specialist",
         image: "/dd6.jpg",
