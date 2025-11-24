@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 export function CareerHeroSection() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,7 +13,7 @@ export function CareerHeroSection() {
   };
 
   return (
-    <div className="relative bg-gradient-to-r from-[#1a5f7a] to-[#2d8ba8] py-20 overflow-hidden">
+    <div className="relative bg-linear-to-r from-[#1a5f7a] to-[#2d8ba8] py-20 overflow-hidden">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -52,9 +53,7 @@ export function CareerHeroSection() {
 
             <button
               type="submit"
-              className="w-full sm:w-auto bg-[#2B9DB5] hover:bg-[#258a9f] 
-               text-white px-8 py-4 rounded-lg font-medium 
-               transition-colors flex items-center justify-center gap-2"
+              className={`${primaryButtonClasses} w-full sm:w-auto rounded-lg px-8 py-4`}
             >
               <span>Search</span>
               <svg

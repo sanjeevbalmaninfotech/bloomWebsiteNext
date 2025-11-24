@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 interface AboutSectionProps {
   doctorId: string;
@@ -6,6 +7,8 @@ interface AboutSectionProps {
 
 export function AboutSection({ doctorId }: AboutSectionProps) {
   const [activeTab, setActiveTab] = useState("about");
+  const tabButtonBaseClasses =
+    "px-6 py-2.5 rounded-md font-medium transition-colors";
 
   // This data would come from your constants/doctors.ts
   const doctorData = {
@@ -61,31 +64,31 @@ His research findings were presented at national and international meetings and 
               <div className="flex gap-2 mb-8">
                 <button
                   onClick={() => setActiveTab("about")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                  className={
                     activeTab === "about"
-                      ? "bg-[#2B9DB5] text-white"
-                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                      ? `${primaryButtonClasses} ${tabButtonBaseClasses}`
+                      : `${tabButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                  }
                 >
                   About
                 </button>
                 <button
                   onClick={() => setActiveTab("treatment")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                  className={
                     activeTab === "treatment"
-                      ? "bg-[#2B9DB5] text-white"
-                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                      ? `${primaryButtonClasses} ${tabButtonBaseClasses}`
+                      : `${tabButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                  }
                 >
                   Treatment
                 </button>
                 <button
                   onClick={() => setActiveTab("insurer")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                  className={
                     activeTab === "insurer"
-                      ? "bg-[#2B9DB5] text-white"
-                      : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                      ? `${primaryButtonClasses} ${tabButtonBaseClasses}`
+                      : `${tabButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                  }
                 >
                   Insurer
                 </button>
@@ -115,7 +118,7 @@ His research findings were presented at national and international meetings and 
                   <div className="flex gap-4 mb-12">
                     <button
                       onClick={() => setShowFullText(!showFullText)}
-                      className="bg-gradient-to-r from-[#2B9DB5] to-[#4DB8A8] text-white px-6 py-3 rounded-md font-medium hover:shadow-lg transition-all flex items-center gap-2"
+                      className={`${primaryButtonClasses} rounded-md px-6 py-3`}
                     >
                       <span>{showFullText ? "Read Less" : "Read More"}</span>
 
@@ -134,7 +137,9 @@ His research findings were presented at national and international meetings and 
                       </svg>
                     </button>
 
-                    <button className="bg-[#2B9DB5] text-white px-6 py-3 rounded-md font-medium hover:bg-[#258a9f] transition-colors flex items-center gap-2">
+                    <button
+                      className={`${primaryButtonClasses} rounded-md px-6 py-3`}
+                    >
                       <span>View All Availability</span>
                       <svg
                         className="w-5 h-5"
@@ -169,7 +174,9 @@ His research findings were presented at national and international meetings and 
                     ))}
                   </div>
 
-                  <button className="bg-[#2B9DB5] text-white px-6 py-3 rounded-md font-medium hover:bg-[#258a9f] transition-colors flex items-center gap-2">
+                  <button
+                    className={`${primaryButtonClasses} rounded-md px-6 py-3`}
+                  >
                     <span>View All Availability</span>
                     <svg
                       className="w-5 h-5"

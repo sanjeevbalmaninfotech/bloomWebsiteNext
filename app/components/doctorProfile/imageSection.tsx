@@ -1,6 +1,7 @@
 "use client";
 
 import { doctorsData } from "@/app/constants/doctors";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 import Image from "next/image";
 import React from "react";
 
@@ -21,7 +22,7 @@ export default function ImageSection({ doctorId }: ImageSectionProps) {
           <div className="flex flex-col md:flex-row items-center md:items-center gap-12 md:gap-16">
 
             {/* Profile Image */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <div className="w-56 h-56 md:w-64 md:h-64 rounded-xl overflow-hidden bg-gray-300 shadow-lg">
                 <Image
                   src={doctor.image}
@@ -54,7 +55,9 @@ export default function ImageSection({ doctorId }: ImageSectionProps) {
               </div>
 
               {/* Button */}
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-md flex items-center gap-2 transition-colors mx-auto md:mx-0">
+              <button
+                className={`${primaryButtonClasses} rounded-md px-6 py-3 mx-auto md:mx-0`}
+              >
                 <span>View All Availability</span>
                 <svg
                   className="w-5 h-5"

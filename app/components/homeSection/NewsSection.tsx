@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 const NewsSection = () => {
   return (
@@ -24,27 +25,24 @@ const NewsSection = () => {
                   highest quality of care through a team-based, doctor-led model.
                 </p>
 
-                <Link href="/news-signup">
-                    hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium 
-                    px-6 py-3 rounded-lg flex items-center space-x-2 transition-all 
-                  <div className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium px-6 py-3 rounded-lg flex items-center space-x-2 transition-all
-                    duration-300 w-fit cursor-pointer"
+                <Link
+                  href="/news-signup"
+                  className={`${primaryButtonClasses} rounded-lg px-6 py-3 w-fit`}
+                >
+                  <span>Sign Up For Latest News</span>
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    <span>Sign Up For Latest News</span>
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </div>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
                 </Link>
               </div>
 
@@ -79,7 +77,7 @@ const NewsSection = () => {
               <div className="bg-[#1e4a5f] rounded-lg overflow-hidden w-full h-full flex flex-col">
 
                 {/* IMAGE */}
-                <div className="relative w-full h-80 flex-shrink-0 bg-gray-300">
+                <div className="relative w-full h-80 shrink-0 bg-gray-300">
                   <img
                     src="/newsSectionImg2.png"
                     alt="Featured News"

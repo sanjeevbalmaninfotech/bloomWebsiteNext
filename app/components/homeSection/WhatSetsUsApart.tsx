@@ -1,4 +1,5 @@
 import React from "react";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 const WhatSetsUsApart = () => {
   const menuItems = [
@@ -27,14 +28,14 @@ return (
             {menuItems.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 cursor-pointer group hover:bg-gradient-to-r hover:from-[#126ba8] hover:to-[#4da990]"
+                className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg hover:shadow-md transition-all duration-300 cursor-pointer group hover:bg-linear-to-r hover:from-[#126ba8] hover:to-[#4da990]"
               >
                 <h3
                   className={`text-sm sm:text-base md:text-lg font-semibold ${item.color} group-hover:text-white transition-colors duration-300`}
                 >
                   {item.title}
                 </h3>
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center flex-shrink-0 ml-2">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shrink-0 ml-2">
                   <img
                     src="/Arrow-Right.svg"
                     alt="Arrow Right"
@@ -72,7 +73,9 @@ return (
 
               {/* Button pinned to bottom of this fixed-height box */}
               <div>
-                <button className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 rounded-lg inline-flex items-center gap-2 sm:gap-3 transition-colors duration-300 cursor-pointer text-base sm:text-lg md:text-xl font-semibold">
+                <button
+                  className={`${primaryButtonClasses} rounded-lg px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 text-base sm:text-lg md:text-xl sm:gap-3 cursor-pointer`}
+                >
                   Read More
                   <img
                     src="/Arrow-Right.svg"

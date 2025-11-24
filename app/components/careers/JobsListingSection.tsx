@@ -3,12 +3,15 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { jobsData } from "@/app/constants/careers";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 export function JobsListingSection() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const jobsPerPage = 8;
+  const filterButtonBaseClasses =
+    "px-6 py-2.5 rounded-md font-medium transition-colors";
 
   const filteredJobs = useMemo(() => {
     return jobsData.filter((job) => {
@@ -100,11 +103,11 @@ export function JobsListingSection() {
               {/* View All */}
               <button
                 onClick={() => handleFilterChange("all")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                className={
                   activeFilter === "all"
-                    ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
-                    : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                    ? `${primaryButtonClasses} ${filterButtonBaseClasses}`
+                    : `${filterButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                }
               >
                 View All
               </button>
@@ -112,11 +115,11 @@ export function JobsListingSection() {
               {/* Clinical */}
               <button
                 onClick={() => handleFilterChange("clinical")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                className={
                   activeFilter === "clinical"
-                    ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
-                    : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                    ? `${primaryButtonClasses} ${filterButtonBaseClasses}`
+                    : `${filterButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                }
               >
                 Clinical
               </button>
@@ -124,11 +127,11 @@ export function JobsListingSection() {
               {/* Non-Clinical */}
               <button
                 onClick={() => handleFilterChange("non-clinical")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
+                className={
                   activeFilter === "non-clinical"
-                    ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
-                    : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                    ? `${primaryButtonClasses} ${filterButtonBaseClasses}`
+                    : `${filterButtonBaseClasses} bg-white text-gray-700 border border-gray-300 hover:bg-gray-50`
+                }
               >
                 Non-Clinical
               </button>
@@ -151,7 +154,7 @@ export function JobsListingSection() {
                 <Link
                   key={job.id}
                   href={`/jobDetails/${job.id}`}
-                  className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer"
+                  className="bg-linear-to-br from-blue-50 to-cyan-50 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer"
                 >
                 <h4 className="text-xl font-bold text-gray-900 mb-4 min-h-[56px]">
                   {job.title}
@@ -223,12 +226,7 @@ export function JobsListingSection() {
                 </div>
 
                   {/* Apply Button */}
-                  <div
-                    className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3]
-                    hover:from-[#5FC1A3] hover:to-[#157DC1]
-                    text-white py-3 rounded-lg font-medium 
-                    hover:shadow-lg transition-all flex items-center justify-center gap-2"
-                  >
+                  <div className={`${primaryButtonClasses} w-full py-3 rounded-lg`}>
                     <span>Apply Now</span>
                     <svg
                       className="w-5 h-5"
@@ -273,22 +271,22 @@ export function JobsListingSection() {
                 <button
                   onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
                   disabled={currentPage === 1}
-                  className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  className={
                     currentPage === 1
-                      ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                      : "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#5FC1A3] hover:to-[#157DC1] text-white"
-                  }`}
+                      ? "px-6 py-2 rounded-md font-medium bg-gray-200 text-gray-400 cursor-not-allowed"
+                      : `${primaryButtonClasses} px-6 py-2 rounded-md`
+                  }
                 >
                   Previous
                 </button>
                 <button
                   onClick={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
                   disabled={currentPage === totalPages}
-                  className={`px-6 py-2 rounded-md font-medium transition-colors ${
+                  className={
                     currentPage === totalPages
-                      ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                      : "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#5FC1A3] hover:to-[#157DC1] text-white"
-                  }`}
+                      ? "px-6 py-2 rounded-md font-medium bg-gray-200 text-gray-400 cursor-not-allowed"
+                      : `${primaryButtonClasses} px-6 py-2 rounded-md`
+                  }
                 >
                   Next
                 </button>

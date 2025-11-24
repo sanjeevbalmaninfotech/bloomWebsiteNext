@@ -3,6 +3,7 @@
 
 
 import { jobsDetailsData } from "@/app/constants/jobs/jobs";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 import { JobDetailsImageSectionProps } from "@/app/types/jobs/jobs";
 import Image from "next/image";
 import React from "react";
@@ -13,7 +14,7 @@ export default function JobImageSection({ jobId }: JobDetailsImageSectionProps) 
   if (!job) return null;
 
   return (
-    <div className="relative bg-gradient-to-r from-[#1e5a7d] to-[#4a90b8] py-20 md:py-28 overflow-hidden">
+    <div className="relative bg-linear-to-r from-[#1e5a7d] to-[#4a90b8] py-20 md:py-28 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 opacity-30">
         <Image
@@ -73,7 +74,9 @@ export default function JobImageSection({ jobId }: JobDetailsImageSectionProps) 
               </div>
 
               {/* Apply Button */}
-              <button className="bg-gradient-to-r from-[#3b9ec7] to-[#5fc1a3] hover:from-[#2e8bb3] hover:to-[#4aa88c] text-white font-semibold px-8 py-3.5 rounded-lg flex items-center gap-2 transition-all shadow-lg hover:shadow-xl">
+              <button
+                className={`${primaryButtonClasses} rounded-lg px-8 py-3.5 shadow-lg hover:shadow-xl`}
+              >
                 <span>Apply Now</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

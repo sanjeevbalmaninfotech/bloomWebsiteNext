@@ -2,9 +2,11 @@
 "use client";
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { servicesData } from "@/app/constants/services";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 interface Specialist {
   id: string;
@@ -20,6 +22,7 @@ interface SpecialistsSectionProps {
   serviceId: string;
 }
 
+
 // Use specialists from centralized services data
 
 export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
@@ -27,6 +30,11 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
 }) => {
   const service = servicesData[serviceId] || servicesData["cardiology"];
   const specialists: Specialist[] = service.specialists || [];
+
+
+  useEffect(() => {
+    console.log("SpecialistsSection");
+  },[])
 
   return (
 <div className="bg-[rgba(243,248,252,1)] py-12 md:py-16">
@@ -52,17 +60,20 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
               "
             >
               {/* Content Section */}
-              <div className="p-6 flex-grow">
+              <div className="p-6 grow">
                 
                 {/* Doctor Info */}
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
-                    <img
+                  <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 shrink-0">
+                    <Image
                       src={specialist.image}
                       alt={specialist.name}
+                      width={64}
+                      height={64}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                      onError={(event) => {
+                        const target = event.currentTarget;
+                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
                           specialist.name
                         )}&size=64&background=05BFDB&color=fff`;
                       }}
@@ -104,7 +115,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
 
               {/* Button ALWAYS at bottom */}
               <div
-                className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto text-center"
+                className={`${primaryButtonClasses} w-full rounded-none rounded-b-lg py-4 text-center`}
               >
                 Book An Appointment
               </div>

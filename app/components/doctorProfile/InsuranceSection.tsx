@@ -1,3 +1,4 @@
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 
 export function InsuranceSection() {
@@ -76,7 +77,7 @@ return (
           </div>
 
           {/* Button */}
-          <button className="bg-[#2B9DB5] text-white px-6 py-3 rounded-md font-medium hover:bg-[#258a9f] transition-colors flex items-center gap-2">
+          <button className={`${primaryButtonClasses} rounded-md px-6 py-3`}>
             <span>View All Availability</span>
             <svg
               className="w-5 h-5"

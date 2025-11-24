@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { RegisterButton } from "../registerButton/RegisterButton";
 import { servicesData } from "@/app/constants/services";
+import { primaryButtonClasses } from "@/app/constants/styles/buttons";
 
 interface AccordionItem {
   id: string;
@@ -146,7 +147,7 @@ export const ServiceAccordionSection: React.FC<
           {/* Right Column - Sidebar */}
           <div className="space-y-6">
             {/* Fast Track Card */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-100">
+            <div className="bg-linear-to-br from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-100">
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Fast Track Your{" "}
                 <span className="text-[#05BFDB]">Treatment</span>
@@ -168,7 +169,7 @@ export const ServiceAccordionSection: React.FC<
                   £23.99 per month
                 </span>
               </p>
-              <button className="w-full inline-flex items-center justify-center gap-2 bg-[#05BFDB] hover:bg-[#04A5C0] text-white font-medium px-5 py-2.5 rounded-md transition-colors duration-200">
+              <button className={`${primaryButtonClasses} w-full rounded-md px-5 py-2.5`}>
                 Discover Bloom Membership
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
