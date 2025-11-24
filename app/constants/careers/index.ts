@@ -8,77 +8,77 @@ export interface Job {
 
 export const jobsData: Job[] = [
   {
-    id: "1",
+    id: "senior-radiographer",
     title: "Senior Radiographer",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "2",
+    id: "housekeeping-assistant",
     title: "Housekeeping Assistant",
     employmentType: "Full time",
     category: "Non-Clinical",
     location: "Milton Keynes, UK"
   },
   {
-    id: "3",
+    id: "pharmacy-technician",
     title: "Pharmacy Technician",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "4",
+    id: "senior-medical-secretary",
     title: "Senior Medical Secretary",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "5",
+    id: "gp-health-screener",
     title: "GP/Health Screener",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "6",
+    id: "staff-nurse",
     title: "Staff Nurse",
     employmentType: "Full time",
     category: "Non-Clinical",
     location: "Milton Keynes, UK"
   },
   {
-    id: "7",
+    id: "picu-senior-staff-nurse",
     title: "PICU Senior Staff Nurse",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "8",
+    id: "staff-nurse-spinal-thoracic",
     title: "Staff Nurse – Spinal / Thoracic",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "9",
+    id: "resident-doctor-paediatrics",
     title: "Resident Doctor Paediatrics",
     employmentType: "Full time",
     category: "Clinical Ex.",
     location: "Milton Keynes, UK"
   },
   {
-    id: "10",
+    id: "patient-access-leader",
     title: "Patient Access Leader",
     employmentType: "Full time",
     category: "Non-Clinical",
     location: "Milton Keynes, UK"
   },
   {
-    id: "11",
+    id: "director-quality-risk",
     title: "Director of Quality & Risk",
     employmentType: "Full time",
     category: "Clinical Ex.",

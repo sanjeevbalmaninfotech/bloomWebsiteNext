@@ -73,8 +73,8 @@ const CombineFooter = () => {
                 </div>
               </div>
 
-             <button
-  className="
+              <button
+                className="
     flex items-center gap-2
     bg-[linear-gradient(to_right,rgb(21,125,193),rgb(95,193,163))]
     hover:bg-[linear-gradient(to_right,rgb(18,110,175),rgb(85,178,150))]
@@ -85,11 +85,14 @@ const CombineFooter = () => {
     mt-4
     w-fit
   "
->
-  <span>Get Our Location</span>
-  <img src="/Arrow-Right.svg" alt="Arrow Right" className="w-5 h-5" />
-</button>
-
+              >
+                <span>Get Our Location</span>
+                <img
+                  src="/Arrow-Right.svg"
+                  alt="Arrow Right"
+                  className="w-5 h-5 bg-white/20  brightness-200"
+                />
+              </button>
             </div>
 
             {/* 3. Right side - Map Image */}
