@@ -244,7 +244,7 @@ const CombineFooter = () => {
 
                 {/* LinkedIn */}
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/bloom-health-hospitals"
                   target="_blank"
                   className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                 >
