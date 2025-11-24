@@ -106,7 +106,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
               <div
                 className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto text-center"
               >
-                Book An Appointment
+                Make An Enquiry
               </div>
 
             </Link>

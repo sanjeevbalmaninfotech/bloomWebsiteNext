@@ -1,9 +1,11 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
 import FAQSection from "./FAQSection";
 import FooterImage from "./FooterImage";
+
 const CombineFooter = () => {
   return (
     <>
@@ -29,7 +31,16 @@ const CombineFooter = () => {
                 highest quality of care through a team-based, doctor-led model.
               </p>
 
-              <button className="flex items-center gap-2 bg-white text-sky-600 px-5 py-2.5 rounded-lg font-semibold hover:bg-sky-50 transition-colors text-sm">
+              {/* ✅ Updated Directions Button */}
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps/search/?api=1&query=163-175+Grafton+Gate,+Milton+Keynes,+UK,+MK9+1AE",
+                    "_blank"
+                  )
+                }
+                className="flex items-center gap-2 bg-white text-sky-600 px-5 py-2.5 rounded-lg font-semibold hover:bg-sky-50 transition-colors text-sm"
+              >
                 <span>Directions</span>
                 <img
                   src="/Arrow-Right.svg"
@@ -73,18 +84,25 @@ const CombineFooter = () => {
                 </div>
               </div>
 
+              {/* ✅ Updated Get Our Location Button */}
               <button
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps/search/?api=1&query=163-175+Grafton+Gate,+Milton+Keynes,+UK,+MK9+1AE",
+                    "_blank"
+                  )
+                }
                 className="
-    flex items-center gap-2
-    bg-[linear-gradient(to_right,rgb(21,125,193),rgb(95,193,163))]
-    hover:bg-[linear-gradient(to_right,rgb(18,110,175),rgb(85,178,150))]
-    text-white
-    px-6 py-3
-    rounded-lg font-semibold
-    transition-colors
-    mt-4
-    w-fit
-  "
+                flex items-center gap-2
+                bg-[linear-gradient(to_right,rgb(21,125,193),rgb(95,193,163))]
+                hover:bg-[linear-gradient(to_right,rgb(18,110,175),rgb(85,178,150))]
+                text-white
+                px-6 py-3
+                rounded-lg font-semibold
+                transition-colors
+                mt-4
+                w-fit
+              "
               >
                 <span>Get Our Location</span>
                 <img
@@ -106,6 +124,7 @@ const CombineFooter = () => {
           </div>
         </div>
       </section>
+
       <footer className="relative bg-[#003049] text-white overflow-hidden">
         {/* Background Text - BLOOM HEALTH */}
         <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
@@ -121,7 +140,7 @@ const CombineFooter = () => {
             <div className="flex flex-col space-y-4">
               <Link href="/">
                 <Image
-                  src="/BloomLogo.svg" // White version of logo
+                  src="/BloomLogo.svg"
                   alt="Bloom Health Logo"
                   width={150}
                   height={40}
@@ -205,8 +224,6 @@ const CombineFooter = () => {
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <div className="space-y-3">
                 <p className="text-gray-300">24 / 7 Walk-in Centre</p>
-
-                {/* Social Media Icons */}
               </div>
             </div>
 
@@ -214,7 +231,7 @@ const CombineFooter = () => {
               <div className="flex space-x-4 pt-2">
                 {/* Facebook */}
                 <Link
-                  href="https://facebook.com"
+                  href="https://facebook.com/bloomhealthhospital"
                   target="_blank"
                   className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                 >
@@ -229,7 +246,7 @@ const CombineFooter = () => {
 
                 {/* Instagram */}
                 <Link
-                  href="https://instagram.com"
+                  href="https://instagram.com/bloomhealthhospitals"
                   target="_blank"
                   className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                 >
