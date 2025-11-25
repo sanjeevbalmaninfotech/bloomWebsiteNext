@@ -116,7 +116,7 @@ const CombineFooter = () => {
             {/* 3. Right side - Map Image */}
             <div className="lg:col-span-5 relative flex items-center justify-end">
               <img
-                src="/map.png"
+                src="/Map.png"
                 alt="UK Map"
                 className="w-full max-w-md lg:max-w-lg h-auto object-contain drop-shadow-2xl"
               />

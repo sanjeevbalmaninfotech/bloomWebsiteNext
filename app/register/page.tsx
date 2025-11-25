@@ -18,11 +18,7 @@ export default function RegisterPage() {
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    console.log("Register form submitted:", form);
-    alert("Form submitted successfully!\nOur team will contact you shortly.");
-  }
+ 
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50">
