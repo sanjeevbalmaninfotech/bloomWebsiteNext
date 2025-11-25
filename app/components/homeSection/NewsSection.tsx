@@ -27,8 +27,7 @@ const NewsSection = () => {
                 <Link href="/news-signup">
                     hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium 
                     px-6 py-3 rounded-lg flex items-center space-x-2 transition-all 
-                  <div className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium px-6 py-3 rounded-lg flex items-center space-x-2 transition-all
-                    duration-300 w-fit cursor-pointer"
+                  <div className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium px-6 py-3 rounded-lg flex items-center space-x-2 transition-all duration-300 w-fit cursor-pointer"
                   >
                     <span>Sign Up For Latest News</span>
                     <svg
