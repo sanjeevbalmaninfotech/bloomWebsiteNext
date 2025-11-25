@@ -165,7 +165,7 @@ export default function JobDetailsSection({ jobId }: JobDetailsSectionProps) {
           {/* Apply Now Button */}
           <div className="text-center">
             <button className="bg-gradient-to-r from-[#3b9ec7] to-[#5fc1a3] hover:from-[#2e8bb3] hover:to-[#4aa88c] text-white font-semibold px-10 py-3.5 rounded-lg inline-flex items-center gap-2 transition-all shadow-lg hover:shadow-xl">
-              <span>Register Now</span>
+              <span>Apply Now</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
