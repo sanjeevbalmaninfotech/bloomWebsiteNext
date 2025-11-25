@@ -76,7 +76,7 @@ export default function RegisterPage() {
                 </div>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-3">
-                Book Your Appointment
+                Register
               </h1>
               <p className="text-gray-600 text-lg">
                 Schedule a consultation with our expert medical team

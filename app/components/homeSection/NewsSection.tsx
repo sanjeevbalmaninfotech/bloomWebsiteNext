@@ -23,8 +23,8 @@ const NewsSection = () => {
                   At Bloom Healthcare, our superspecialist doctors provide the
                   highest quality of care through a team-based, doctor-led model.
                 </p>
-
-                <Link href="/news-signup">
+                {/* news-signup */}
+                <Link href="/">
                     hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium 
                     px-6 py-3 rounded-lg flex items-center space-x-2 transition-all 
                   <div className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium px-6 py-3 rounded-lg flex items-center space-x-2 transition-all duration-300 w-fit cursor-pointer"
@@ -131,7 +131,7 @@ const NewsSection = () => {
                 25, Feb, 2025
               </span>
               <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
-                Press release
+                Press Release
               </span>
             </div>
           </div>
