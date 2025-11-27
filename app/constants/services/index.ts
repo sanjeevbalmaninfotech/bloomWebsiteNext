@@ -110,7 +110,7 @@ export const servicesData: TypeServicesData = {
 
   // Diagnostics uses the same content as cardiology (per your note)
   diagnostics: {
-    id: "cardiology",
+    id: "diagnostics",
     name: "Diagnostics",
     description:
       "Diagnostics related to cardiology - imaging and lab tests to support cardiac care.",
@@ -419,4 +419,100 @@ export const servicesData: TypeServicesData = {
       },
     ],
   },
+  "ucc": {
+    id: "ucc",
+    name: "Urgent Care Centre",
+    description:
+      "24/7 walk-in urgent care led by senior Emergency Medicine consultants, GPs and experienced nurses. Fast assessment, on-site diagnostics, and immediate treatment for non-life-threatening conditions.",
+    image: "/urgent-care.svg",
+    buttonText: "Visit Now - Walk In 24/7",
+    
+    accordionItems: [
+      {
+        id: "ucc-what",
+        title: "What is Urgent Care?",
+        content:
+          "Our Urgent Care Centre provides 24/7 walk-in access for urgent but non-life-threatening illnesses and injuries. Staffed by senior Emergency Medicine consultants, registrars, experienced GPs, nurses and HCAs with on-site X-rays, ultrasound, CT scans, and blood tests.",
+      },
+      {
+        id: "ucc-when",
+        title: "When to visit",
+        content:
+          "Visit if you need quick care for non-life-threatening conditions: minor injuries, infections, sudden pain, or if your GP can't offer urgent same-day slots. We help avoid long A&E waits with rapid triage and on-site testing.",
+      },
+      {
+        id: "ucc-process",
+        title: "What to expect",
+        content: [
+          "Arrival & Triage - rapid assessment",
+          "Assessment & Diagnosis - full examination with on-site tests",
+          "Treatment - immediate care with prescriptions/procedures",
+          "Follow-Up - referrals arranged if needed",
+        ]  },
+      {
+        id: "ucc-exclusions",
+        title: "What we DON'T treat",
+        content:
+          "We cannot treat life-threatening emergencies: chest pain, severe head injuries, uncontrolled bleeding, pregnancy emergencies, stroke, major fractures, anaphylaxis, infants under 1, severe mental health crises. For these - call 999 or visit A&E immediately.",
+      },
+    ],
+    
+    relatedTreatments: [
+      "Minor Injuries",
+      "Infections & UTIs",
+      "Wound Care & Dressings",
+      "Minor Fractures",
+      "Respiratory Issues",
+      "Minor Head Injuries",
+      "Medication Problems",
+      "Fever & Sudden Pain",
+      "Eye Infections",
+      "Ear Problems",
+      "Emergency Dental Pain",
+      "Digestive Issues",
+      "Sprains & Strains",
+      "Cuts & Lacerations",
+      "Burns & Scalds",
+      "Allergic Reactions (non-severe)",
+      "Back Pain",
+      "Joint Pain",
+      "Skin Rashes & Infections",
+    ],
+    
+    specialists: [
+      {
+        id: "anna-patel",
+        name: "Dr James Mitchell",
+        title: "Lead Consultant - Emergency Medicine",
+        image: "/dd1.jpg",
+        specialties: ["Emergency Medicine", "Trauma Care", "Acute Medicine"],
+        consultationFee: "Walk-in 24/7",
+        experience: "18 Years",
+      },
+      {
+        id: "anna-patel",
+        name: "Dr Sarah Patel",
+        title: "Consultant Emergency Physician",
+        image: "/dd2.jpg",
+        specialties: ["Emergency Care", "Paediatric Emergency", "Clinical Leadership"],
+        consultationFee: "Walk-in 24/7",
+        experience: "14 Years",
+      },
+      {
+        id: "anna-patel",
+        name: "Dr Michael Chen",
+        title: "Senior GP & Urgent Care Lead",
+        image: "/dd3.jpg",
+        specialties: ["Urgent Care", "General Practice", "Minor Injuries"],
+        consultationFee: "Walk-in 24/7",
+        experience: "16 Years",
+      },
+   
+     
+  
+    ],
+  },
+
+
+ 
 };

@@ -9,7 +9,7 @@ export interface TypeServiceItem {
 export interface AccordionItem {
   id: string;
   title: string;
-  content: string;
+  content: string | string[];
 }
 
 export interface Specialist {
