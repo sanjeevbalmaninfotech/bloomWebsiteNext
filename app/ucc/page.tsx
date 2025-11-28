@@ -157,7 +157,7 @@ const UrgentCareBlock = () => {
       name: "ethan-brooks",
       title: "Cardiologist",
       specialties: ["Heart", "Cardiology"],
-      consultationFee: "$50",
+      consultationFee: "£50",
       experience: "10 yrs",
       image:
         "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
@@ -167,7 +167,7 @@ const UrgentCareBlock = () => {
       name: "hannah-cole",
       title: "Dermatologist",
       specialties: ["Skin", "Cosmetics"],
-      consultationFee: "$60",
+      consultationFee: "£60",
       experience: "8 yrs",
       image:
         "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
@@ -177,7 +177,7 @@ const UrgentCareBlock = () => {
       name: "Dr. Jane Smith",
       title: "Dermatologist",
       specialties: ["Skin", "Cosmetics"],
-      consultationFee: "$60",
+      consultationFee: "£60",
       experience: "8 yrs",
       image:
         "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
@@ -256,7 +256,7 @@ const UrgentCareBlock = () => {
             </div>
 
             {/* Main description */}
-            <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-paragraph text-gray-800 max-w-3xl mx-auto">
               With a diverse team of senior clinicians, modern facilities, and a
               commitment to fast, patient-first care, Bloom Health Hospital
               brings a new standard of urgent treatment to Milton Keynes. Our
@@ -271,15 +271,15 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Clinicians You Can Trust
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     Our Urgent Care Centre is staffed by an exceptional mix of
                     senior Emergency Medicine consultants and registrars,
                     alongside experienced GPs, nurses and HCAs. This breadth of
-                    expertise means you’re always seen by a professional suited
-                    to your condition - day or night.
+                    expertise means you&apos;re always seen by a professional
+                    suited to your condition - day or night.
                   </p>
                 </div>
               </li>
@@ -289,10 +289,10 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Fast Access, 24/7 Walk-In Care
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     We are open around the clock, offering immediate walk-in
                     access for urgent but non-life-threatening illnesses and
                     injuries. We prioritise rapid triage and prompt assessment
@@ -306,10 +306,10 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Hospital-Based Urgent Care with On-Site Diagnostics
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     As part of Bloom Health Hospital, we can arrange X-rays,
                     ultrasound, CT scans, POCT and blood tests on-site, with
                     extended hours and on-call availability for urgent cases.
@@ -324,10 +324,10 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     A Patient-Centred, Comfortable Environment
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     Our facilities have been designed to feel modern, calming
                     and accessible. Private treatment rooms, clean clinical
                     areas and attentive staff ensure you feel supported from the
@@ -341,10 +341,10 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Efficient Pathways to Treatment
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     Our focus is on doing everything we can to start your
                     diagnosis and treatment straight away. By combining skilled
                     clinicians with immediate access to investigations, we aim
@@ -359,10 +359,10 @@ const UrgentCareBlock = () => {
                   •
                 </span>
                 <div>
-                  <span className="text-2xl font-semibold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Easy, Accessible Visit Experience
                   </span>
-                  <p className="text-lg text-gray-700 mt-1">
+                  <p className="text-paragraph text-gray-700 mt-1">
                     We are conveniently located with extensive council parking
                     directly outside the hospital, which we reimburse for
                     patients attending the Urgent Care Centre.
@@ -430,7 +430,7 @@ const UrgentCareBlock = () => {
             </p>
 
             {/* --- Added Line Starts Here --- */}
-            <h3 className="text-lg font-semibold text-blue-900 tracking-wide border-l-4 border-blue-900 pl-3 mb-2">
+            <h3 className="heading-small text-blue-900 tracking-wide border-l-4 border-blue-900 pl-3 mb-2">
               You should choose Bloom Health Urgent Care Centre if:
             </h3>
             {/* --- Added Line Ends Here --- */}
@@ -510,13 +510,13 @@ const UrgentCareBlock = () => {
 
             <>
               {/* Small Section Heading */}
-              <p className="text-xl font-semibold text-gray-900">
+              <p className="text-paragraph text-gray-900">
                 Important Information for Patients
               </p>
 
               {/* Explanatory Text */}
               <div className=" border-blue-700 pl-4 mt-3 space-y-1">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-paragraph text-gray-900">
                   Our Urgent Care Centre is designed for non-life-threatening
                   illnesses and injuries. For your safety, the conditions below
                   require A&E or emergency services and cannot be treated at
@@ -525,7 +525,7 @@ const UrgentCareBlock = () => {
               </div>
 
               {/* Main Section Heading */}
-              <h3 className="text-2xl font-semibold mt-6">
+              <h3 className="heading-medium mt-6 text-gray-900">
                 Conditions Requiring Emergency Care (Not Treated Here)
               </h3>
             </>
