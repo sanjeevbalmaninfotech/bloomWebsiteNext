@@ -20,7 +20,7 @@ const OurServices = () => {
     {
       id: "cardiology",
       icon: "/Diagnostics.svg",
-      title: "Diagnostics",
+      title: "Diagnostics and Imaging",
       description:
         "On-site laboratory tests, ultrasound, X-ray, CT scans, and rapid-result services.",
     },
