@@ -13,6 +13,7 @@ import {
   Ambulance,
 } from "lucide-react";
 import Navbar from "../components/Navbar";
+import { MainFooter } from "../components/footer/Footer";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -603,6 +604,8 @@ const UrgentCareBlock = () => {
           </div>
         </div>
       </div>
+
+      <MainFooter/>
     </>
   );
 };
