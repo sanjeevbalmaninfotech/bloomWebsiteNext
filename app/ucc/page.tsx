@@ -8,7 +8,6 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { Heart, Brain, Droplet, Baby, AlertCircle } from "lucide-react";
-import { SpecialistsSection } from "@/app/components/services/SpecialistsSection";
 import Navbar from "../components/Navbar";
 
 const UrgentCareBlock = () => {
@@ -127,10 +126,10 @@ const UrgentCareBlock = () => {
         </div>
 
         {/* Content Container */}
-        <div className="relative flex flex-col min-h-[420px]">
+        <div className=" bg-blue-600/70 relative flex flex-col min-h-[420px]">
           {/* RED BOX - Bottom Right */}
           <div className="absolute bottom-[-40px] right-20">
-            <div className="bg-blue-600/70 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[420px] shadow-xl">
+            <div className="bg-blue-600/70 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[450px] shadow-xl">
               <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
                 Welcome to Bloom Health
                 <br />
@@ -193,10 +192,10 @@ const UrgentCareBlock = () => {
               <li className="flex items-start">
                 <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
                 <div>
-                  <span className="font-bold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Walk-In & Same-Day Appointments
                   </span>
-                  <span className="text-gray-700">
+                  <span className="text-paragraph text-gray-700">
                     {" "}
                     – Whether you walk in, call ahead, or book online, you be
                     seen quickly. Each consultation is £99.
@@ -207,10 +206,10 @@ const UrgentCareBlock = () => {
               <li className="flex items-start">
                 <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
                 <div>
-                  <span className="font-bold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Open 7 Days a Week, Extended Hours
                   </span>
-                  <span className="text-gray-700">
+                  <span className="text-paragraph text-gray-700">
                     {" "}
                     – From early morning through to late evenings, including
                     weekends and most public holidays, we here for you when
@@ -222,10 +221,10 @@ const UrgentCareBlock = () => {
               <li className="flex items-start">
                 <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
                 <div>
-                  <span className="font-bold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Wide Range of Urgent Care Services
                   </span>
-                  <span className="text-gray-700">
+                  <span className="text-paragraph text-gray-700">
                     {" "}
                     – Covering urgent injuries and illnesses like cuts, burns,
                     sprains, infections, flu symptoms, minor fractures, and
@@ -237,10 +236,10 @@ const UrgentCareBlock = () => {
               <li className="flex items-start">
                 <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
                 <div>
-                  <span className="font-bold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Experienced Medical Professionals
                   </span>
-                  <span className="text-gray-700">
+                  <span className="text-paragraph text-gray-700">
                     {" "}
                     – Our team includes emergency medicine physicians, nurses,
                     and first-rate support staff. All committed to accurate
@@ -253,10 +252,10 @@ const UrgentCareBlock = () => {
               <li className="flex items-start">
                 <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
                 <div>
-                  <span className="font-bold text-gray-900">
+                  <span className="heading-small text-gray-900">
                     Modern Facilities & Patient Comfort
                   </span>
-                  <span className="text-gray-700">
+                  <span className="text-paragraph text-gray-700">
                     {" "}
                     – We use cutting-edge diagnostic tools, digital imaging,
                     and sterile, state-of-the-art treatment rooms. All
