@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Pill, ClipboardCheck, PlusCircle, Stethoscope } from "lucide-react";
 import { Heart, Brain, AlertCircle } from "lucide-react";
@@ -14,6 +15,7 @@ import {
 } from "lucide-react";
 import Navbar from "../components/Navbar";
 import { MainFooter } from "../components/footer/Footer";
+import Link from "next/link";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -149,22 +151,56 @@ const UrgentCareBlock = () => {
     },
   ];
 
+  const specialists = [
+    {
+      id: "ethan-brooks",
+      name: "ethan-brooks",
+      title: "Cardiologist",
+      specialties: ["Heart", "Cardiology"],
+      consultationFee: "$50",
+      experience: "10 yrs",
+      image:
+        "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
+    },
+    {
+      id: "hannah-cole",
+      name: "hannah-cole",
+      title: "Dermatologist",
+      specialties: ["Skin", "Cosmetics"],
+      consultationFee: "$60",
+      experience: "8 yrs",
+      image:
+        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    },
+    {
+      id: "samuel-okoye",
+      name: "Dr. Jane Smith",
+      title: "Dermatologist",
+      specialties: ["Skin", "Cosmetics"],
+      consultationFee: "$60",
+      experience: "8 yrs",
+      image:
+        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    },
+    // add more doctors...
+  ];
+
   return (
     <>
       <Navbar />
       <div className="relative w-full max-w-6xl mx-auto overflow-visible rounded-2xl shadow-2xl mb-4">
         {/* Background Image */}
         <div className="absolute inset-0">
-  <img
-    src="/temp1.jpg"
-    alt="Medical care background"
-    className="w-full h-full object-cover object-center"
-  />
-  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
-</div>
+          <img
+            src="/temp1.jpg"
+            alt="Medical care background"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
+        </div>
 
         {/* Content Container */}
-       <div className=" relative flex flex-col min-h-[420px]">
+        <div className=" relative flex flex-col min-h-[420px]">
           {/* RED BOX - Bottom Right */}
           <div className="absolute bottom-[-40px] right-20">
             <div className="bg-gradient-primary backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[450px] shadow-xl">
@@ -211,13 +247,13 @@ const UrgentCareBlock = () => {
             </div>
 
             {/* Main Heading */}
-         
-             <div>
-            <h2 className="heading-large">
-               A New Standard of Urgent Care in{" "}
-              <span className="text-gradient">Milton Keynes</span>
-            </h2>
-          </div>
+
+            <div>
+              <h2 className="heading-large">
+                A New Standard of Urgent Care in{" "}
+                <span className="text-gradient">Milton Keynes</span>
+              </h2>
+            </div>
 
             {/* Main description */}
             <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
@@ -462,78 +498,71 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
-   <div className="w-full py-12 px-4 mb-4 bg-[#F0441F]">
-  <div className="max-w-7xl mx-auto">
-    {/* Center All Headings */}
-    <div className="text-center space-y-6">
-
-      <div>
-        <h2 className="heading-large">
-          What We Don’t Treat at Bloom Health{"  "}
-          <span className="text-gradient">Urgent Care Centre</span>
-        </h2>
-      </div>
-
-<>
-  {/* Small Section Heading */}
-  <p className="text-xl font-semibold text-gray-900">
-    Important Information for Patients
-  </p>
-
-  {/* Explanatory Text */}
-<div className=" border-blue-700 pl-4 mt-3 space-y-1">
-  <h3 className="text-xl font-semibold text-gray-900">
-    Our Urgent Care Centre is designed for non-life-threatening illnesses
-    and injuries.
-     For your safety, the conditions below require A&E or emergency
-    services and cannot be treated at urgent care.
-  </h3>
-
-  
-</div>
-
-  {/* Main Section Heading */}
-  <h3 className="text-2xl font-semibold mt-6">
-    Conditions Requiring Emergency Care (Not Treated Here):
-  </h3>
-</>
-
-    </div>
-
-    {/* Conditions Grid - 2 Columns */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-      {conditions.map((condition, index) => {
-        const Icon = condition.icon;
-        return (
-          <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-            <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 mt-1">
-                <Icon className="w-8 h-8 text-red-600" />
-              </div>
-
-              {/* Content */}
-              <div>
-                <h3 className="heading-small mb-2 text-gray-900">
-                  {condition.title}
-                </h3>
-                <p className="text-paragraph text-gray-700">
-                  {condition.description}
-                </p>
-              </div>
+      <div className="w-full py-12 px-4 mb-4 bg-gradient-primary">
+        <div className="max-w-7xl mx-auto">
+          {/* Center All Headings */}
+          <div className="text-center space-y-6">
+            <div>
+              <h2 className="heading-large">
+                What We Don’t Treat at Bloom Health Urgent Care Centre
+              </h2>
             </div>
-          </div>
-        );
-      })}
-    </div>
-  </div>
-</div>
 
+            <>
+              {/* Small Section Heading */}
+              <p className="text-xl font-semibold text-gray-900">
+                Important Information for Patients
+              </p>
+
+              {/* Explanatory Text */}
+              <div className=" border-blue-700 pl-4 mt-3 space-y-1">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  Our Urgent Care Centre is designed for non-life-threatening
+                  illnesses and injuries. For your safety, the conditions below
+                  require A&E or emergency services and cannot be treated at
+                  urgent care.
+                </h3>
+              </div>
+
+              {/* Main Section Heading */}
+              <h3 className="text-2xl font-semibold mt-6">
+                Conditions Requiring Emergency Care (Not Treated Here)
+              </h3>
+            </>
+          </div>
+
+          {/* Conditions Grid - 2 Columns */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+            {conditions.map((condition, index) => {
+              const Icon = condition.icon;
+              return (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-md">
+                  <div className="flex items-start gap-4">
+                    {/* Icon */}
+                    <div className="flex-shrink-0 mt-1">
+                      <Icon className="w-8 h-8 text-red-600" />
+                    </div>
+
+                    {/* Content */}
+                    <div>
+                      <h3 className="heading-small mb-2 text-gray-900">
+                        {condition.title}
+                      </h3>
+                      <p className="text-paragraph text-gray-700">
+                        {condition.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
 
       <>
         <div className="w-full bg-gray-50 py-12 px-4 mb-4">
           <div className="max-w-7xl mx-auto">
-            {/* Section Title */}
             <h2
               className="heading-large mb-4"
               style={{ color: "var(--color-primary-blue)" }}
@@ -541,17 +570,14 @@ const UrgentCareBlock = () => {
               What to Expect
             </h2>
 
-            {/* Cards Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {steps.map((step, index) => (
                 <div
                   key={index}
                   className="bg-white rounded-lg shadow-md overflow-hidden"
                 >
-                  {/* Red top bar */}
                   <div className="h-3 bg-gradient-primary"></div>
 
-                  {/* Card content */}
                   <div className="p-6">
                     <h3
                       className="heading-small mb-3"
@@ -569,10 +595,10 @@ const UrgentCareBlock = () => {
           </div>
         </div>
       </>
-      <div className="w-full bg-gray-50 py-14 px-4">
-        {/* SPECIALISTS SECTION for UCC */}
+      {/* <div className="w-full bg-gray-50 py-14 px-4">
+       
         <div className="max-w-7xl mx-auto">
-          {/* Heading */}
+         
           <h2
             className="heading-large text-center mb-4"
             style={{ color: "var(--color-primary-blue)" }}
@@ -581,22 +607,23 @@ const UrgentCareBlock = () => {
           </h2>
           <p className="text-paragraph text-center text-gray-600 mb-4">
             Our compassionate urgent care team is dedicated to your
-            health—available every day.
+            health-available every day.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
             {doctors.map((doctor, index) => (
               <div
                 key={index}
                 className="relative group cursor-pointer transition-transform duration-300 hover:-translate-y-2"
               >
-                {/* Card with bigger rounded bottom-right corner */}
+               
                 <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl rounded-br-[6rem] p-7 pb-20 shadow-lg transition-all duration-200 group-hover:from-white group-hover:to-white group-hover:shadow-xl min-h-[420px] flex flex-col justify-between">
-                  {/* Decorative blocks in top right */}
+                 
                   <div className="absolute top-8 right-8 flex gap-2 z-10">
                     <div className="w-4 h-4bg-gradient-primary"></div>
                     <div className="w-4 h-4"></div>
                   </div>
-                  {/* Image */}
+                 
                   <div className="relative overflow-hidden rounded-2xl mb-6 shadow">
                     <img
                       src={doctor.image}
@@ -604,7 +631,7 @@ const UrgentCareBlock = () => {
                       className="w-full h-64 object-cover"
                     />
                   </div>
-                  {/* Text content */}
+                 
                   <div className="space-y-1 mb-4">
                     <h3 className="text-2xl font-bold text-white group-hover:text-blue-900 transition-colors duration-300">
                       {doctor.name}
@@ -614,14 +641,103 @@ const UrgentCareBlock = () => {
                     </p>
                   </div>
                 </div>
-                {/* Bottom-right decorative circle */}
+                
                 <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-red-400 rounded-full -z-10"></div>
               </div>
             ))}
           </div>
+          </>
+        
         </div>
-      </div>
-      <MainFooter/>
+      </div> */}
+
+      <>
+        <div className="w-full max-w-7xl mx-auto py-12 px-4 mb-4">
+          <div className="text-center mb-10">
+            <h2
+              className="heading-large mb-4"
+              style={{ color: "var(--color-primary-blue)" }}
+            >
+              Meet Our Urgent Care Doctors
+            </h2>
+            <p className="text-paragraph text-gray-600">
+              Our compassionate urgent care team is dedicated to your
+              health—available every day.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {specialists.map((specialist) => (
+              <Link
+                key={specialist.id}
+                href={`/doctors/${specialist.id}`}
+                className="
+          bg-white rounded-lg overflow-hidden 
+          shadow-sm hover:shadow-md 
+          transition-shadow 
+          flex flex-col h-full
+          cursor-pointer
+        "
+              >
+                <div className="p-6 flex-grow">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
+                      <img
+                        src={specialist.image}
+                        alt={specialist.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
+                            specialist.name
+                          )}&size=64&background=05BFDB&color=fff`;
+                        }}
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="heading-small text-gray-900 mb-1">
+                        {specialist.name}
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        {specialist.title}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-paragraph text-gray-600">
+                      {specialist.specialties.join(" | ")}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
+                    <div>
+                      <p className="text-xs text-gray-500 mb-1">
+                        Consultation Fee:
+                      </p>
+                      <p className="text-lg font-bold text-gray-900">
+                        {specialist.consultationFee}
+                      </p>
+                    </div>
+
+                    <div className="text-right">
+                      <p className="text-xs text-gray-500 mb-1">Experience:</p>
+                      <p className="text-lg font-bold text-gray-900">
+                        {specialist.experience}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="btn btn-primary w-full rounded-b-lg mt-auto text-center py-4">
+                  Make An Enquiry
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </>
+
+      <MainFooter />
     </>
   );
 };

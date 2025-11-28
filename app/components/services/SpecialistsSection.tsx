@@ -31,13 +31,11 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
   return (
     <div className="bg-[rgba(243,248,252,1)] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Heading */}
-        <h2 className="heading-large text-center mb-12">
+          <h2 className="heading-large text-center mb-12">
           Specialists Offering <span className="text-gradient">{service.name}</span>
-        </h2>
+          </h2>
 
-        {/* Specialists Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {specialists.map((specialist) => (
             <Link
