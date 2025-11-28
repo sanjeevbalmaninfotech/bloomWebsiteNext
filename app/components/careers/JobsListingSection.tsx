@@ -60,11 +60,11 @@ export function JobsListingSection() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Be A Part Of <span className="text-[#2B9DB5]">Amazing Team</span>
+            <h2 className="heading-large text-gray-900 mb-4">
+              Be A Part Of <span className="text-gradient">Amazing Team</span>
             </h2>
 
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-paragraph text-gray-600 max-w-2xl mx-auto mb-8">
               As one of the nation leading providers of private healthcare
               services, we pride ourselves on delivering extraordinary care.
             </p>
@@ -100,11 +100,10 @@ export function JobsListingSection() {
               {/* View All */}
               <button
                 onClick={() => handleFilterChange("all")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                  activeFilter === "all"
-                    ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
+                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeFilter === "all"
+                    ? "btn btn-primary"
                     : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 View All
               </button>
@@ -112,11 +111,10 @@ export function JobsListingSection() {
               {/* Clinical */}
               <button
                 onClick={() => handleFilterChange("clinical")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                  activeFilter === "clinical"
+                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeFilter === "clinical"
                     ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
                     : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 Clinical
               </button>
@@ -124,11 +122,10 @@ export function JobsListingSection() {
               {/* Non-Clinical */}
               <button
                 onClick={() => handleFilterChange("non-clinical")}
-                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                  activeFilter === "non-clinical"
+                className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeFilter === "non-clinical"
                     ? "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] text-white hover:from-[#5FC1A3] hover:to-[#157DC1]"
                     : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 Non-Clinical
               </button>
@@ -137,7 +134,7 @@ export function JobsListingSection() {
 
           {/* Job Count */}
           <div className="flex justify-between items-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900">
+            <h3 className="heading-medium text-gray-900">
               {totalJobs} Vacancies
             </h3>
             <p className="text-gray-600">
@@ -155,7 +152,7 @@ export function JobsListingSection() {
                   href={`/jobDetails/${job.id}`}
                   className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg p-6 hover:shadow-lg transition-shadow cursor-pointer"
                 >
-                  <h4 className="text-xl font-bold text-gray-900 mb-4 min-h-[56px]">
+                  <h4 className="heading-medium text-gray-900 mb-4 min-h-[56px]">
                     {job.title}
                   </h4>
 
@@ -225,10 +222,7 @@ export function JobsListingSection() {
 
                   {/* Apply Button */}
                   <div
-                    className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3]
-    hover:from-[#5FC1A3] hover:to-[#157DC1]
-    text-white py-3 rounded-lg font-medium 
-    hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                    className="btn btn-primary w-full py-3 flex items-center justify-center gap-2"
                   >
                     <span>More Details</span>
 
@@ -272,11 +266,10 @@ export function JobsListingSection() {
                     setCurrentPage((prev) => Math.max(1, prev - 1))
                   }
                   disabled={currentPage === 1}
-                  className={`px-6 py-2 rounded-md font-medium transition-colors ${
-                    currentPage === 1
+                  className={`px-6 py-2 rounded-md font-medium transition-colors ${currentPage === 1
                       ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                       : "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#5FC1A3] hover:to-[#157DC1] text-white"
-                  }`}
+                    }`}
                 >
                   Previous
                 </button>
@@ -285,11 +278,10 @@ export function JobsListingSection() {
                     setCurrentPage((prev) => Math.min(totalPages, prev + 1))
                   }
                   disabled={currentPage === totalPages}
-                  className={`px-6 py-2 rounded-md font-medium transition-colors ${
-                    currentPage === totalPages
+                  className={`px-6 py-2 rounded-md font-medium transition-colors ${currentPage === totalPages
                       ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                       : "bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#5FC1A3] hover:to-[#157DC1] text-white"
-                  }`}
+                    }`}
                 >
                   Next
                 </button>

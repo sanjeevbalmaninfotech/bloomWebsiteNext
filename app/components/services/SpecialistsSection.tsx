@@ -29,12 +29,12 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
   const specialists: Specialist[] = service.specialists || [];
 
   return (
-<div className="bg-[rgba(243,248,252,1)] py-12 md:py-16">
+    <div className="bg-[rgba(243,248,252,1)] py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Specialists Offering <span className="text-[#05BFDB]">{service.name}</span>
+        <h2 className="heading-large text-center mb-12">
+          Specialists Offering <span className="text-gradient">{service.name}</span>
         </h2>
 
         {/* Specialists Grid */}
@@ -53,7 +53,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
             >
               {/* Content Section */}
               <div className="p-6 flex-grow">
-                
+
                 {/* Doctor Info */}
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
@@ -70,7 +70,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
+                    <h3 className="heading-small text-gray-900 mb-1">
                       {specialist.name}
                     </h3>
                     <p className="text-sm text-gray-600">{specialist.title}</p>
@@ -79,7 +79,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
 
                 {/* Specialties */}
                 <div className="mb-4">
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-paragraph text-gray-600">
                     {specialist.specialties.join(" | ")}
                   </p>
                 </div>
@@ -104,7 +104,7 @@ export const SpecialistsSection: React.FC<SpecialistsSectionProps> = ({
 
               {/* Button ALWAYS at bottom */}
               <div
-                className="w-full bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium py-4 rounded-b-lg transition-all duration-300 mt-auto text-center"
+                className="btn btn-primary w-full rounded-b-lg mt-auto text-center py-4"
               >
                 Make An Enquiry
               </div>

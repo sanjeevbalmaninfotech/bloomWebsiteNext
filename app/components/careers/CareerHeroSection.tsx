@@ -19,15 +19,15 @@ export function CareerHeroSection() {
       {/* Content */}
       <div className="relative container mx-auto px-4">
         <div className="max-w-3xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="heading-large text-white mb-6" style={{ fontSize: '3.75rem' }}>
             Together We Thrive
           </h1>
 
-          <p className="text-xl text-white/90 mb-10">
+          <p className="text-paragraph text-white/90 mb-10" style={{ fontSize: '1.25rem' }}>
             Stay informed with our latest announcements and health insights.
           </p>
 
-    
+
         </div>
       </div>
     </div>

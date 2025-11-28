@@ -14,19 +14,7 @@ export const RegisterButton = () => {
   return (
     <Link href="/register">
       <div
-        className="
-          bg-gradient-to-r from-[#157DC1] to-[#5FC1A3]
-          hover:from-[#5FC1A3] hover:to-[#157DC1]
-          text-white font-medium 
-          px-5 py-3 
-          rounded-lg 
-          flex items-center justify-center gap-3
-          transition-all duration-300 
-          shadow-md hover:shadow-lg
-
-          w-full sm:w-fit md:w-fit lg:w-fit
-          max-w-fit
-        "
+        className="btn btn-primary flex items-center justify-center gap-3 w-full sm:w-fit md:w-fit lg:w-fit max-w-fit"
       >
         <span className="text-sm sm:text-base lg:text-lg xl:text-xl">
           Register Your Interest

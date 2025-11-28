@@ -15,19 +15,18 @@ const NewsSection = () => {
 
               {/* TOP CONTENT */}
               <div>
-                <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                  News At <span className="text-[#5FC1A3]">Bloom</span>
+                <h1 className="heading-large text-gray-900 mb-4">
+                  News At <span className="text-gradient">Bloom</span>
                 </h1>
 
-                <p className="text-base text-gray-600 mb-6">
+                <p className="text-paragraph text-gray-600 mb-6">
                   At Bloom Healthcare, our superspecialist doctors provide the
                   highest quality of care through a team-based, doctor-led model.
                 </p>
                 {/* news-signup */}
                 <Link href="/">
-                    hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium 
-                    px-6 py-3 rounded-lg flex items-center space-x-2 transition-all 
-                  <div className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] hover:from-[#126ba8] hover:to-[#4da990] text-white font-medium px-6 py-3 rounded-lg flex items-center space-x-2 transition-all duration-300 w-fit cursor-pointer"
+
+                  <div className="btn btn-primary flex items-center space-x-2 w-fit"
                   >
                     <span>Sign Up For Latest News</span>
                     <svg
@@ -55,7 +54,7 @@ const NewsSection = () => {
                     <div className="space-y-3">
                       <div className="text-sm text-gray-600">25, Feb, 2025</div>
 
-                      <h3 className="text-base font-semibold text-gray-900 leading-snug">
+                      <h3 className="heading-small text-gray-900 leading-snug">
                         <span className="font-bold">Bloom Hosts</span>
                         <br />
                         Multi-Stakeholder Panel on World Obesity Day to Address the
@@ -97,10 +96,10 @@ const NewsSection = () => {
 
                 {/* CONTENT */}
                 <div className="p-8">
-                  <h2 className="text-2xl font-bold text-white mb-6 leading-tight">
+                  <h2 className="heading-medium text-white mb-6 leading-tight">
                     Bloom Hosts Multi-Stakeholder Panel on World Obesity Day
                   </h2>
-                  <p className="text-white text-base leading-relaxed opacity-90">
+                  <p className="text-paragraph text-white opacity-90">
                     HCA Healthcare UK has announced that it has treated a metastatic lung cancer
                     patient with tumour-infiltrating lymphocyte (TIL) therapy for the first time.
                   </p>
@@ -154,7 +153,7 @@ const NewsSection = () => {
               <div className="space-y-3">
                 <div className="text-sm text-gray-600">25, Feb, 2025</div>
 
-                <h3 className="text-base font-semibold text-gray-900 leading-snug">
+                <h3 className="heading-small text-gray-900 leading-snug">
                   <span className="font-bold">Bloom Hosts</span>
                   <br />
                   Multi-Stakeholder Panel on World Obesity Day to Address the

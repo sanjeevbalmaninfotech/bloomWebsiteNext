@@ -41,12 +41,11 @@ export const ServiceAccordionSection: React.FC<
               onClick={() => setShowDescription(!showDescription)}
               className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-gray-50 transition-colors border border-gray-200 rounded-lg"
             >
-              <span className="text-lg font-semibold text-gray-900">
+              <span className="heading-small text-gray-900">
                 Fast access to private cardiac care with bloom health
               </span>
-              <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${
-                showDescription ? 'rotate-180' : ''
-              }`}>
+              <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${showDescription ? 'rotate-180' : ''
+                }`}>
                 <svg
                   className="w-4 h-4 text-gray-600"
                   fill="none"
@@ -67,7 +66,7 @@ export const ServiceAccordionSection: React.FC<
             {showDescription && (
               <>
                 <div className="space-y-4">
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-paragraph text-gray-700">
                     At Bloom health, we offer a wide range of cardiology
                     treatments at locations across the UK. We give you fast
                     access to accurate and reliable diagnostics with the latest
@@ -110,12 +109,11 @@ export const ServiceAccordionSection: React.FC<
                     onClick={() => toggleAccordion(item.id)}
                     className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-gray-50 transition-colors"
                   >
-                    <span className="text-lg font-semibold text-gray-900">
+                    <span className="heading-small text-gray-900">
                       {item.title}
                     </span>
-                    <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${
-                      expandedId === item.id ? 'rotate-180' : ''
-                    }`}>
+                    <div className={`w-6 h-6 rounded border-2 border-gray-400 flex items-center justify-center transition-transform ${expandedId === item.id ? 'rotate-180' : ''
+                      }`}>
                       <svg
                         className="w-4 h-4 text-gray-600"
                         fill="none"
@@ -133,7 +131,7 @@ export const ServiceAccordionSection: React.FC<
                   </button>
                   {expandedId === item.id && (
                     <div className="px-4 md:px-5 pb-4 md:pb-5 pt-2">
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-paragraph text-gray-600">
                         {item.content}
                       </p>
                     </div>
@@ -147,11 +145,11 @@ export const ServiceAccordionSection: React.FC<
           <div className="space-y-6">
             {/* Fast Track Card */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="heading-medium text-gray-900 mb-3">
                 Fast Track Your{" "}
-                <span className="text-[#05BFDB]">Treatment</span>
+                <span className="text-gradient">Treatment</span>
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-paragraph text-gray-600">
                 To book an appointment or speak with one of our friendly team,
                 please get in touch using the options below
               </p>
@@ -159,7 +157,7 @@ export const ServiceAccordionSection: React.FC<
 
             {/* Membership Card */}
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
+              <h3 className="heading-small text-gray-900 mb-2">
                 Our Membership
               </h3>
               <p className="text-sm text-gray-600 mb-4">
@@ -178,7 +176,7 @@ export const ServiceAccordionSection: React.FC<
 
             {/* Related Treatments */}
             <div className="bg-white p-6 rounded-lg border border-gray-200">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">
+              <h3 className="heading-small text-gray-900 mb-4">
                 Related Treatments:
               </h3>
 

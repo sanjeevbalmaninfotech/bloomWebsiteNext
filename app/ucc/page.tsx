@@ -114,15 +114,15 @@ const UrgentCareBlock = () => {
 
   return (
     <>
-   <Navbar/>
+      <Navbar />
       <div className="relative w-full max-w-6xl mx-auto overflow-visible rounded-2xl shadow-2xl mb-4">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          {/* <img
             src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&h=800&fit=crop"
             alt="Medical care background"
             className="w-full h-full object-cover"
-          />
+          /> */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
         </div>
 
@@ -130,31 +130,31 @@ const UrgentCareBlock = () => {
         <div className="relative flex flex-col min-h-[420px]">
           {/* RED BOX - Bottom Right */}
           <div className="absolute bottom-[-40px] right-20">
-  <div className="bg-red-600/70 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[420px] shadow-xl">
-    <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
-      Welcome to Bloom Health
-      <br />
-      Urgent Care Centre
-    </h1>
+            <div className="bg-blue-600/70 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[420px] shadow-xl">
+              <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
+                Welcome to Bloom Health
+                <br />
+                Urgent Care Centre
+              </h1>
 
-    <div className="mb-4 space-y-1">
-      <p className="text-white text-base font-semibold">
-        Open 24 Hours a Day, 7 Days a Week
-      </p>
-      <p className="text-white text-base font-semibold">
-        Urgent Care Centre & GP Walk-In Service in Milton Keynes
-      </p>
-    </div>
+              <div className="mb-4 space-y-1">
+                <p className="text-white text-base font-semibold">
+                  Open 24 Hours a Day, 7 Days a Week
+                </p>
+                <p className="text-white text-base font-semibold">
+                  Urgent Care Centre & GP Walk-In Service in Milton Keynes
+                </p>
+              </div>
 
-    <p className="text-white text-lg font-bold mb-3">
-      Walk-In Anytime
-    </p>
+              <p className="text-white text-lg font-bold mb-3">
+                Walk-In Anytime
+              </p>
 
-    <p className="text-white text-sm leading-relaxed">
-      At Bloom Health Urgent Care Centre, we provide fast, expert medical attention for non-life-threatening but urgent illnesses and injuries. Be seen by experienced GPs, A&E consultants, senior nurses and HCAs, with on-site access to X-ray, CT, ultrasound and blood tests — all under one roof, 24/7.
-    </p>
-  </div>
-</div>
+              <p className="text-white text-sm leading-relaxed">
+                At Bloom Health Urgent Care Centre, we provide fast, expert medical attention for non-life-threatening but urgent illnesses and injuries. Be seen by experienced GPs, A&E consultants, senior nurses and HCAs, with on-site access to X-ray, CT, ultrasound and blood tests — all under one roof, 24/7.
+              </p>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -175,13 +175,13 @@ const UrgentCareBlock = () => {
           <div className="space-y-6">
             {/* Badge */}
             <div className="inline-block">
-              <span className="bg-blue-900 text-white text-xs font-bold px-4 py-2 rounded uppercase tracking-wide">
+              <span className="badge badge-primary">
                 What Sets Us Apart
               </span>
             </div>
 
             {/* Main description */}
-            <p className="text-gray-800 text-lg leading-relaxed">
+            <p className="text-paragraph text-gray-800">
               With highly skilled clinicians, modern facilities, and a
               patient-first approach, our goal is to get you seen, treated,
               and on with your life. No long waits, no unnecessary hospital
@@ -269,7 +269,7 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-r from-red-400 via-red-500 to-red-400 py-10 px-4 mb-4">
+      <div className="w-full bg-gradient-primary py-10 px-4 mb-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             {services.map((service, index) => {
@@ -311,12 +311,12 @@ const UrgentCareBlock = () => {
           {/* RIGHT on mobile / LEFT on large */}
           <div className="space-y-6 lg:order-1">
             <div className="inline-block">
-              <span className="bg-blue-900 text-white text-xs font-bold px-4 py-2 rounded uppercase tracking-wide">
+              <span className="badge badge-primary">
                 What Sets Us Apart
               </span>
             </div>
 
-            <p className="text-gray-800 text-lg leading-relaxed">
+            <p className="text-paragraph text-gray-800">
               With highly skilled clinicians, modern facilities, and a
               patient-first approach, our goal is to get you seen, treated,
               and on with your life.
@@ -330,7 +330,7 @@ const UrgentCareBlock = () => {
       <div className="w-full bg-gray-50 py-12 px-4 mb-4">
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+          <h2 className="heading-large mb-4" style={{ color: 'var(--color-primary-blue)' }}>
             What to Expect
           </h2>
 
@@ -342,14 +342,14 @@ const UrgentCareBlock = () => {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 {/* Red top bar */}
-                <div className="h-3 bg-gradient-to-r from-red-400 to-red-500"></div>
+                <div className="h-3 bg-gradient-primary"></div>
 
                 {/* Card content */}
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-blue-900 mb-3">
+                  <h3 className="heading-small mb-3" style={{ color: 'var(--color-primary-blue)' }}>
                     {step.title}
                   </h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">
+                  <p className="text-paragraph text-gray-700">
                     {step.description}
                   </p>
                 </div>
@@ -373,8 +373,8 @@ const UrgentCareBlock = () => {
 
             {/* Right side - Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What We Don’t Treat at London Urgent Care
+              <h2 className="heading-large text-gray-900 mb-4">
+                What We Don Treat at London Urgent Care
               </h2>
 
               {/* Conditions List */}
@@ -394,10 +394,10 @@ const UrgentCareBlock = () => {
 
                         {/* Content */}
                         <div>
-                          <h3 className="text-lg font-bold mb-2 text-gray-900">
+                          <h3 className="heading-small mb-2 text-gray-900">
                             {condition.title}
                           </h3>
-                          <p className="text-gray-700 text-sm leading-relaxed">
+                          <p className="text-paragraph text-gray-700">
                             {condition.description}
                           </p>
                         </div>
@@ -411,19 +411,20 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
+
       <div className="w-full bg-gray-50 py-14 px-4">
         {/* SPECIALISTS SECTION for UCC */}
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-4">
+          <h2 className="heading-large text-center mb-4" style={{ color: 'var(--color-primary-blue)' }}>
             Meet Our Urgent Care Doctors
           </h2>
-          <p className="text-center text-gray-600 mb-4">
+          <p className="text-paragraph text-center text-gray-600 mb-4">
             Our compassionate urgent care team is dedicated to your health—available every day.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
             {doctors.map((doctor, index) => (
-              <div 
+              <div
                 key={index}
                 className="relative group cursor-pointer transition-transform duration-300 hover:-translate-y-2"
               >
@@ -436,8 +437,8 @@ const UrgentCareBlock = () => {
                   </div>
                   {/* Image */}
                   <div className="relative overflow-hidden rounded-2xl mb-6 shadow">
-                    <img 
-                      src={doctor.image} 
+                    <img
+                      src={doctor.image}
                       alt={doctor.name}
                       className="w-full h-64 object-cover"
                     />

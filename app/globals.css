@@ -1,8 +1,23 @@
 @import "tailwindcss";
 
+/* ============================================
+   DESIGN TOKENS - CSS Custom Properties
+   ============================================ */
 :root {
+  /* Background Colors */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Brand Colors */
+  --color-primary-blue: rgba(3, 52, 83, 1);
+  --color-gradient-start: #157DC1;
+  --color-gradient-end: #5FC1A3;
+
+  /* Typography */
+  --font-axiforma: 'Axiforma', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(90deg, #157DC1 0%, #5FC1A3 100%);
 }
 
 @theme inline {
@@ -22,8 +37,213 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-axiforma);
 }
+
+/* ============================================
+   TYPOGRAPHY STYLES
+   ============================================ */
+
+/* Paragraph Text */
+.text-paragraph {
+  font-family: var(--font-axiforma);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  /* -3% */
+}
+
+/* Primary Heading (Black) */
+.heading-primary {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  /* -2% */
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/* Gradient Text for Headings */
+.heading-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  /* -2% */
+  text-transform: capitalize;
+}
+
+/* Large Heading Variant */
+.heading-large {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+/* Medium Heading Variant */
+.heading-medium {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+/* Small Heading Variant */
+.heading-small {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   BACKGROUND UTILITY CLASSES
+   ============================================ */
+
+.bg-primary-blue {
+  background-color: var(--color-primary-blue);
+}
+
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+
+.btn {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(3, 52, 83, 0.9);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-primary-blue);
+  color: var(--color-primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+/* ============================================
+   BADGE STYLES
+   ============================================ */
+
+.badge {
+  font-family: var(--font-axiforma);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-primary {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.badge-gradient {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* ============================================
+   CARD STYLES
+   ============================================ */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-header-gradient {
+  height: 12px;
+  background: var(--gradient-primary);
+  border-radius: 12px 12px 0 0;
+  margin: -24px -24px 16px -24px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gradient {
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), var(--gradient-primary);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* ============================================
+   CURSOR STYLES
+   ============================================ */
 
 /* Ensure a hand (pointer) cursor for interactive controls across the site */
 button,
@@ -46,4 +266,5 @@ button[disabled],
 input[disabled],
 [aria-disabled="true"] {
   cursor: default;
+  opacity: 0.6;
 }

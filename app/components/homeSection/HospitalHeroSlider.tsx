@@ -25,9 +25,8 @@ const HospitalHeroSlider = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
           >
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
@@ -43,13 +42,13 @@ const HospitalHeroSlider = () => {
             <div className="relative h-full flex items-center">
               <div className="container mx-auto px-8 md:px-16 lg:px-24">
                 <div className="max-w-2xl space-y-6">
-                  <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                  <h1 className="heading-large text-white leading-tight" style={{ fontSize: '3rem' }}>
                     {slide.title}
                     <br />
                     <span className="text-cyan-300">{slide.highlight}</span>
                   </h1>
 
-                  <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
+                  <p className="text-paragraph text-gray-100" style={{ fontSize: '1.125rem' }}>
                     {slide.description}
                   </p>
 
@@ -71,11 +70,10 @@ const HospitalHeroSlider = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 ${
-              index === currentSlide
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 ${index === currentSlide
                 ? "bg-cyan-400 scale-125 shadow-lg"
                 : "bg-white/50 hover:bg-white/80"
-            }`}
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

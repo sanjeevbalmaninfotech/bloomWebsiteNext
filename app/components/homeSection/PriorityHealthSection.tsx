@@ -22,14 +22,14 @@ const PriorityHealthSection = () => {
 
           {/* Heading */}
           <div className="bg-white rounded-b-2xl px-6 py-3 mb-6 md:mb-10 shadow-sm mx-4 md:mx-8 lg:mx-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+            <h2 className="heading-large">
               Our Priority Is{" "}
-              <span className="text-cyan-500">YOUR Health</span>
+              <span className="text-gradient">YOUR Health</span>
             </h2>
           </div>
 
           {/* Description */}
-          <p className="max-w-3xl text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed mb-8 px-4">
+          <p className="text-paragraph max-w-3xl text-gray-800 mb-8 px-4">
             At Bloom Healthcare, our superspecialist doctors provide the highest quality
             of care through a team-based, doctor-led model. Trained at some of the world
             most prestigious institutions, our highly experienced doctors are recognized

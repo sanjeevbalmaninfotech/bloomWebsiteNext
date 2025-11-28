@@ -26,12 +26,12 @@ const OurServices = () => {
     },
   ];
 
-return (
+  return (
     <div className="w-full py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-12">
-          Our <span className="text-cyan-500">Services</span>
+        <h2 className="heading-large text-center mb-12">
+          Our <span className="text-gradient">Services</span>
         </h2>
 
         {/* Services Grid */}
@@ -52,13 +52,13 @@ return (
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <h3 className="heading-medium text-gray-900">
                     {service.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed mt-6 mb-6 flex-grow">
+                <p className="text-paragraph text-gray-600 mt-6 mb-6 flex-grow">
                   {service.description}
                 </p>
 

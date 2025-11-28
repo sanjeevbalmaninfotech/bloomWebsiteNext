@@ -18,15 +18,15 @@ const CombineFooter = () => {
             {/* 1. Left section - Smaller height */}
             <div className="lg:col-span-3 text-white space-y-4 bg-sky-600 rounded-2xl p-6">
               <div>
-                <h2 className="text-2xl lg:text-3xl font-bold mb-1">
+                <h2 className="heading-medium mb-1">
                   Find Us Easily,
                 </h2>
-                <h2 className="text-2xl lg:text-3xl font-bold">
+                <h2 className="heading-medium">
                   Reach Us Anytime
                 </h2>
               </div>
 
-              <p className="text-white/90 text-sm leading-relaxed">
+              <p className="text-paragraph text-white/90">
                 At Bloom Healthcare, our superspecialist doctors provide the
                 highest quality of care through a team-based, doctor-led model.
               </p>
@@ -53,10 +53,10 @@ const CombineFooter = () => {
             {/* 2. Middle section - Taller with more content */}
             <div className="lg:col-span-4 bg-sky-950 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-white space-y-5 shadow-xl">
               <div className="space-y-1">
-                <h3 className="text-xl lg:text-2xl font-bold">
+                <h3 className="heading-medium">
                   163-175 Grafton Gate,
                 </h3>
-                <h3 className="text-xl lg:text-2xl font-bold">
+                <h3 className="heading-medium">
                   Milton Keynes,
                 </h3>
                 <p className="text-lg font-semibold mt-2">MK9 1AE UK</p>
@@ -92,17 +92,7 @@ const CombineFooter = () => {
                     "_blank"
                   )
                 }
-                className="
-                flex items-center gap-2
-                bg-[linear-gradient(to_right,rgb(21,125,193),rgb(95,193,163))]
-                hover:bg-[linear-gradient(to_right,rgb(18,110,175),rgb(85,178,150))]
-                text-white
-                px-6 py-3
-                rounded-lg font-semibold
-                transition-colors
-                mt-4
-                w-fit
-              "
+                className="btn btn-primary flex items-center gap-2 mt-4 w-fit"
               >
                 <span>Get Our Location</span>
                 <img
@@ -151,7 +141,7 @@ const CombineFooter = () => {
 
             {/* Our Services */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+              <h3 className="heading-small mb-4">Our Services</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -182,7 +172,7 @@ const CombineFooter = () => {
 
             {/* Important Info */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Important info</h3>
+              <h3 className="heading-small mb-4">Important info</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -221,7 +211,7 @@ const CombineFooter = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
+              <h3 className="heading-small mb-4">Contact</h3>
               <div className="space-y-3">
                 <p className="text-gray-300">24 / 7 Walk-in Centre</p>
               </div>
