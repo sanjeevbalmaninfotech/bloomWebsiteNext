@@ -13,6 +13,7 @@ import {
   Ambulance,
 } from "lucide-react";
 import Navbar from "../components/Navbar";
+import { MainFooter } from "../components/footer/Footer";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -154,19 +155,19 @@ const UrgentCareBlock = () => {
       <div className="relative w-full max-w-6xl mx-auto overflow-visible rounded-2xl shadow-2xl mb-4">
         {/* Background Image */}
         <div className="absolute inset-0">
-          {/* <img
-            src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&h=800&fit=crop"
-            alt="Medical care background"
-            className="w-full h-full object-cover"
-          /> */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
-        </div>
+  <img
+    src="/temp1.jpg"
+    alt="Medical care background"
+    className="w-full h-full object-cover object-center"
+  />
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
+</div>
 
         {/* Content Container */}
-        <div className=" bg-blue-600/70 relative flex flex-col min-h-[420px]">
+       <div className=" relative flex flex-col min-h-[420px]">
           {/* RED BOX - Bottom Right */}
           <div className="absolute bottom-[-40px] right-20">
-            <div className="bg-blue-600/70 backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[450px] shadow-xl">
+            <div className="bg-gradient-primary backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[450px] shadow-xl">
               <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
                 Welcome to Bloom Health
                 <br />
@@ -210,9 +211,13 @@ const UrgentCareBlock = () => {
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-4xl font-bold text-blue-400">
-              A New Standard of Urgent Care in Milton Keynes
+         
+             <div>
+            <h2 className="heading-large">
+               A New Standard of Urgent Care in{" "}
+              <span className="text-gradient">Milton Keynes</span>
             </h2>
+          </div>
 
             {/* Main description */}
             <p className="text-lg text-gray-800 max-w-3xl mx-auto leading-relaxed">
@@ -457,60 +462,73 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
-      <div className="w-full py-12 px-4 mb-4">
-        <div className="max-w-7xl mx-auto">
-          {/* Center All Headings */}
-          <div className="text-center space-y-6">
-            <h2 className="heading-large text-gray-900">
-              What We Don’t Treat at Bloom Health Urgent Care Centre
-            </h2>
+   <div className="w-full py-12 px-4 mb-4 bg-[#F0441F]">
+  <div className="max-w-7xl mx-auto">
+    {/* Center All Headings */}
+    <div className="text-center space-y-6">
 
-            {/* Explanatory text */}
-            <div className="border-l-4 border-blue-700 pl-4 inline-block text-left">
-              <p className="text-paragraph text-gray-800 font-medium">
-                Our Urgent Care Centre is designed for non-life-threatening
-                illnesses and injuries.
-              </p>
-              <p className="text-paragraph text-gray-700 mt-1">
-                For your safety, the conditions below require A&E or emergency
-                services and cannot be treated at urgent care.
-              </p>
-            </div>
-
-            {/* NEW SECTION HEADING */}
-            <h3 className="text-2xl font-semibold text-blue-600 tracking-wide">
-              Conditions Requiring Emergency Care (Not Treated Here):
-            </h3>
-          </div>
-
-          {/* Conditions Grid - 2 Columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-            {conditions.map((condition, index) => {
-              const Icon = condition.icon;
-              return (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-                  <div className="flex items-start gap-4">
-                    {/* Icon */}
-                    <div className="flex-shrink-0 mt-1">
-                      <Icon className="w-8 h-8 text-red-600" />
-                    </div>
-
-                    {/* Content */}
-                    <div>
-                      <h3 className="heading-small mb-2 text-gray-900">
-                        {condition.title}
-                      </h3>
-                      <p className="text-paragraph text-gray-700">
-                        {condition.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+      <div>
+        <h2 className="heading-large">
+          What We Don’t Treat at Bloom Health{"  "}
+          <span className="text-gradient">Urgent Care Centre</span>
+        </h2>
       </div>
+
+<>
+  {/* Small Section Heading */}
+  <p className="text-xl font-semibold text-gray-900">
+    Important Information for Patients
+  </p>
+
+  {/* Explanatory Text */}
+<div className=" border-blue-700 pl-4 mt-3 space-y-1">
+  <h3 className="text-xl font-semibold text-gray-900">
+    Our Urgent Care Centre is designed for non-life-threatening illnesses
+    and injuries.
+     For your safety, the conditions below require A&E or emergency
+    services and cannot be treated at urgent care.
+  </h3>
+
+  
+</div>
+
+  {/* Main Section Heading */}
+  <h3 className="text-2xl font-semibold mt-6">
+    Conditions Requiring Emergency Care (Not Treated Here):
+  </h3>
+</>
+
+    </div>
+
+    {/* Conditions Grid - 2 Columns */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+      {conditions.map((condition, index) => {
+        const Icon = condition.icon;
+        return (
+          <div key={index} className="bg-white rounded-lg p-6 shadow-md">
+            <div className="flex items-start gap-4">
+              {/* Icon */}
+              <div className="flex-shrink-0 mt-1">
+                <Icon className="w-8 h-8 text-red-600" />
+              </div>
+
+              {/* Content */}
+              <div>
+                <h3 className="heading-small mb-2 text-gray-900">
+                  {condition.title}
+                </h3>
+                <p className="text-paragraph text-gray-700">
+                  {condition.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+
 
       <>
         <div className="w-full bg-gray-50 py-12 px-4 mb-4">
@@ -575,8 +593,8 @@ const UrgentCareBlock = () => {
                 <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl rounded-br-[6rem] p-7 pb-20 shadow-lg transition-all duration-200 group-hover:from-white group-hover:to-white group-hover:shadow-xl min-h-[420px] flex flex-col justify-between">
                   {/* Decorative blocks in top right */}
                   <div className="absolute top-8 right-8 flex gap-2 z-10">
-                    <div className="w-4 h-4 bg-blue-900 rounded transition-colors duration-300 group-hover:bg-blue-500"></div>
-                    <div className="w-4 h-4 bg-blue-900 rounded transition-colors duration-300 group-hover:bg-blue-500"></div>
+                    <div className="w-4 h-4bg-gradient-primary"></div>
+                    <div className="w-4 h-4"></div>
                   </div>
                   {/* Image */}
                   <div className="relative overflow-hidden rounded-2xl mb-6 shadow">
@@ -603,6 +621,7 @@ const UrgentCareBlock = () => {
           </div>
         </div>
       </div>
+      <MainFooter/>
     </>
   );
 };

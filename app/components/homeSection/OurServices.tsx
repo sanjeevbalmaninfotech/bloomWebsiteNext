@@ -6,7 +6,7 @@ const OurServices = () => {
     {
       id: "walk-in-centre",
       icon: "/Walkins.svg",
-      title: "GP Walk-In Centre",
+      title: "Urgent Care Centre/ GP Walk-In service",
       description:
         "Walk-in and same-day appointments for minor injuries, sudden illnesses, and urgent health concerns.",
     },
@@ -40,7 +40,11 @@ const OurServices = () => {
             <React.Fragment key={service.id}>
               {/* Card */}
               <Link
-                href={`/services/${service.id}`}
+                href={
+                  service.id === "walk-in-centre"
+                    ? "/ucc"
+                    : `/services/${service.id}`
+                }
                 className="flex-1 rounded-lg hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center p-6 md:p-8"
               >
                 {/* Icon + Title with background */}
