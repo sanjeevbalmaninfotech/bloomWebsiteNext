@@ -536,17 +536,12 @@ const UrgentCareBlock = () => {
                 >
                   <div className="flex gap-3 md:gap-4">
                     <div className="flex-shrink-0 mt-1">
-                      {/* Check if icon is a string path or component */}
-                      {typeof condition.icon === 'string' ? (
-                        <img
-                          src={condition.icon}
-                          alt={condition.title}
-                          className="w-10 h-10 md:w-12 md:h-12 text-[#DC2626]"
-                          style={{ filter: 'invert(24%) sepia(85%) saturate(4456%) hue-rotate(350deg) brightness(93%) contrast(96%)' }}
-                        />
-                      ) : (
-                        <condition.icon className="w-10 h-10 md:w-12 md:h-12 text-[#DC2626]" />
-                      )}
+                      <img
+                        src={condition.icon}
+                        alt={condition.title}
+                        className="w-10 h-10 md:w-12 md:h-12"
+                        style={{ filter: 'invert(24%) sepia(85%) saturate(4456%) hue-rotate(350deg) brightness(93%) contrast(96%)' }}
+                      />
                     </div>
                     <div className="flex-1">
                       <h3
