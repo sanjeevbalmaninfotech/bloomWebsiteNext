@@ -44,7 +44,7 @@ export default function FAQSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="heading-large text-gray-900 mb-4">
-            Frequent Asked Questions
+            Frequently Asked Questions
           </h2>
           <p className="text-paragraph text-gray-600 max-w-3xl mx-auto">
             Find answers to common questions about our services, treatments, appointments, and patient care options to help you make informed health decisions.
@@ -78,8 +78,8 @@ export default function FAQSection() {
               {/* Answer Content */}
               <div
                 className={`transition-all duration-300 ease-in-out ${openIndex === index
-                    ? 'max-h-96 opacity-100'
-                    : 'max-h-0 opacity-0'
+                  ? 'max-h-96 opacity-100'
+                  : 'max-h-0 opacity-0'
                   }`}
               >
                 <div className="px-6 pb-5 pt-2">

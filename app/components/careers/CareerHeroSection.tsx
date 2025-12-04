@@ -17,7 +17,7 @@ export function CareerHeroSection() {
       />
 
       {/* Content */}
-      <div className="relative container mx-auto px-4">
+      <div className="relative max-w-7xl mx-auto px-4 section-spacing">
         <div className="max-w-3xl">
           <h1 className="heading-large text-white mb-6" style={{ fontSize: '3.75rem' }}>
             Together We Thrive

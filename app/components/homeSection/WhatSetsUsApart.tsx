@@ -9,7 +9,7 @@ const WhatSetsUsApart = () => {
   ];
 
   return (
-    <div className="w-full py-8 sm:py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div className="w-full section-spacing px-4 sm:px-6 lg:px-8 bg-gray-50 section-margin">
       <div className="max-w-7xl mx-auto">
         {/* Main Heading */}
         <h2 className="heading-large text-center mb-8 sm:mb-10 md:mb-12 px-2">
@@ -50,7 +50,8 @@ const WhatSetsUsApart = () => {
           */}
             <div className="flex flex-col md:flex-row gap-6 sm:gap-8 h-full items-start">
               {/* LEFT SECTION → set same fixed height as image at md+ and keep content spaced (top + bottom) */}
-              <div className="w-full md:w-1/2 flex flex-col justify-between md:h-[350px] lg:h-[400px]">
+              <div className="w-full md:w-[55%] flex flex-col justify-between md:h-[350px] lg:h-[400px]">
+
                 <div>
                   <h3 className="heading-large mb-4 sm:mb-6">
                     Care YOU Can Count On !

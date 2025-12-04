@@ -37,7 +37,7 @@ export const ServiceImageSection: React.FC<ServiceImageSectionProps> = ({
       </div>
 
       {/* Text Content Overlay */}
-      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-12 sm:py-16 md:py-20 lg:py-24">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 section-spacing">
         <div className="w-full max-w-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             {serviceData.name}
@@ -45,9 +45,9 @@ export const ServiceImageSection: React.FC<ServiceImageSectionProps> = ({
           <p className="text-sm sm:text-base md:text-lg text-white/95 mb-6 sm:mb-8 leading-relaxed">
             {serviceData.description}
           </p>
-<div className="w-full md:w-1/2 lg:w-[43%]">
-  <RegisterButton />
-</div>
+          <div className="w-full md:w-1/2 lg:w-[43%]">
+            <RegisterButton />
+          </div>
 
         </div>
       </div>

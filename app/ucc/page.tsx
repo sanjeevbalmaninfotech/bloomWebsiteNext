@@ -20,27 +20,28 @@ import Link from "next/link";
 const UrgentCareBlock = () => {
   const services = [
     {
-      icon: Activity,
+      icon: "/TREATMENT.svg",
       title: "Treatment of minor emergencies (sprains, cuts, fractures)",
     },
     {
-      icon: Pill,
+      icon: "/INFECTION.svg",
       title: "Infection diagnoses & antibiotic treatment",
     },
     {
-      icon: ClipboardCheck,
+      icon: "/RESPIRATORY.svg",
       title: "Respiratory, gastro, and flu-like illness management",
     },
     {
-      icon: HeartPulse,
+      icon: "/IMAGING.svg",
       title: "Imaging & X-ray services onsite",
     },
+
     {
-      icon: PlusCircle,
+      icon: "/LABORATORY.svg",
       title: "Laboratory tests & diagnostics",
     },
     {
-      icon: Stethoscope,
+      icon: "/WOUND.svg",
       title: "Wound care and minor surgical procedures",
     },
   ];
@@ -54,77 +55,76 @@ const UrgentCareBlock = () => {
     {
       title: "Assessment & Diagnosis",
       description:
-        "You’ll be seen by an experienced GP, Emergency Medicine clinician, or senior nurse practitioner who will take a full history and examine you. Where helpful, we can arrange on-site tests such as X-ray, ultrasound, CT (extended hours) or blood work to reach a clear diagnosis efficiently.",
+        "You'll be seen by an experienced GP, Emergency Medicine clinician, or senior nurse practitioner who will take a full history and examine you. Where helpful, we can arrange on-site tests such as X-ray, ultrasound, CT (extended hours) or blood work to reach a clear diagnosis efficiently.",
     },
     {
       title: "Treatment & Guidance",
       description:
-        "Once we understand what’s wrong, we’ll begin treatment without delay. This may include prescriptions, wound care, dressings, minor procedures, symptom relief, or safety-netting advice. Our team ensures you leave with clear instructions and full confidence in your next steps.",
+        "Once we understand what's wrong, we'll begin treatment without delay. This may include prescriptions, wound care, dressings, minor procedures, symptom relief, or safety-netting advice. Our team ensures you leave with clear instructions and full confidence in your next steps.",
     },
     {
       title: "Follow-Up Options",
       description:
-        "If your condition requires further specialist input, planned investigation, or ongoing care, we’ll help organise the appropriate referrals — either within Bloom Health Hospital or through your GP. We make sure no patient leaves without a clear plan.",
+        "If your condition requires further specialist input, planned investigation, or ongoing care, we'll help organise the appropriate referrals - either within Bloom Health Hospital or through your GP. We make sure no patient leaves without a clear plan.",
     },
   ];
   const conditions = [
     {
-      icon: HeartPulse,
+      icon: "/Icons/HeartAttack.svg",
       title: "Chest Pain or Suspected Heart Attack",
       description:
-        "Any sudden chest pain, tightness, or pain radiating to the jaw/left arm requires A&E immediately",
+        "Any sudden chest pain, tightness, or pain radiating to the jaw/left arm requires A&E immediately.",
     },
     {
-      icon: Brain,
+      icon: "/Icons/HeadInjury.svg",
       title: "Severe Head Injury or Loss of Consciousness",
       description:
         "Major trauma, severe blows to the head, confusion, or blackouts must be managed in emergency departments.",
     },
     {
-      icon: Droplet,
+      icon: "/Icons/Bleeding.svg",
       title: "Severe or Uncontrolled Bleeding",
       description:
         "Heavy bleeding or wounds requiring advanced surgical care should go directly to A&E.",
     },
     {
-      icon: Baby,
+      icon: "/Icons/PregnancyEmergencies.svg",
       title: "Pregnancy-Related Emergencies",
-      description:
-        "Heavy bleeding, severe abdominal pain, or concerns with pregnancy should be treated in maternity emergency services",
+      description: "Heavy bleeding, severe abdominal pain, or concerns with pregnancy should be treated in maternity emergency services."
     },
     {
-      icon: Activity,
+      icon: "/Icons/StrokeSymptons.svg",
       title: "Stroke Symptoms",
       description:
-        "Facial drooping, weakness on one side, speech difficulties — call 999 immediately.",
+        "Facial drooping, weakness on one side, speech difficulties - call 999 immediately.",
     },
     {
-      icon: AlertTriangle,
+      icon: "/Icons/MajorFractures.svg",
       title:
-        "Major Fractures or Suspected Broken Bones of the Hip, Pelvis, or Spine",
+        "Major Fractures or Suspected Broken Bones of the Hip, Pelvis or Spine",
       description: "These injuries require specialist trauma care.",
     },
     {
-      icon: ShieldAlert,
+      icon: "/Icons/AllergicReactions.svg",
       title: "Severe Allergic Reactions (Anaphylaxis)",
       description:
         "Breathing difficulties, throat swelling, or widespread rash require urgent emergency treatment.",
     },
     {
-      icon: Baby,
+      icon: "/Icons/ChildrenUnderage.svg",
       title: "Children Under the Age of 1",
       description:
         "Infants require paediatric specialist assessment in hospital emergency services.",
     },
     {
-      icon: Skull,
+      icon: "/Icons/MentalHealthCrisis.svg",
       title: "Severe Mental Health Crisis",
       description:
         "Threats to safety, extreme agitation, or mental health emergencies require dedicated crisis services or A&E.",
     },
     {
-      icon: Ambulance,
-      title: "Any Life-Threatening Emergency — Call 999",
+      icon: "/Icons/CallEmergency.svg",
+      title: "Any Life-Threatening Emergency -Call 999",
       description:
         "If you are unsure, call 999 or visit A&E for immediate help.",
     },
@@ -188,367 +188,377 @@ const UrgentCareBlock = () => {
   return (
     <>
       <Navbar />
-      <div className="relative w-full max-w-6xl mx-auto overflow-visible rounded-2xl shadow-2xl mb-4">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="/temp1.jpg"
-            alt="Medical care background"
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent"></div>
-        </div>
-
-        {/* Content Container */}
-        <div className=" relative flex flex-col min-h-[420px]">
-          {/* RED BOX - Bottom Right */}
-          <div className="absolute bottom-[-40px] right-20">
-            <div className="bg-gradient-primary backdrop-blur-sm rounded-3xl p-6 md:p-8 w-[350px] md:w-[450px] shadow-xl">
-              <h1 className="text-white text-2xl md:text-3xl font-bold mb-4 leading-tight">
-                Welcome to Bloom Health
-                <br />
-                Urgent Care Centre
-              </h1>
-
-              <div className="mb-4 space-y-1">
-                <p className="text-white text-base font-semibold">
-                  Open 24 Hours a Day, 7 Days a Week
-                </p>
-                <p className="text-white text-base font-semibold">
-                  Urgent Care Centre & GP Walk-In Service in Milton Keynes
-                </p>
-              </div>
-
-              <p className="text-white text-lg font-bold mb-3">
-                Walk-In Anytime
-              </p>
-
-              <p className="text-white text-sm leading-relaxed">
-                At Bloom Health Urgent Care Centre, we provide fast, expert
-                medical attention for non-life-threatening but urgent illnesses
-                and injuries. Be seen by experienced GPs, A&E consultants,
-                senior nurses and HCAs, with on-site access to X-ray, CT,
-                ultrasound and blood tests — all under one roof, 24/7.
-              </p>
-            </div>
-          </div>
-        </div>
+      {/* Hero Image */}
+      <div className="w-full h-auto">
+        <img
+          src="/ucchero.png"
+          alt="Medical Image"
+          className="w-full h-auto object-cover object-center md:h-[500px] sm:h-[350px]"
+        />
       </div>
 
-      <>
-        <div className="w-full max-w-5xl mx-auto py-12 px-4 mb-4">
-          {/* Entire content centered */}
-          <div className="space-y-10 text-center">
-            {/* Badge */}
-            <div className="inline-block">
-              <span className="badge badge-primary text-lg px-4 py-2">
-                WHAT SETS US APART / Who We Are
+      {/* What Sets Us Apart Section */}
+      <div className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24">
+        <div className="max-w-7xl mx-auto">
+          {/* Badge - What Sets Us Apart */}
+          <div className="mb-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+              <span className="text-[#171717]">What Sets </span>
+              <span
+                className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent"
+                style={{ fontFamily: "Axiforma, sans-serif" }}
+              >
+                Us Apart
               </span>
-            </div>
+            </h2>
+          </div>
 
-            {/* Main Heading */}
+          {/* Main Heading */}
+          <div className="mb-4">
+            <h3
+              className="text-lg md:text-xl"
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                color: "rgba(23, 23, 23, 1)",
+              }}
+            >
+              A New Standard of Urgent Care in Milton Keynes
+            </h3>
+          </div>
 
-            <div>
-              <h2 className="heading-large">
-                A New Standard of Urgent Care in{" "}
-                <span className="text-gradient">Milton Keynes</span>
-              </h2>
-            </div>
-
-            {/* Main description */}
-            <p className="text-paragraph text-gray-800 max-w-3xl mx-auto">
+          {/* Main description */}
+          <div className="mb-6">
+            <p
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                color: "rgba(138, 138, 138, 1)",
+                fontSize: "15px",
+                lineHeight: "24px",
+              }}
+            >
               With a diverse team of senior clinicians, modern facilities, and a
               commitment to fast, patient-first care, Bloom Health Hospital
               brings a new standard of urgent treatment to Milton Keynes. Our
               goal is simple: to get you assessed, diagnosed, and treated as
               quickly and comfortably as possible.
             </p>
+          </div>
 
-            {/* Bullet points */}
-            <ul className="space-y-6 max-w-4xl mx-auto text-left">
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
+          {/* Bullet points container */}
+          <div className="space-y-6">
+            {[
+              {
+                title: "Clinicians You Can Trust",
+                desc: "Our Urgent Care Centre is staffed by an exceptional mix of senior Emergency Medicine consultants and registrars, alongside experienced GPs, nurses and HCAs. This breadth of expertise means you're always seen by a professional suited to your condition - day or night.",
+              },
+              {
+                title: "Fast Access, 24/7 Walk-In Care",
+                desc: "We are open around the clock, offering immediate walk-in access for urgent but non-life-threatening illnesses and injuries. We prioritise rapid triage and prompt assessment so you can get reassurance and a plan without long waits.",
+              },
+              {
+                title: "Hospital-Based Urgent Care with On-Site Diagnostics",
+                desc: "As part of Bloom Health Hospital, we can arrange X-rays, ultrasound, CT scans, POCT and blood tests on-site, with extended hours and on-call availability for urgent cases. This means fewer delays, fewer referrals elsewhere, and quicker answers.",
+              },
+              {
+                title: "A Patient-Centred, Comfortable Environment",
+                desc: "Our facilities have been designed to feel modern, calming and accessible. Private treatment rooms, clean clinical areas and attentive staff ensure you feel supported from the moment you arrive.",
+              },
+              {
+                title: "Efficient Pathways to Treatment",
+                desc: "Our focus is on doing everything we can to start your diagnosis and treatment straight away. By combining skilled clinicians with immediate access to investigations, we aim to reduce waiting times and keep your care moving forward without unnecessary steps.",
+              },
+              {
+                title: "Easy, Accessible Visit Experience",
+                desc: "We are conveniently located with extensive council parking directly outside the hospital, which we reimburse for patients attending the Urgent Care Centre.",
+              },
+            ].map((item, index) => (
+              <div key={index} className="flex gap-4">
+                <span className="text-[rgba(21,93,252,1)] text-xl md:text-2xl flex-shrink-0 mt-1">
                   •
                 </span>
                 <div>
-                  <span className="heading-small text-gray-900">
-                    Clinicians You Can Trust
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    Our Urgent Care Centre is staffed by an exceptional mix of
-                    senior Emergency Medicine consultants and registrars,
-                    alongside experienced GPs, nurses and HCAs. This breadth of
-                    expertise means you&apos;re always seen by a professional
-                    suited to your condition - day or night.
+                  <h4
+                    className="text-base md:text-lg"
+                    style={{
+                      fontFamily: "Axiforma, sans-serif",
+                      color: "rgba(23, 23, 23, 1)",
+                    }}
+                  >
+                    {item.title}
+                  </h4>
+                  <p
+                    className="text-sm md:text-base mt-1"
+                    style={{
+                      fontFamily: "Axiforma, sans-serif",
+                      color: "rgba(138, 138, 138, 1)",
+                    }}
+                  >
+                    {item.desc}
                   </p>
                 </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
-                  •
-                </span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    Fast Access, 24/7 Walk-In Care
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    We are open around the clock, offering immediate walk-in
-                    access for urgent but non-life-threatening illnesses and
-                    injuries. We prioritise rapid triage and prompt assessment
-                    so you can get reassurance and a plan without long waits.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
-                  •
-                </span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    Hospital-Based Urgent Care with On-Site Diagnostics
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    As part of Bloom Health Hospital, we can arrange X-rays,
-                    ultrasound, CT scans, POCT and blood tests on-site, with
-                    extended hours and on-call availability for urgent cases.
-                    This means fewer delays, fewer referrals elsewhere, and
-                    quicker answers.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
-                  •
-                </span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    A Patient-Centred, Comfortable Environment
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    Our facilities have been designed to feel modern, calming
-                    and accessible. Private treatment rooms, clean clinical
-                    areas and attentive staff ensure you feel supported from the
-                    moment you arrive.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
-                  •
-                </span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    Efficient Pathways to Treatment
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    Our focus is on doing everything we can to start your
-                    diagnosis and treatment straight away. By combining skilled
-                    clinicians with immediate access to investigations, we aim
-                    to reduce waiting times and keep your care moving forward
-                    without unnecessary steps.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-3 mt-1 text-xl">
-                  •
-                </span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    Easy, Accessible Visit Experience
-                  </span>
-                  <p className="text-paragraph text-gray-700 mt-1">
-                    We are conveniently located with extensive council parking
-                    directly outside the hospital, which we reimburse for
-                    patients attending the Urgent Care Centre.
-                  </p>
-                </div>
-              </li>
-            </ul>
+              </div>
+            ))}
           </div>
         </div>
-      </>
+      </div>
 
-      <div className="w-full bg-gradient-primary py-10 px-4 mb-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col items-center text-center"
-                >
-                  {/* Icon Container */}
-                  <div className="mb-4 relative">
-                    <div className="w-24 h-24 flex items-center justify-center">
-                      <Icon className="w-16 h-16 text-white stroke-[1.5]" />
-                    </div>
+      {/* Banner info section */}
+
+      <div
+        className="w-full py-12 md:py-16"
+        style={{
+          background: "linear-gradient(134.4deg, #157DC1 -11.36%, #49acac  143.43%)",
+        }}
+      >
+        <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-[1920px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 md:gap-8 max-w-7xl mx-auto">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="mb-3 flex items-center justify-center">
+                  {/* Added container div with fixed dimensions and centering */}
+                  <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+                    <img
+                      src={service.icon}
+                      alt=""
+                      className="max-w-full max-h-full object-contain" // Changed to object-contain
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        display: 'block'
+                      }}
+                    />
                   </div>
-
-                  {/* Text */}
-                  <p className="text-white text-sm font-semibold leading-tight">
-                    {service.title}
-                  </p>
                 </div>
-              );
-            })}
+                <p
+                  className="text-white text-xs md:text-sm leading-tight mt-2"
+                  style={{ fontFamily: "var(--font-family-1, sans-serif)" }}
+                >
+                  {service.title}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
+      {/* When To Come To Bloom UCC Section */}
 
-      <div className="w-full max-w-6xl mx-auto py-12 px-4 mb-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* LEFT on mobile / RIGHT on large */}
-          <div className="lg:order-2">
-            <img
-              src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=800&h=1000&fit=crop"
-              alt="Medical professional with patient"
-              className="w-full h-auto object-cover rounded-lg shadow-lg"
-            />
-          </div>
 
-          {/* RIGHT on mobile / LEFT on large */}
-          <div className="space-y-6 lg:order-1">
-            <div className="inline-block">
-              <span className="badge badge-primary">
-                WHEN TO COME TO BLOOM UCC
-              </span>
-            </div>
-
-            <p className="text-paragraph text-gray-800">
-              Bloom Health Urgent Care Centre is led by experienced Emergency
-              Medicine consultants, GPs and senior nurses, delivering fast,
-              reliable care for non-life-threatening conditions. Our focus is on
-              providing safe, efficient, patient-centred treatment with access
-              to modern hospital facilities - 24 hours a day.
-            </p>
-
-            {/* --- Added Line Starts Here --- */}
-            <h3 className="heading-small text-blue-900 tracking-wide border-l-4 border-blue-900 pl-3 mb-2">
-              You should choose Bloom Health Urgent Care Centre if:
-            </h3>
-            {/* --- Added Line Ends Here --- */}
-
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    You need to be seen quickly
-                  </span>
-                  <span className="text-paragraph text-gray-700">
-                    {" "}
-                    - But your condition isn’t life-threatening — such as minor
-                    injuries, infections, sudden pain, or symptoms that can’t
-                    wait for a GP appointment.
-                  </span>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    Your GP cannot offer an urgent same-day slot
-                  </span>
-                  <span className="text-paragraph text-gray-700">
-                    {" "}
-                    – Or you need help outside normal practice hours, overnight,
-                    or at weekends.
-                  </span>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    You want to avoid long A&E waiting times
-                  </span>
-                  <span className="text-paragraph text-gray-700">
-                    {" "}
-                    - For conditions that can be safely managed within urgent
-                    care — where you’ll receive prompt clinical attention.
-                  </span>
-                </div>
-              </li>
-
-              <li className="flex items-start">
-                <span className="text-blue-900 font-bold mr-2 mt-1">•</span>
-                <div>
-                  <span className="heading-small text-gray-900">
-                    You require rapid assessment with on-site tests
-                  </span>
-                  <span className="text-paragraph text-gray-700">
-                    {" "}
-                    – such as X-ray, ultrasound, CT scan (available extended
-                    hours), or blood tests, allowing for quicker answers and
-                    faster decision-making.
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-full py-12 px-4 mb-4 bg-gradient-primary">
+      {/*   When To Come To Bloom UCC Section */}
+      <div className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24">
         <div className="max-w-7xl mx-auto">
-          {/* Center All Headings */}
-          <div className="text-center space-y-6">
-            <div>
-              <h2 className="heading-large">
-                What We Don’t Treat at Bloom Health Urgent Care Centre
-              </h2>
-            </div>
-
-            <>
-              {/* Small Section Heading */}
-              <p className="text-paragraph text-gray-900">
-                Important Information for Patients
-              </p>
-
-              {/* Explanatory Text */}
-              <div className=" border-blue-700 pl-4 mt-3 space-y-1">
-                <h3 className="text-paragraph text-gray-900">
-                  Our Urgent Care Centre is designed for non-life-threatening
-                  illnesses and injuries. For your safety, the conditions below
-                  require A&E or emergency services and cannot be treated at
-                  urgent care.
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            {/* Left Content */}
+            <div className="lg:w-1/2 flex flex-col">
+              <div className="mb-6">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+                  <span className="text-[#171717]">When To Come To </span>
+                  <span
+                    className="bg-clip-text text-transparent"
+                    style={{
+                      background: "linear-gradient(133.01deg, #157DC1 -11.36%, #49acac  115%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent"
+                    }}
+                  >
+                    Bloom UCC
+                  </span>
+                </h2>
+                <h3
+                  className="text-lg md:text-xl"
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(23, 23, 23, 1)",
+                  }}
+                >
+                  A New Standard of Urgent Care in Milton Keynes
                 </h3>
               </div>
 
-              {/* Main Section Heading */}
-              <h3 className="heading-medium mt-6 text-gray-900">
-                Conditions Requiring Emergency Care (Not Treated Here)
-              </h3>
-            </>
+              <div className="mb-6">
+                <p
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(138, 138, 138, 1)",
+                    fontSize: "15px",
+                    lineHeight: "24px",
+                  }}
+                >
+                  Bloom Health Urgent Care Centre is led by experienced
+                  Emergency Medicine consultants, GPs and senior nurses,
+                  delivering fast, reliable care for non-life-threatening
+                  conditions. Our focus is on providing safe, efficient,
+                  patient-centred treatment with access to modern hospital
+                  facilities - <strong>24 hours a day</strong>.
+                </p>
+              </div>
+
+              <div className="mb-6">
+                <p
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(138, 138, 138, 1)",
+                    fontSize: "15px",
+                    lineHeight: "24px",
+                  }}
+                >
+                  With a diverse team of senior clinicians, modern facilities,
+                  and a commitment to fast, patient-first care, Bloom Health
+                  Hospital brings a new standard of urgent treatment to Milton
+                  Keynes. Our goal is simple: to get you assessed, diagnosed,
+                  and treated as quickly and comfortably as possible.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <h3
+                  className="text-lg md:text-xl font-normal pl-3 border-l-4"
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(21, 125, 193, 1)",
+                    borderLeft: "4px solid transparent",
+                    borderImage:
+                      "linear-gradient(133.01deg, #157DC1 -11.36%, #49acac  115%) 1",
+                  }}
+                >
+                  You should choose Bloom Health Urgent Care Centre if:
+                </h3>
+
+                <ul className="space-y-2">
+                  {[
+                    {
+                      title: "You need to be seen quickly",
+                      desc: " - But your condition isn't life-threatening - such as minor injuries, infections, sudden pain, or symptoms that can't wait for a GP appointment.",
+                    },
+                    {
+                      title: "Your GP cannot offer an urgent same-day slot",
+                      desc: " - Or you need help outside normal practice hours, overnight, or at weekends.",
+                    },
+                    {
+                      title: "You want to avoid long A&E waiting times",
+                      desc: " - For conditions that can be safely managed within urgent care - where you'll receive prompt clinical attention.",
+                    },
+                    {
+                      title: "You require rapid assessment with on-site tests",
+                      desc: " - Such as X-ray, ultrasound, CT scan (available extended hours), or blood tests, allowing for quicker answers and faster decision-making.",
+                    },
+                  ].map((item, index) => (
+                    <li key={index} className="flex gap-3 md:gap-4">
+                      <span className="text-[rgba(21,93,252,1)] text-xl md:text-2xl flex-shrink-0 mt-1">
+                        •
+                      </span>
+                      <div>
+                        <span
+                          className="block text-base md:text-lg"
+                          style={{
+                            fontFamily: "Axiforma, sans-serif",
+                            color: "rgba(23, 23, 23, 1)",
+                          }}
+                        >
+                          {item.title}{" "}
+                          <span
+                            className="text-sm md:text-base"
+                            style={{
+                              fontFamily: "Axiforma, sans-serif",
+                              color: "rgba(138, 138, 138, 1)",
+                            }}
+                          >
+                            {item.desc}
+                          </span>
+                        </span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Right Image - Same height as content */}
+            <div className="lg:w-1/2 flex">
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src="/uccside.png"
+                  alt="Medical professional with patient"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          {/* Conditions Grid - 2 Columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+      {/* Conditions Requiring Emergency Care Section */}
+      <div
+        className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
+        style={{
+          background:
+            "linear-gradient(133.24deg, #157DC1 -11.36%, #49acac 136.67%)",
+        }}
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8">
+            <p
+              className="text-white text-sm md:text-base mb-2"
+              style={{ fontFamily: "Axiforma, sans-serif" }}
+            >
+              Important Information for Patients
+            </p>
+
+            <h2
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 max-w-5xl"
+              style={{ fontFamily: "Axiforma, sans-serif" }}
+            >
+              Conditions Requiring Emergency Care (Not Treated Here)
+            </h2>
+
+            <p
+              className="text-white text-sm md:text-base max-w-5xl"
+              style={{ fontFamily: "Axiforma, sans-serif" }}
+            >
+              Our Urgent Care Centre is designed for non-life-threatening
+              illnesses and injuries. For your safety, the conditions below
+              require A&E or emergency services and cannot be treated at urgent
+              care.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {conditions.map((condition, index) => {
-              const Icon = condition.icon;
-              return (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-                  <div className="flex items-start gap-4">
-                    {/* Icon */}
-                    <div className="flex-shrink-0 mt-1">
-                      <Icon className="w-8 h-8 text-red-600" />
-                    </div>
+              const isLastItem = index === conditions.length - 1;
 
-                    {/* Content */}
-                    <div>
-                      <h3 className="heading-small mb-2 text-gray-900">
+              return (
+                <div
+                  key={index}
+                  className={`bg-white rounded-lg p-4 md:p-6 ${isLastItem ? "border-3 border-[#DC2626]" : ""
+                    }`}
+                  style={{ boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)" }}
+                >
+                  <div className="flex gap-3 md:gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      {/* Check if icon is a string path or component */}
+                      {typeof condition.icon === 'string' ? (
+                        <img
+                          src={condition.icon}
+                          alt={condition.title}
+                          className="w-10 h-10 md:w-12 md:h-12 text-[#DC2626]"
+                          style={{ filter: 'invert(24%) sepia(85%) saturate(4456%) hue-rotate(350deg) brightness(93%) contrast(96%)' }}
+                        />
+                      ) : (
+                        <condition.icon className="w-10 h-10 md:w-12 md:h-12 text-[#DC2626]" />
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <h3
+                        className="text-[#DC2626] font-semibold text-sm md:text-base mb-2"
+                        style={{ fontFamily: "Axiforma, sans-serif" }}
+                      >
                         {condition.title}
                       </h3>
-                      <p className="text-paragraph text-gray-700">
+                      <p
+                        className="text-gray-700 text-xs md:text-sm"
+                        style={{ fontFamily: "Axiforma, sans-serif" }}
+                      >
                         {condition.description}
                       </p>
                     </div>
@@ -560,151 +570,111 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
-      <>
-        <div className="w-full bg-gray-50 py-12 px-4 mb-4">
-          <div className="max-w-7xl mx-auto">
-            <h2
-              className="heading-large mb-4"
-              style={{ color: "var(--color-primary-blue)" }}
-            >
-              What to Expect
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {steps.map((step, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg shadow-md overflow-hidden"
-                >
-                  <div className="h-3 bg-gradient-primary"></div>
-
-                  <div className="p-6">
-                    <h3
-                      className="heading-small mb-3"
-                      style={{ color: "var(--color-primary-blue)" }}
-                    >
-                      {step.title}
-                    </h3>
-                    <p className="text-paragraph text-gray-700">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </>
-      {/* <div className="w-full bg-gray-50 py-14 px-4">
-       
+      {/* What to Expect Section */}
+      <div
+        className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
+        style={{ backgroundColor: "rgba(245, 245, 245, 1)" }}
+      >
         <div className="max-w-7xl mx-auto">
-         
-          <h2
-            className="heading-large text-center mb-4"
-            style={{ color: "var(--color-primary-blue)" }}
-          >
-            Meet Our Urgent Care Doctors
-          </h2>
-          <p className="text-paragraph text-center text-gray-600 mb-4">
-            Our compassionate urgent care team is dedicated to your
-            health-available every day.
-          </p>
-          <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
-            {doctors.map((doctor, index) => (
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+              <span className="text-[#171717]">What to </span>
+              <span className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent">
+                Expect
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {steps.map((step, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer transition-transform duration-300 hover:-translate-y-2"
+                className="p-4 md:p-6 rounded-lg"
+                style={{
+                  backgroundColor: "rgba(21, 125, 193, 0.07)",
+                  height: "100%",
+                }}
               >
-               
-                <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl rounded-br-[6rem] p-7 pb-20 shadow-lg transition-all duration-200 group-hover:from-white group-hover:to-white group-hover:shadow-xl min-h-[420px] flex flex-col justify-between">
-                 
-                  <div className="absolute top-8 right-8 flex gap-2 z-10">
-                    <div className="w-4 h-4bg-gradient-primary"></div>
-                    <div className="w-4 h-4"></div>
-                  </div>
-                 
-                  <div className="relative overflow-hidden rounded-2xl mb-6 shadow">
-                    <img
-                      src={doctor.image}
-                      alt={doctor.name}
-                      className="w-full h-64 object-cover"
-                    />
-                  </div>
-                 
-                  <div className="space-y-1 mb-4">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-blue-900 transition-colors duration-300">
-                      {doctor.name}
-                    </h3>
-                    <p className="text-white text-lg group-hover:text-cyan-500 transition-colors duration-300">
-                      {doctor.title}
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-red-400 rounded-full -z-10"></div>
+                <h3
+                  className="text-lg font-semibold mb-3"
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(0, 0, 0, 1)",
+                  }}
+                >
+                  {step.title}
+                </h3>
+                <p
+                  className="text-sm md:text-base"
+                  style={{
+                    fontFamily: "Axiforma, sans-serif",
+                    color: "rgba(87, 87, 87, 1)",
+                  }}
+                >
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
-          </>
-        
         </div>
-      </div> */}
+      </div>
 
-      <>
-        <div className="w-full max-w-7xl mx-auto py-12 px-4 mb-4">
-          <div className="text-center mb-10">
-            <h2
-              className="heading-large mb-4"
-              style={{ color: "var(--color-primary-blue)" }}
-            >
-              Meet Our Urgent Care Doctors
+      {/* Meet Our Doctors Section */}
+      <div
+        className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
+        style={{ backgroundColor: "rgba(245, 245, 245, 1)" }}
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
+              <span className="text-[#171717]">Meet Our </span>
+              <span className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent">
+                Urgent Care Doctors
+              </span>
             </h2>
-            <p className="text-paragraph text-gray-600">
+
+            <p
+              className="text-sm md:text-base"
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                color: "rgba(138, 138, 138, 1)",
+              }}
+            >
               Our compassionate urgent care team is dedicated to your
-              health—available every day.
+              health - available every day.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {specialists.map((specialist) => (
-              <Link
+              <div
                 key={specialist.id}
-                href={`/doctors/${specialist.id}`}
-                className="
-          bg-white rounded-lg overflow-hidden 
-          shadow-sm hover:shadow-md 
-          transition-shadow 
-          flex flex-col h-full
-          cursor-pointer
-        "
+                className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full"
               >
-                <div className="p-6 flex-grow">
+                <div className="pt-4 px-4 md:pt-6 md:px-6 flex-grow">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
                       <img
                         src={specialist.image}
                         alt={specialist.name}
                         className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(
-                            specialist.name
-                          )}&size=64&background=05BFDB&color=fff`;
-                        }}
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="heading-small text-gray-900 mb-1">
+                      <h3
+                        className="font-semibold text-base md:text-lg mb-1"
+                        style={{ color: "rgba(21, 93, 252, 1)" }}
+                      >
                         {specialist.name}
                       </h3>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-gray-600 text-sm">
                         {specialist.title}
                       </p>
                     </div>
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-paragraph text-gray-600">
+                    <p className="text-gray-600 text-sm">
                       {specialist.specialties.join(" | ")}
                     </p>
                   </div>
@@ -714,28 +684,46 @@ const UrgentCareBlock = () => {
                       <p className="text-xs text-gray-500 mb-1">
                         Consultation Fee:
                       </p>
-                      <p className="text-lg font-bold text-gray-900">
+                      <p
+                        className="font-bold text-lg"
+                        style={{ color: "rgba(21, 93, 252, 1)" }}
+                      >
                         {specialist.consultationFee}
                       </p>
                     </div>
 
                     <div className="text-right">
                       <p className="text-xs text-gray-500 mb-1">Experience:</p>
-                      <p className="text-lg font-bold text-gray-900">
+                      <p
+                        className="font-bold text-lg"
+                        style={{ color: "rgba(21, 93, 252, 1)" }}
+                      >
                         {specialist.experience}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="btn btn-primary w-full rounded-b-lg mt-auto text-center py-4">
-                  Make An Enquiry
+                {/* Button */}
+                <div className="px-4 pb-4">
+                  <div
+                    className="text-center text-white flex items-center justify-center w-full"
+                    style={{
+                      background:
+                        "linear-gradient(133.01deg, #157DC1 -11.36%, #49acac 115%)",
+                      borderRadius: "8px",
+                      padding: "12px",
+                      height: "48px",
+                    }}
+                  >
+                    Make An Enquiry
+                  </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
-      </>
+      </div>
 
       <MainFooter />
     </>

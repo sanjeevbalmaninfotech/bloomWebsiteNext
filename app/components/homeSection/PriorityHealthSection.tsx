@@ -4,8 +4,8 @@ import { RegisterButton } from "../registerButton/RegisterButton";
 const PriorityHealthSection = () => {
   return (
     // WHITE CONTAINER AROUND IMAGE SECTION
-    <div className="w-full bg-white py-10 px-4 md:px-8">
-      <div className="relative h-[650px] md:h-[700px] lg:h-[750px] rounded-3xl overflow-hidden shadow-lg">
+    <div className="w-full bg-white section-spacing px-4 md:px-8 section-margin">
+      <div className="relative max-w-7xl mx-auto h-[650px] md:h-[700px] lg:h-[750px] rounded-3xl overflow-hidden shadow-lg">
 
         {/* Background Image */}
         <img

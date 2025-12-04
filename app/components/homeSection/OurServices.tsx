@@ -27,8 +27,8 @@ const OurServices = () => {
   ];
 
   return (
-    <div className="w-full py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <div className="w-full section-spacing px-4 bg-white section-margin">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <h2 className="heading-large text-center mb-12">
           Our <span className="text-gradient">Services</span>

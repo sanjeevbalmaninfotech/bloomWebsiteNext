@@ -47,7 +47,7 @@ const NewsSection = () => {
               </div>
 
               {/* 2x2 NEWS CARDS */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
 
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="bg-blue-50 rounded-lg p-5 hover:shadow-md transition-shadow">
@@ -113,62 +113,66 @@ const NewsSection = () => {
       </div>
 
       {/* BOTTOM SECTION — OPPOSITE LAYOUT */}
-      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+      <div className="p-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-        {/* LEFT — IMAGE CARD */}
-        <div className="flex flex-col bg-[#1e4a5f] rounded-xl overflow-hidden h-full">
+            {/* LEFT — IMAGE CARD */}
+            <div className="flex flex-col bg-[#1e4a5f] rounded-xl overflow-hidden h-full">
 
-          <div className="relative w-full h-80 bg-gray-300">
-            <img
-              src="/newsSectionImg1.png"
-              alt="Featured News"
-              className="w-full h-full object-cover"
-            />
+              <div className="relative w-full h-80 bg-gray-300">
+                <img
+                  src="/newsSectionImg1.png"
+                  alt="Featured News"
+                  className="w-full h-full object-cover"
+                />
 
-            <div className="absolute bottom-4 left-4 flex items-center space-x-3">
-              <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
-                25, Feb, 2025
-              </span>
-              <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
-                Press Release
-              </span>
-            </div>
-          </div>
+                <div className="absolute bottom-4 left-4 flex items-center space-x-3">
+                  <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
+                    25, Feb, 2025
+                  </span>
+                  <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
+                    Press Release
+                  </span>
+                </div>
+              </div>
 
-          <div className="p-8">
-            <h2 className="text-2xl font-bold text-white mb-6 leading-tight">
-              Bloom Hosts Multi-Stakeholder Panel on World Obesity Day
-            </h2>
-            <p className="text-white text-base leading-relaxed opacity-90">
-              HCA Healthcare UK has treated a metastatic lung cancer patient with TIL therapy...
-            </p>
-          </div>
-        </div>
-
-        {/* RIGHT — SINGLE 2×2 NEWS CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full">
-
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="bg-blue-50 rounded-lg p-5 hover:shadow-md transition-shadow">
-              <div className="space-y-3">
-                <div className="text-sm text-gray-600">25, Feb, 2025</div>
-
-                <h3 className="heading-small text-gray-900 leading-snug">
-                  <span className="font-bold">Bloom Hosts</span>
-                  <br />
-                  Multi-Stakeholder Panel on World Obesity Day to Address the
-                  Rising Obesity Crisis and its Health Impacts
-                </h3>
-
-                <span className="inline-block text-blue-600 text-sm font-medium pt-2">
-                  News
-                </span>
+              <div className="p-8">
+                <h2 className="text-2xl font-bold text-white mb-6 leading-tight">
+                  Bloom Hosts Multi-Stakeholder Panel on World Obesity Day
+                </h2>
+                <p className="text-white text-base leading-relaxed opacity-90">
+                  HCA Healthcare UK has treated a metastatic lung cancer patient with TIL therapy...
+                </p>
               </div>
             </div>
-          ))}
 
+            {/* RIGHT — SINGLE 2×2 NEWS CARDS */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-full">
+
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="bg-blue-50 rounded-lg p-5 hover:shadow-md transition-shadow">
+                  <div className="space-y-3">
+                    <div className="text-sm text-gray-600">25, Feb, 2025</div>
+
+                    <h3 className="heading-small text-gray-900 leading-snug">
+                      <span className="font-bold">Bloom Hosts</span>
+                      <br />
+                      Multi-Stakeholder Panel on World Obesity Day to Address the
+                      Rising Obesity Crisis and its Health Impacts
+                    </h3>
+
+                    <span className="inline-block text-blue-600 text-sm font-medium pt-2">
+                      News
+                    </span>
+                  </div>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
         </div>
-
       </div>
     </>
   );

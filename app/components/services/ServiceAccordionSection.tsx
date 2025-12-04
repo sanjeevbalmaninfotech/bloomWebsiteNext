@@ -31,7 +31,7 @@ export const ServiceAccordionSection: React.FC<
   };
 
   return (
-    <div className="bg-white py-12 md:py-16">
+    <div className="bg-white section-spacing section-margin">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Left Column - Description & Accordion */}

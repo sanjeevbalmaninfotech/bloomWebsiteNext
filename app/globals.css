@@ -27,12 +27,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Dark mode disabled to maintain consistent brand colors across all themes */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -267,4 +268,81 @@ input[disabled],
 [aria-disabled="true"] {
   cursor: default;
   opacity: 0.6;
+}
+
+/* ============================================
+   LAYOUT UTILITY CLASSES
+   ============================================ */
+
+/* Standard Container - Consistent max-width across all pages */
+.section-container {
+  width: 100%;
+  max-width: 1280px;
+  /* max-w-7xl equivalent */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Standard Section Spacing - Consistent vertical padding */
+.section-spacing {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Standard Section Margin - Consistent bottom margin between sections */
+.section-margin {
+  margin-bottom: 2rem;
+}
+
+/* Hero Section - Standard hero/banner layout */
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Content Grid - Standard 2-column grid layout */
+.content-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .content-grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Image Section Overlay - Standard overlay for image sections */
+.image-section-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(3, 52, 83, 0.4), transparent);
 }
