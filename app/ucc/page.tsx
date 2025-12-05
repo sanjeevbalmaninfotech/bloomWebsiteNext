@@ -1,21 +1,9 @@
 "use client";
 import React from "react";
-import { Pill, ClipboardCheck, PlusCircle, Stethoscope } from "lucide-react";
-import { Heart, Brain, AlertCircle } from "lucide-react";
-import {
-  HeartPulse,
-  Droplet,
-  Baby,
-  AlertTriangle,
-  Activity,
-  Skull,
-  ShieldAlert,
-  HeartCrack,
-  Ambulance,
-} from "lucide-react";
+
+
 import Navbar from "../components/Navbar";
 import { MainFooter } from "../components/footer/Footer";
-import Link from "next/link";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -130,6 +118,7 @@ const UrgentCareBlock = () => {
     },
   ];
 
+  /*
   const doctors = [
     {
       name: "Andre van Nierop",
@@ -150,6 +139,7 @@ const UrgentCareBlock = () => {
         "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
     },
   ];
+  */
 
   const specialists = [
     {

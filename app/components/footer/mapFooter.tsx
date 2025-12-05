@@ -1,5 +1,5 @@
 
-import { MapPin, Phone, Mail } from "lucide-react";
+import {  Phone, Mail } from "lucide-react";
 export default function MapFooter() {
 
     return (

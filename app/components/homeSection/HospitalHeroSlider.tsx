@@ -12,7 +12,7 @@ const HospitalHeroSlider = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [slides.length]);
+  }, [slides?.length]);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
