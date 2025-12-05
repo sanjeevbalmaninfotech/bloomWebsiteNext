@@ -14,14 +14,25 @@
     "jsx": "react-jsx",
     "incremental": true,
   "forceConsistentCasingInFileNames": true,
+   "baseUrl": ".", 
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+   "paths": {
+  "@/*": ["./*"],
+  "@app/*": ["app/*"],
+  "@components/*": ["app/components/*"],
+  "@hooks/*": ["app/hooks/*"],
+  "@utils/*": ["app/utils/*"],
+  "@types/*": ["app/types/*"],
+  "@libs/*": ["app/libs/*"],
+  "@constants/*": ["app/constants/*"],
+  "@config/*": ["app/config/*"],
+  "@services/*": ["app/services/*"],
+  "@styles/*": ["app/styles/*"]
+}
   },
   "include": [
     "next-env.d.ts",

@@ -154,7 +154,7 @@ const UrgentCareBlock = () => {
   const specialists = [
     {
       id: "ethan-brooks",
-      name: "ethan-brooks",
+      name: "Ethan-Brooks",
       title: "Cardiologist",
       specialties: ["Heart", "Cardiology"],
       consultationFee: "£50",
@@ -164,7 +164,7 @@ const UrgentCareBlock = () => {
     },
     {
       id: "hannah-cole",
-      name: "hannah-cole",
+      name: "Hannah-Cole",
       title: "Dermatologist",
       specialties: ["Skin", "Cosmetics"],
       consultationFee: "£60",
@@ -617,7 +617,7 @@ const UrgentCareBlock = () => {
       {/* Meet Our Doctors Section */}
       <div
         className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
-        style={{ backgroundColor: "rgba(245, 245, 245, 1)" }}
+        style={{ background: "radial-gradient(circle at center, #EDEDED , #FFFFFF)" }}
       >
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
@@ -656,10 +656,7 @@ const UrgentCareBlock = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3
-                        className="font-semibold text-base md:text-lg mb-1"
-                        style={{ color: "rgba(21, 93, 252, 1)" }}
-                      >
+                      <h3 className="font-semibold text-base md:text-lg mb-1 text-[#157DC1]">
                         {specialist.name}
                       </h3>
                       <p className="text-gray-600 text-sm">
@@ -679,20 +676,14 @@ const UrgentCareBlock = () => {
                       <p className="text-xs text-gray-500 mb-1">
                         Consultation Fee:
                       </p>
-                      <p
-                        className="font-bold text-lg"
-                        style={{ color: "rgba(21, 93, 252, 1)" }}
-                      >
+                      <p className="font-bold text-lg text-[#157DC1]">
                         {specialist.consultationFee}
                       </p>
                     </div>
 
                     <div className="text-right">
                       <p className="text-xs text-gray-500 mb-1">Experience:</p>
-                      <p
-                        className="font-bold text-lg"
-                        style={{ color: "rgba(21, 93, 252, 1)" }}
-                      >
+                      <p className="font-bold text-lg text-[#157DC1]">
                         {specialist.experience}
                       </p>
                     </div>
