@@ -11,18 +11,35 @@ const Navbar = () => {
 
   const discoverRef = useRef<HTMLDivElement | null>(null);
   const servicesRef = useRef<HTMLDivElement | null>(null);
+  const mobileDiscoverRef = useRef<HTMLDivElement | null>(null);
+  const mobileServicesRef = useRef<HTMLDivElement | null>(null);
 
   // Close dropdowns when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       const target = event.target as Node;
 
-      if (discoverRef.current && !discoverRef.current.contains(target)) {
-        setIsDiscoverOpen(false);
-      }
+      // Only handle desktop dropdowns
+      if (window.innerWidth >= 768) {
+        // Check if click is outside both refs
+        const clickedOutsideDiscover = discoverRef.current && !discoverRef.current.contains(target);
+        const clickedOutsideServices = servicesRef.current && !servicesRef.current.contains(target);
 
-      if (servicesRef.current && !servicesRef.current.contains(target)) {
-        setIsServicesOpen(false);
+        // Only close if clicked outside both (not switching between them)
+        if (clickedOutsideDiscover && clickedOutsideServices) {
+          setIsDiscoverOpen(false);
+          setIsServicesOpen(false);
+        }
+      } else {
+        // Handle mobile dropdowns
+        const clickedOutsideMobileDiscover = mobileDiscoverRef.current && !mobileDiscoverRef.current.contains(target);
+        const clickedOutsideMobileServices = mobileServicesRef.current && !mobileServicesRef.current.contains(target);
+
+        // Only close if clicked outside both
+        if (clickedOutsideMobileDiscover && clickedOutsideMobileServices) {
+          setIsDiscoverOpen(false);
+          setIsServicesOpen(false);
+        }
       }
     }
 
@@ -183,9 +200,12 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="px-4 py-3 space-y-3">
             {/* Mobile Discover */}
-            <div>
+            <div ref={mobileDiscoverRef}>
               <button
-                onClick={() => setIsDiscoverOpen(!isDiscoverOpen)}
+                onClick={() => {
+                  setIsDiscoverOpen(!isDiscoverOpen);
+                  setIsServicesOpen(false);
+                }}
                 className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2 transition-colors"
               >
                 Discover Bloom
@@ -220,9 +240,12 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Services */}
-            <div>
+            <div ref={mobileServicesRef}>
               <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                onClick={() => {
+                  setIsServicesOpen(!isServicesOpen);
+                  setIsDiscoverOpen(false);
+                }}
                 className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2 transition-colors"
               >
                 Services

@@ -48,7 +48,8 @@ const WhatSetsUsApart = () => {
             {/* Parent row for the content & image.
               Use items-start so both children start at same top line.
           */}
-            <div className="flex flex-col md:flex-row gap-6 sm:gap-8 h-full items-start">
+          <div className="flex flex-col md:flex-row gap-6 sm:gap-8 h-full items-start bg-white rounded-lg p-2.5">
+
               {/* LEFT SECTION → set same fixed height as image at md+ and keep content spaced (top + bottom) */}
               <div className="w-full md:w-[55%] flex flex-col justify-between md:h-[350px] lg:h-[400px]">
 
@@ -83,7 +84,7 @@ const WhatSetsUsApart = () => {
 
               {/* RIGHT SECTION → Image with the same height classes */}
               <div className="w-full md:w-1/2 flex items-start justify-center">
-                <div className="rounded-lg overflow-hidden shadow-2xl w-full h-64 sm:h-80 md:h-[350px] lg:h-[400px]">
+                <div className="rounded-lg overflow-hidden w-full h-64 sm:h-80 md:h-[350px] lg:h-[400px]">
                   <img
                     src="/AboutBloom.png"
                     alt="Bloom Health Team"
