@@ -21,12 +21,12 @@ const PriorityHealthSection = () => {
         <div className="absolute top-0 left-0 w-full flex flex-col items-center text-center px-4 z-10">
 
           {/* Heading */}
-        <div className="bg-white rounded-b-2xl px-4 sm:px-6 md:px-8 py-3 mb-4 sm:mb-6 md:mb-10 shadow-sm mx-2 sm:mx-4 md:mx-8 lg:mx-12">
-  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug sm:leading-tight md:leading-tight">
-    Our Priority Is{" "}
-    <span className="text-gradient">YOUR Health</span>
-  </h2>
-</div>
+          <div className="bg-white rounded-b-2xl px-4 sm:px-6 md:px-8 py-3 mb-4 sm:mb-6 md:mb-10 shadow-sm mx-2 sm:mx-4 md:mx-8 lg:mx-12">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug sm:leading-tight md:leading-tight">
+              Our Priority Is{" "}
+              <span className="text-gradient">YOUR Health</span>
+            </h2>
+          </div>
 
 
           {/* Description */}

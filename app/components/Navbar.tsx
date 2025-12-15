@@ -68,8 +68,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white  sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-2 ">
+        <div className="flex items-center h-20">
           <div className="flex-shrink-0">
             <Link href="/" onClick={handleLinkClick}>
               <Image
@@ -83,7 +83,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 mx-auto">
             {/* Discover Bloom */}
             <div className="relative" ref={discoverRef}>
               <button
@@ -170,7 +170,10 @@ const Navbar = () => {
             <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
               Contact
             </Link>
+          </div>
 
+          {/* Register Button - Right aligned */}
+          <div className="hidden md:block">
             <RegisterButton />
           </div>
 
