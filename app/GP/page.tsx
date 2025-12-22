@@ -13,7 +13,10 @@ const GP = () => {
     return (
         <>
             <Navbar />
-            <GPImageSection />
+            <div className="pb-[60px]">
+                <GPImageSection />
+            </div>
+
             <GPsUtiliseSection />
             <ImagingReferralSection />
             <GPUtilise />

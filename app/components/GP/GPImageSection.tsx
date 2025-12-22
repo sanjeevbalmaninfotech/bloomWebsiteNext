@@ -14,22 +14,21 @@ export default function ImageSection() {
             </div>
 
             {/* Content */}
-            <div className="relative h-full flex items-center">
-                <div className="container mx-auto px-8 md:px-16 lg:px-24">
-                    <div className="max-w-2xl space-y-6">
+            <div className="relative h-full flex items-center px-6 md:px-12 lg:px-[120px]">
+                <div className="max-w-7xl mx-auto w-full">
+                    <div className="max-w-2xl space-y-4">
                         {/* Heading */}
-                        <h1 className="text-white leading-tight 
-                text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                        <h1 className="font-axiforma font-semibold text-white text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-[38px] tracking-[-0.02em] capitalize">
                             Information For GPs
-                            <br />
-                            <span className="text-cyan-300">
-                                Working In Partnership
-                            </span>
                         </h1>
+                        <p className="font-axiforma font-semibold text-white text-lg sm:text-xl md:text-[22px] leading-[42px] tracking-[-0.02em] capitalize mt-1">
+                            Working in Partnership with Primary Care Across Milton Keynes
+                        </p>
+
 
                         {/* Description 1 */}
-                        <p className="text-gray-100 
-                text-sm sm:text-base md:text-lg">
+                        <p className="text-gray-100 font-axiforma
+                text-base sm:text-lg md:text-xl leading-relaxed tracking-tight">
                             Bloom Health is designed to support the vital work delivered by GP practices throughout
                             Milton Keynes. We provide rapid access to urgent care, diagnostics and specialist opinion,
                             helping to ease pressure on primary care, improve continuity, and ensure patients receive
@@ -37,14 +36,15 @@ export default function ImageSection() {
                         </p>
 
                         {/* Description 2 */}
-                        <p className="text-gray-100 
-                text-sm sm:text-base md:text-lg">
+                        <p className="text-gray-100 font-axiforma
+                text-base sm:text-lg md:text-xl leading-relaxed tracking-tight">
                             Our role is complementary. We recognise the NHS as the backbone of local healthcare, and
                             our services exist to add capacity, improve access, and offer convenience for patients and
                             their GPs, particularly when speed of diagnosis or review can make a meaningful difference.
                         </p>
-
-                        <RegisterButton />
+                        <div className="mt-6">
+                            <RegisterButton />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -43,7 +43,7 @@ export default function FAQSection() {
       <div className="relative max-w-4xl mx-auto w-full">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="heading-large text-gray-900 mb-4">
+          <h2 className="heading-large text-red-900 mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-paragraph text-gray-600 max-w-3xl mx-auto">

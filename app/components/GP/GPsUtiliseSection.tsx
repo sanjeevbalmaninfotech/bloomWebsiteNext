@@ -5,7 +5,7 @@ export default function GPsUtiliseSection() {
             description: "when their own practice is at capacity."
         },
         {
-            title: "Faster diagnostic clarity,",
+            title: "Faster diagnostic clarity",
             description: "including blood tests and imaging."
         },
         {
@@ -23,41 +23,18 @@ export default function GPsUtiliseSection() {
     ];
 
     return (
-        <div className="bg-white py-12 px-6 md:py-16 lg:py-[60px] md:px-12 lg:px-[120px]">
+        <div className="bg-white py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
             <div className="max-w-7xl mx-auto">
                 {/* Main Heading */}
-                <h1
-                    className="font-semibold mb-4 md:mb-6"
-                    style={{
-                        fontSize: 'clamp(28px, 5vw, 36px)',
-                        lineHeight: 'clamp(36px, 6vw, 48px)',
-                        letterSpacing: '-0.72px',
-                        fontFamily: 'Axiforma, sans-serif'
-                    }}
-                >
+                <h1 className="font-semibold mb-4 md:mb-6 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                     How GPs Can Utilise{' '}
-                    <span
-                        style={{
-                            background: 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            backgroundClip: 'text'
-                        }}
-                    >
+                    <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
                         Bloom Health
                     </span>
                 </h1>
 
                 {/* Subheading */}
-                <p
-                    className="text-gray-700 mb-6 md:mb-8"
-                    style={{
-                        fontSize: 'clamp(14px, 2vw, 15px)',
-                        lineHeight: '24px',
-                        letterSpacing: '-0.45px',
-                        fontFamily: 'Axiforma, sans-serif'
-                    }}
-                >
+                <p className="text-gray-700 mb-6 md:mb-8 text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
                     GPs may direct patients to Bloom Health when they would benefit from:
                 </p>
 
@@ -66,41 +43,20 @@ export default function GPsUtiliseSection() {
                     {benefits.map((benefit, index) => (
                         <li
                             key={index}
-                            style={{
-                                fontSize: 'clamp(14px, 2vw, 15px)',
-                                lineHeight: '28px',
-                                letterSpacing: '-0.18px',
-                                fontFamily: 'sans-serif'
-                            }}
+                            className="text-sm sm:text-base leading-7 tracking-tight"
                         >
                             <span className="text-black font-normal">{benefit.title}</span>{' '}
-                            <span style={{ color: 'rgba(138, 138, 138, 1)' }}>{benefit.description}</span>
+                            <span className="text-[#8A8A8A]">{benefit.description}</span>
                         </li>
                     ))}
                 </ul>
 
                 {/* Bottom Description */}
                 <div className="space-y-3 md:space-y-4">
-                    <p
-                        className="text-gray-700"
-                        style={{
-                            fontSize: 'clamp(14px, 2vw, 15px)',
-                            lineHeight: '120%',
-                            letterSpacing: '-0.18px',
-                            fontFamily: 'sans-serif'
-                        }}
-                    >
+                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
                         There is no contract or agreement required, and patients can simply walk in for urgent care or GP support. Specialist appointments can be arranged directly by the patient through our reception team.
                     </p>
-                    <p
-                        className="text-gray-700"
-                        style={{
-                            fontSize: 'clamp(14px, 2vw, 15px)',
-                            lineHeight: '120%',
-                            letterSpacing: '-0.18px',
-                            fontFamily: 'sans-serif'
-                        }}
-                    >
+                    <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
                         We work to ensure all relevant findings, reports and results can be shared back with their GP practice for continuity of care.
                     </p>
                 </div>

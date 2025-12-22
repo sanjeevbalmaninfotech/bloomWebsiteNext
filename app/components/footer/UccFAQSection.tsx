@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { homePageFAQ } from '@/app/constants/FAQs';
+import ButtonTalkToTeam from '../ButtonTalkToTeam';
 
 export default function UccFAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -22,7 +23,7 @@ export default function UccFAQSection() {
           {/* Header */}
           <div className="mb-8">
             <h2
-              className="font-[family-name:var(--font-1)] font-semibold mb-4 tracking-[-0.72px] text-[#157DC1]"
+              className="font-[family-name:var(--font-1)] font-semibold mb-4  text-[#157DC1]"
               style={{
                 fontSize: "35.7px",
                 lineHeight: "48px",
@@ -121,6 +122,8 @@ export default function UccFAQSection() {
                 )}
               </div>
             ))}
+            <ButtonTalkToTeam />
+
           </div>
         </div>
       </div>
