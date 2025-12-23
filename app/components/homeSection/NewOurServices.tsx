@@ -15,7 +15,7 @@ const ServicesSection = () => {
         },
         {
             icon: Droplet,
-            title: "Blood Testing",
+            title: "Pathology and Blood Testing",
             description: "A complete range of blood tests and pathology services with accurate results, fast reporting, and seamless coordination with your clinician for timely care.",
         },
         {
@@ -26,68 +26,73 @@ const ServicesSection = () => {
     ];
 
     return (
-        <section className="w-full py-12 px-6 sm:py-16 sm:px-12 lg:py-[60px] lg:px-[120px] bg-gradient-to-br from-[#157DC1] to-[#5FC1A3]">
+        <section className="w-full py-12 px-6 sm:py-16 sm:px-12 lg:py-[60px] lg:px-[120px] ">
             <div className="max-w-[1440px] mx-auto pb-5">
-                {/* Heading */}
-                <h2 className="text-white font-semibold text-3xl sm:text-4xl lg:text-[36px] leading-[40px] tracking-[-0.02em] capitalize text-center mb-12 sm:mb-16 lg:mb-[60px]  pb-4">
-                    Our Services
-                </h2>
 
-                {/* Services Container - Horizontal Layout */}
-                <div className="flex flex-col md:flex-row items-stretch justify-center gap-8 md:gap-0">
-                    {services.map((service, index) => (
-                        <React.Fragment key={index}>
-                            {/* Service Card */}
-                            <div className="flex flex-col items-center gap-[15px] text-white md:px-5 lg:px-6 flex-1 md:max-w-[280px] lg:max-w-none">
-                                {/* Icon */}
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-2">
-                                    <service.icon className="w-full h-full" strokeWidth={1.5} />
+                <div className="bg-gradient-to-br from-[#157DC1] to-[#5FC1A3]">
+
+                    <h2 className="text-white font-semibold text-3xl sm:text-4xl lg:text-[36px] leading-[40px] tracking-[-0.02em] capitalize text-center mb-12 sm:mb-16 lg:mb-[60px]  pb-4">
+                        Our Services
+                    </h2>
+
+                    {/* Services Container - Horizontal Layout */}
+                    <div className="flex flex-col md:flex-row items-stretch justify-center gap-8 md:gap-0">
+                        {services.map((service, index) => (
+                            <React.Fragment key={index}>
+                                {/* Service Card */}
+                                <div className="flex flex-col items-center gap-[15px] text-white md:px-5 lg:px-6 flex-1 md:max-w-[280px] lg:max-w-none">
+                                    {/* Icon */}
+                                    <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-2">
+                                        <service.icon className="w-full h-full" strokeWidth={1.5} />
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3 className="font-semibold text-lg sm:text-[18px] leading-[100%] tracking-[-0.02em] capitalize text-center mb-3">
+                                        {service.title}
+                                    </h3>
+
+                                    {/* Description */}
+                                    <p className="font-normal text-sm sm:text-[15px] leading-[20px] tracking-[-0.03em] text-center text-white/90 mb-4">
+                                        {service.description}
+                                    </p>
+
+                                    {/* Arrow Icon */}
+                                    <button
+                                        className="mt-auto w-10 h-10 flex items-center justify-center hover:bg-white/10 transition-colors"
+                                        aria-label={`Learn more about ${service.title}`}
+                                    >
+                                        <img
+                                            src="/Arrow-Right.svg"
+                                            alt="Arrow Right"
+                                            className="invert brightness-0"
+                                            style={{
+                                                width: "34px",
+                                                height: "34px"
+                                            }}
+                                        />
+                                    </button>
+
+
+
                                 </div>
 
-                                {/* Title */}
-                                <h3 className="font-semibold text-lg sm:text-[18px] leading-[100%] tracking-[-0.02em] capitalize text-center mb-3">
-                                    {service.title}
-                                </h3>
+                                {/* Vertical Divider - Hidden on mobile, shown from md breakpoint */}
+                                {index < services.length - 1 && (
+                                    <div className="hidden md:flex mx-4 lg:mx-8">
+                                        <div
+                                            className="w-[1.5px] self-stretch"
+                                            style={{
+                                                background: 'linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, #3f3d3dff, rgba(102, 102, 102, 0) 100%)'
+                                            }}
+                                        ></div>
+                                    </div>
+                                )}
+                            </React.Fragment>
+                        ))}
+                    </div>
 
-                                {/* Description */}
-                                <p className="font-normal text-sm sm:text-[15px] leading-[20px] tracking-[-0.03em] text-center text-white/90 mb-4">
-                                    {service.description}
-                                </p>
-
-                                {/* Arrow Icon */}
-                                <button
-                                    className="mt-auto w-10 h-10 flex items-center justify-center hover:bg-white/10 transition-colors"
-                                    aria-label={`Learn more about ${service.title}`}
-                                >
-                                    <img
-                                        src="/Arrow-Right.svg"
-                                        alt="Arrow Right"
-                                        className="invert brightness-0"
-                                        style={{
-                                            width: "34px",
-                                            height: "34px"
-                                        }}
-                                    />
-                                </button>
-
-
-
-                            </div>
-
-                            {/* Vertical Divider - Hidden on mobile, shown from md breakpoint */}
-                            {index < services.length - 1 && (
-                                <div className="hidden md:flex mx-4 lg:mx-8">
-                                    <div
-                                        className="w-[1.5px] self-stretch"
-                                        style={{
-                                            background: 'linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, #3f3d3dff, rgba(102, 102, 102, 0) 100%)'
-                                        }}
-                                    ></div>
-                                </div>
-                            )}
-                        </React.Fragment>
-                    ))}
                 </div>
+
             </div>
         </section>
     );

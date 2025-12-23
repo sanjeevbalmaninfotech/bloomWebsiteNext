@@ -28,7 +28,7 @@ export default function ImageSection() {
 
                         {/* Description 1 */}
                         <p className="text-gray-100 font-axiforma
-                text-base sm:text-lg md:text-xl leading-relaxed tracking-tight">
+                text-base text-[15px] leading-relaxed tracking-tight">
                             Bloom Health is designed to support the vital work delivered by GP practices throughout
                             Milton Keynes. We provide rapid access to urgent care, diagnostics and specialist opinion,
                             helping to ease pressure on primary care, improve continuity, and ensure patients receive
@@ -37,7 +37,7 @@ export default function ImageSection() {
 
                         {/* Description 2 */}
                         <p className="text-gray-100 font-axiforma
-                text-base sm:text-lg md:text-xl leading-relaxed tracking-tight">
+                text-base text-[15px] leading-relaxed tracking-tight">
                             Our role is complementary. We recognise the NHS as the backbone of local healthcare, and
                             our services exist to add capacity, improve access, and offer convenience for patients and
                             their GPs, particularly when speed of diagnosis or review can make a meaningful difference.

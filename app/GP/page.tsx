@@ -13,7 +13,7 @@ const GP = () => {
     return (
         <>
             <Navbar />
-            <div className="pb-[60px]">
+            <div className="">
                 <GPImageSection />
             </div>
 

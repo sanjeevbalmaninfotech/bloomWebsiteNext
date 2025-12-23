@@ -5,7 +5,7 @@ import { homePageFAQ } from '@/app/constants/FAQs';
 import ButtonTalkToTeam from '../ButtonTalkToTeam';
 
 export default function UccFAQSection() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
 
 
   const toggleFAQ = (index: number) => {

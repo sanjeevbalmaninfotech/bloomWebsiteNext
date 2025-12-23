@@ -27,7 +27,7 @@ const OriginBloomSection = () => {
                         <div className="flex flex-col flex-1">
 
                             {/* First Image */}
-                            <div className="flex-1 flex items-center justify-center border-b border-gray-200">
+                            <div className="flex-1 flex items-center justify-center mb-1 ">
                                 <div className="relative w-full max-w-[400px] aspect-[4/5] lg:h-full lg:aspect-auto">
                                     <img
                                         src="/staff/MRravinder.jpeg"

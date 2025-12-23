@@ -147,18 +147,18 @@ const Navbar = () => {
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50 border border-gray-100">
                   <Link
-                    href="/services/consultation"
+                    href="/pathology"
                     onClick={handleLinkClick}
                     className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                   >
-                    Consultation
+                    Pathology
                   </Link>
                   <Link
-                    href="/services/therapy"
+                    href="/imaging"
                     onClick={handleLinkClick}
                     className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                   >
-                    Therapy
+                    Imaging & Screening
                   </Link>
                 </div>
               )}
@@ -166,6 +166,9 @@ const Navbar = () => {
 
             <Link href="/careers" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
               Careers
+            </Link>
+            <Link href="/GP" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
+              GP’s Info
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
               Contact

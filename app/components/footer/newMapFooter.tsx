@@ -100,9 +100,16 @@ export default function ContactSection() {
 
                             {/* Button Section */}
                             <button
+                                onClick={() =>
+                                    window.open(
+                                        "https://www.google.com/maps/search/?api=1&query=163-175+Grafton+Gate,+Milton+Keynes,+UK,+MK9+1AE",
+                                        "_blank"
+                                    )
+                                }
                                 className="w-full h-[45px] px-6 py-3 rounded-lg text-white font-[family-name:var(--font-1)] font-normal text-center transition-opacity duration-300 hover:opacity-90 flex items-center justify-center gap-3"
                                 style={{
-                                    background: 'linear-gradient(134.42deg, rgb(21, 125, 193) 2.41%, rgb(95, 193, 163) 139.58%)'
+                                    background:
+                                        "linear-gradient(134.42deg, rgb(21, 125, 193) 2.41%, rgb(95, 193, 163) 139.58%)",
                                 }}
                             >
                                 <span className="text-sm sm:text-base lg:text-lg xl:text-xl">
@@ -115,6 +122,7 @@ export default function ContactSection() {
                                     className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 invert brightness-0"
                                 />
                             </button>
+
 
                             {/* SVG Gradients for Icons */}
                             <svg width="0" height="0" style={{ position: 'absolute' }}>

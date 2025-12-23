@@ -6,7 +6,7 @@ export default function FooterImage() {
       {/* Responsive Image Container */}
       <div className="w-full">
         <img
-          src="/FAQ1.png"
+          src="\footer\footerImage.png"
           alt="Footer"
           className="w-full h-auto object-cover"
         />

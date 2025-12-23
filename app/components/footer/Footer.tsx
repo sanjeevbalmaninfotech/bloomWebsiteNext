@@ -2,7 +2,7 @@ import Footer from "./FooterBottom";
 
 export const MainFooter = () => {
   return (
-    <div className="pt-12 md:pt-16">
+    <div className="pt-8 md:pt-12">
       <Footer />
     </div>
   );
