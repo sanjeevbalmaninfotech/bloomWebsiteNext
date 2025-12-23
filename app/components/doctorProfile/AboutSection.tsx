@@ -19,16 +19,16 @@ His research findings were presented at national and international meetings and 
     treatments: [
       "Abdominal Aortic Aneurysm Screening",
       "Ambulatory Blood Pressure Monitoring",
-      "Ambulatory Electrocardiogram (ECG) Test",
+      "Ambulatory Electrocardiogram (Echo) Test",
       "Amyloid Scan (Cardiac Amyloidosis)",
       "Atrial Fibrillation Treatment",
       "Cardiac Catheterisation",
-      "Cardiac Stress Test (Stress ECG)",
+      "Cardiac Stress Test (Stress Echo)",
       "Cardiovascular Screening",
       "Cardioversion",
       "Catheter Ablation",
       "Echocardiogram Scan",
-      "Electrocardiogram (ECG)",
+      "Electrocardiogram (Echo)",
       "Endovascular Aortic Aneurysm Repair",
       "Heart Bypass Surgery",
       "Heart Failure Treatment",
@@ -61,31 +61,28 @@ His research findings were presented at national and international meetings and 
               <div className="flex gap-2 mb-8">
                 <button
                   onClick={() => setActiveTab("about")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                    activeTab === "about"
+                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeTab === "about"
                       ? "bg-[#2B9DB5] text-white"
                       : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   About
                 </button>
                 <button
                   onClick={() => setActiveTab("treatment")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                    activeTab === "treatment"
+                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeTab === "treatment"
                       ? "bg-[#2B9DB5] text-white"
                       : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   Treatment
                 </button>
                 <button
                   onClick={() => setActiveTab("insurer")}
-                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${
-                    activeTab === "insurer"
+                  className={`px-6 py-2.5 rounded-md font-medium transition-colors ${activeTab === "insurer"
                       ? "bg-[#2B9DB5] text-white"
                       : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   Insurer
                 </button>

@@ -90,7 +90,7 @@ export default function SpecialistConsultations() {
 
                     {/* Description */}
                     <p className="text-[#8A8A8A] mb-8 md:mb-2 font-normal text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
-                        Our mission is to enhance availability, reduce delays, and support the healthcare community of Milton Keynes. By offering reliable urgent care, efficient diagnostics, and clear communication with GP practices.
+                        Our mission is to enhance availability, reduce delays, and support the healthcare community of Milton Keynes. By offering reliable urgent care, efficient diagnostics and clear communication with GP practices, Bloom Health strives to :
                     </p>
 
                     <section className="w-full py-4">
@@ -98,8 +98,8 @@ export default function SpecialistConsultations() {
                             {/* Heading with vertical bar */}
                             <div className="flex items-center gap-4 mb-6 pl-3">
                                 {/* Gradient vertical bar */}
-                                <span className="w-1 h-10 bg-[#157DC1]"></span>
-                                <h3 className=" font-medium   text-xl   sm:text-2xl   lg:text-3xl   leading-tight   text-[#157DC1]  font-axiforma">
+                                <span className="w-1 h-8 bg-[#157DC1]"></span>
+                                <h3 className=" font-medium   text-[24px]         leading-tight   text-[#157DC1]  font-axiforma">
                                     Bloom Health strives to :
                                 </h3>
                             </div>

@@ -27,9 +27,9 @@ export const doctorsData: DoctorsDataType = {
     name: "Dr Aruna Arujuna",
     title: "Consultant Cardiologist",
     designation: "MBBS, MD, DM (Cardiology)",
-    specialties: ["Cardiology", "Ambulatory Blood Pressure Monitoring", "Electrocardiogram (ECG)"],
+    specialties: ["Cardiology", "Ambulatory Blood Pressure Monitoring", "Electrocardiogram (Echo)"],
     image: "/dd2.jpg",
-    about: "Dr. Aruna Arujuna is a consultant cardiologist with 8 years of experience specializing in ambulatory blood pressure monitoring and ECG diagnostics. She provides comprehensive cardiac care with a focus on preventive cardiology.",
+    about: "Dr. Aruna Arujuna is a consultant cardiologist with 8 years of experience specializing in ambulatory blood pressure monitoring and Echo diagnostics. She provides comprehensive cardiac care with a focus on preventive cardiology.",
     qualifications: [
       "MBBS from Medical College",
       "MD in Internal Medicine",
@@ -47,7 +47,7 @@ export const doctorsData: DoctorsDataType = {
     name: "Dr Benjamin Brown",
     title: "Consultant Cardiologist/ Electrophysiologist",
     designation: "MBBS, MD, DM (Cardiology)",
-    specialties: ["Cardiology", "Atrial Fibrillation Treatment", "Electrocardiogram (ECG)"],
+    specialties: ["Cardiology", "Atrial Fibrillation Treatment", "Electrocardiogram (Echo)"],
     image: "/dd3.jpg",
     about: "Dr. Benjamin Brown is an experienced consultant cardiologist and electrophysiologist with 18 years of expertise in atrial fibrillation treatment and advanced cardiac procedures.",
     qualifications: [

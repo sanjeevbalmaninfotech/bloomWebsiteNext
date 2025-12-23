@@ -22,7 +22,7 @@ export default function GPUtilise() {
                     <h1 className="text-white font-semibold leading-tight tracking-tight text-2xl sm:text-3xl md:text-4xl font-axiforma">
                         How GPs Can Utilise Bloom Health
                     </h1>
-                    <p className="text-gray-100 font-normal leading-relaxed tracking-tight text-base sm:text-lg md:text-xl font-axiforma">
+                    <p className="text-gray-100 font-normal leading-relaxed tracking-tight text-base text-[15px] md:text-xl font-axiforma">
                         Results can be securely shared with GP practices to support continuity and avoid repeat testing.
                         Bloom Health offers:
                     </p>

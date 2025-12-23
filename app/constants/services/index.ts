@@ -31,7 +31,7 @@ export const servicesData: TypeServicesData = {
         id: "treatment",
         title: "Cardiology treatment with bloom",
         content:
-          "We offer state-of-the-art cardiology treatments including ECG, echocardiograms, stress tests, and advanced interventional procedures with experienced consultants.",
+          "We offer state-of-the-art cardiology treatments including Echo, echocardiograms, stress tests, and advanced interventional procedures with experienced consultants.",
       },
       {
         id: "booking",
@@ -55,16 +55,16 @@ export const servicesData: TypeServicesData = {
     relatedTreatments: [
       "Abdominal Aortic Aneurysm Screening",
       "Ambulatory Blood Pressure Monitoring",
-      "Ambulatory Electrocardiogram (ECG) Test",
+      "Ambulatory Electrocardiogram (Echo) Test",
       "Amyloid Scan (Cardiac Amyloidosis)",
       "Atrial Fibrillation Treatment",
       "Cardiac Catheterisation",
-      "Cardiac Stress Test (Stress ECG)",
+      "Cardiac Stress Test (Stress Echo)",
       "Cardiovascular Screening",
       "Cardioversion",
       "Catheter Ablation",
       "Echocardiogram Scan",
-      "Electrocardiogram (ECG)",
+      "Electrocardiogram (Echo)",
       "Endovascular Aortic Aneurysm Repair",
       "Heart Bypass Surgery",
       "Heart Failure Treatment",
@@ -87,7 +87,7 @@ export const servicesData: TypeServicesData = {
         specialties: [
           "Cardiology",
           "Ambulatory Blood Pressure Monitoring",
-          "Electrocardiogram (ECG)",
+          "Electrocardiogram (Echo)",
         ],
         consultationFee: "£300",
         experience: "8 Years",
@@ -100,7 +100,7 @@ export const servicesData: TypeServicesData = {
         specialties: [
           "Cardiology",
           "Atrial Fibrillation Treatment",
-          "Electrocardiogram (ECG)",
+          "Electrocardiogram (Echo)",
         ],
         consultationFee: "£270",
         experience: "18 Years",
@@ -139,7 +139,7 @@ export const servicesData: TypeServicesData = {
         id: "treatment",
         title: "Cardiology treatment with bloom",
         content:
-          "We offer state-of-the-art cardiology treatments including ECG, echocardiograms, stress tests, and advanced interventional procedures with experienced consultants.",
+          "We offer state-of-the-art cardiology treatments including Echo, echocardiograms, stress tests, and advanced interventional procedures with experienced consultants.",
       },
       {
         id: "booking",
@@ -163,16 +163,16 @@ export const servicesData: TypeServicesData = {
     relatedTreatments: [
       "Abdominal Aortic Aneurysm Screening",
       "Ambulatory Blood Pressure Monitoring",
-      "Ambulatory Electrocardiogram (ECG) Test",
+      "Ambulatory Electrocardiogram (Echo) Test",
       "Amyloid Scan (Cardiac Amyloidosis)",
       "Atrial Fibrillation Treatment",
       "Cardiac Catheterisation",
-      "Cardiac Stress Test (Stress ECG)",
+      "Cardiac Stress Test (Stress Echo)",
       "Cardiovascular Screening",
       "Cardioversion",
       "Catheter Ablation",
       "Echocardiogram Scan",
-      "Electrocardiogram (ECG)",
+      "Electrocardiogram (Echo)",
       "Endovascular Aortic Aneurysm Repair",
       "Heart Bypass Surgery",
       "Heart Failure Treatment",
@@ -195,7 +195,7 @@ export const servicesData: TypeServicesData = {
         specialties: [
           "Cardiology",
           "Ambulatory Blood Pressure Monitoring",
-          "Electrocardiogram (ECG)",
+          "Electrocardiogram (Echo)",
         ],
         consultationFee: "£300",
         experience: "8 Years",
@@ -208,7 +208,7 @@ export const servicesData: TypeServicesData = {
         specialties: [
           "Cardiology",
           "Atrial Fibrillation Treatment",
-          "Electrocardiogram (ECG)",
+          "Electrocardiogram (Echo)",
         ],
         consultationFee: "£270",
         experience: "18 Years",
@@ -419,8 +419,8 @@ export const servicesData: TypeServicesData = {
       },
     ],
   },
-  
 
 
- 
+
+
 };

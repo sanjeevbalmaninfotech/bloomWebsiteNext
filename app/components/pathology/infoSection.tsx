@@ -287,7 +287,7 @@ export default function InfoSection() {
 
                     <>
                         <>
-                            <div className="max-w-3xl">
+                            <div className="max-w-3xl mt-8">
                                 <h2
                                     className="font-semibold text-[20px] md:text-[22px] leading-[40px] md:leading-[48px] tracking-[-0.72px]"
                                     style={{
@@ -297,18 +297,13 @@ export default function InfoSection() {
                                         WebkitTextFillColor: "transparent",
                                     }}
                                 >
-                                    Private Pathology Services
+                                    Full Laboratory Blood Tests
                                 </h2>
 
-                                <p
-                                    className="font-medium text-[18px] leading-[24px] mb-2 tracking-[-0.45px] text-[#000000] align-middle"
-                                    style={{ fontFamily: "'Axiforma', sans-serif" }}
-                                >
-                                    Extensive private pathology services in Milton Keynes
-                                </p>
+
                                 <div className="space-y-3 md:space-y-4 ">
                                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
-                                        For more in-depth testing, routine health checks or specialist investigations, Bloom Health partners with leading UK laboratories offering an exceptional range of diagnostics.
+                                        Hundreds of blood tests and specialist investigations processed through accredited partner laboratories, covering everything from general health screening to advanced biomarkers. Together, these services give you and your clinician a clear picture of your health, reduce uncertainty, and help guide the right next steps.
                                     </p>
                                 </div>
 
@@ -317,6 +312,9 @@ export default function InfoSection() {
                                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                                 >
                                     We support testing across:
+                                </p>
+                                <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
+                                    These tests can support clinicians in identifying or ruling out concerns related to the heart or circulation.
                                 </p>
                             </div>
 

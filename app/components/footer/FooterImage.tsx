@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FooterImage() {
   return (
-    <section className="w-full pt-4 bg-gray-50">
+    <section className="w-full bg-gray-50">
       {/* Responsive Image Container */}
       <div className="w-full">
         <img
