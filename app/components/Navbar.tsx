@@ -168,7 +168,7 @@ const Navbar = () => {
               Careers
             </Link>
             <Link href="/GP" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
-              GP’s Info
+              For GPs
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
               Contact

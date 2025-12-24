@@ -4,12 +4,12 @@ import { ChevronRight, Activity, Syringe, Droplet, Stethoscope } from 'lucide-re
 const ServicesSection = () => {
     const services = [
         {
-            icon: Activity,
+            imageUrl: "/Walkins.svg",
             title: "Urgent Care Centre & GP Walk-Ins",
             description: "24/7 access to immediate medical support. Walk in at any time for urgent treatment or GP consultations, with no appointments required and minimal waiting, providing fast, reassuring care when it matters most.",
         },
         {
-            icon: Syringe,
+            imageUrl: "/Plannedcare.svg",
             title: "Imaging & Screening",
             description: "Comprehensive diagnostic imaging and screening with rapid turnaround times and high-quality reports. Designed to support swift diagnosis and clear clinical pathways.",
         },
@@ -19,7 +19,7 @@ const ServicesSection = () => {
             description: "A complete range of blood tests and pathology services with accurate results, fast reporting, and seamless coordination with your clinician for timely care.",
         },
         {
-            icon: Stethoscope,
+            imageUrl: "/Plannedcare.svg",
             title: "Consultant Care",
             description: "Specialist-led assessments, diagnosis and treatment from leading consultants across multiple medical specialties, providing expert care tailored to your needs.",
         },
@@ -56,7 +56,7 @@ const ServicesSection = () => {
                                 {/* Service Card */}
                                 <div className="flex flex-col items-center gap-[15px] text-white md:px-5 lg:px-6 flex-1 md:max-w-[280px] lg:max-w-none">
                                     <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-2">
-                                        <service.icon className="w-full h-full" strokeWidth={1.5} />
+                                        <img src={service.imageUrl} alt={service.title} className="w-full h-full" />
                                     </div>
 
                                     <h3 className="font-semibold text-lg sm:text-[18px] leading-[1.2] tracking-[-0.02em] capitalize text-center mb-3">

@@ -22,26 +22,41 @@ export default function MiddleSection() {
 
     const sectionsAccordion = [
         {
-            title: "Cardiac & Circulatory Markers",
-            description: "Helps assess chest pain, shortness of breath, dizziness or palpitations. Includes highly valuable markers such as:",
-            listItems: ["Troponin IBNP", "NT-proBNP", "CK-MB", "Myoglobin"]
+            image: "",
+            title: "X-ray",
+            subHeading: "Our onsite digital X-ray service means that, where appropriate, patients can often have their X-ray in Milton Keynes during the same visit as their clinical assessment.",
+            description: "X-ray can be particularly useful when:",
+            listItems: ["You have a suspected fracture or bone injury.", "There are concerns about joints or the spine.", "A chest X-ray is clinically indicated.", "The clinician needs a quick view of bones or certain structures."]
         },
         {
-            title: "D-dimer",
-            description: "Used to help evaluate the risk of clot-related issues where clinically appropriate."
+            image: "",
+            title: "CT Scan (Computed Tomography)",
+            subHeading: "Our onsite CT scanner allows us to take detailed cross-sectional images of the body using carefully controlled X-rays.",
+            description: "A CT scan in Milton Keynes at Bloom Health may be used, where clinically appropriate, to help assess:",
+            listItems: ["Certain types of abdominal pain or discomfort.", "Some headaches or neurological concerns (as advised by a clinician)", "Injuries or trauma, especially where deeper structures need review.", 'Selected chest or lung-related issuesYour CT will only be requested after a clinical assessment.']
+
         },
         {
-            title: "Shortness-of-Breath Assessment Panel",
-            description: "A multi-marker panel designed to support decision-making when breathlessness, chest tightness or unexplained fatigue occurs."
+            title: "Ultrasound",
+            subHeading: "We offer private ultrasound in Milton Keynes using a high-quality ultrasound machine with multiple probes. Ultrasound uses sound waves, not radiation, to create moving images of structures inside the body.",
+            description: "Depending on your symptoms and clinical assessment, ultrasound may be used to look at:",
+            listItems: ["Abdominal organs (such as liver, gallbladder, kidneys).", "Pelvic area, including gynaecological or bladder-related concerns.", "Muscles, tendons and joints (MSK ultrasound).", 'Soft tissue lumps or swellings.', 'Certain vascular (blood vessel) assessments.', 'Some pregnancy-related concerns, where clinically appropriate.']
         },
         {
-            title: "Drug Screening (TOX-DSX)",
-            description: "A screening tool that can help identify the presence of commonly tested substances."
+            image: "",
+            title: "Echo (Echocardiogram)",
+            subHeading: 'An echocardiogram is a non-invasive ultrasound scan that produces detailed images of the heart, allowing clinicians to assess its structure and function in real time.',
+            description: "At Bloom Health Hospital, echocardiograms are performed using our advanced ultrasound technology and may be used to help assess symptoms such as:",
+            listItems: ['Chest discomfort or unexplained chest symptoms.', 'Shortness of breath or reduced exercise tolerance.', 'Palpitations or concerns about heart function.', 'Dizziness or light-headedness.', 'Suspected valve, muscle, or structural heart conditions.'],
+            endDescription: "An echocardiogram does not replace all cardiac investigations, but it provides valuable insight into how the heart is working and may be used alongside other tests, clinical assessment, and further imaging where appropriate."
         },
         {
-            title: "General Infection & Wellness Markers",
-            description: "Supports clinicians in assessing signs of infection or inflammation during urgent care visits"
+            title: "MRI Access: Trusted Local Partners",
+            subHeading: "Some conditions or symptoms are best assessed with MRI (Magnetic Resonance Imaging), which provides very detailed views of soft tissues, joints, the brain and spinal structures.",
+            description: "While MRI is not located onsite at Bloom Health, we work closely with trusted MRI providers in Milton Keynes. When your clinician feels an MRI would be helpful, we can:",
+            listItems: ['Discuss why an MRI is recommended.', 'Help guide you towards an appropriate private MRI pathway in Milton Keynes.', 'Ensure results are considered alongside your other findings and clinical assessment.']
         },
+
     ];
 
     return (
@@ -147,56 +162,43 @@ export default function MiddleSection() {
                                     borderImage: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
                                     borderBottom: openIndex === index ? '1px solid' : '1px solid #e5e5e5'
                                 }}>
+                                    {/* --- Header / Button (Remains mostly same) --- */}
                                     <button
                                         onClick={() => toggleSection(index)}
                                         className="w-full py-4 px-2 flex items-center justify-between hover:bg-gray-50 transition-colors"
                                     >
-                                        <span
-                                            style={{
-                                                fontFamily: 'Axiforma, sans-serif',
-                                                fontWeight: 500,
-                                                fontSize: '15px',
-                                                lineHeight: '24px',
-                                                letterSpacing: '-0.03em',
-                                                background: openIndex === index
-                                                    ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)'
-                                                    : '',
-                                                WebkitBackgroundClip: openIndex === index ? 'text' : 'unset',
-                                                WebkitTextFillColor: openIndex === index ? 'transparent' : '#171717',
-                                                backgroundClip: openIndex === index ? 'text' : 'unset'
-                                            }}
-                                        >
+                                        <span style={{
+                                            fontFamily: 'Axiforma, sans-serif',
+                                            fontWeight: 500,
+                                            fontSize: '15px',
+                                            lineHeight: '24px',
+                                            letterSpacing: '-0.03em',
+                                            background: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)' : '',
+                                            WebkitBackgroundClip: openIndex === index ? 'text' : 'unset',
+                                            WebkitTextFillColor: openIndex === index ? 'transparent' : '#171717',
+                                            backgroundClip: openIndex === index ? 'text' : 'unset'
+                                        }}>
                                             {section.title}
                                         </span>
 
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             style={{
                                                 transform: openIndex === index ? 'rotate(0deg)' : 'rotate(-90deg)',
                                                 transition: 'transform 0.3s ease'
                                             }}
                                         >
-                                            <path
-                                                d="M7 9L12 14L17 9"
-                                                stroke={openIndex === index ? '#157DC1' : '#D3D3D3'}
-                                                strokeWidth="2"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                            />
+                                            <path d="M7 9L12 14L17 9" stroke={openIndex === index ? '#157DC1' : '#D3D3D3'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </button>
 
-                                    <div
-                                        style={{
-                                            // Increased maxHeight to accommodate the list
-                                            maxHeight: openIndex === index ? '300px' : '0',
-                                            overflow: 'hidden',
-                                            transition: 'max-height 0.3s ease'
-                                        }}
-                                    >
+                                    {/* --- Accordion Content Body --- */}
+                                    <div style={{
+                                        // IMPORTANT: Increased max-height to fit Image + Text. 
+                                        // If content is very long, use a larger number or calculate ref height.
+                                        maxHeight: openIndex === index ? '1200px' : '0',
+                                        overflow: 'hidden',
+                                        transition: 'max-height 0.4s ease'
+                                    }}>
                                         <div className="pb-4 px-2" style={{
                                             fontFamily: 'Axiforma, sans-serif',
                                             fontWeight: 500,
@@ -205,20 +207,51 @@ export default function MiddleSection() {
                                             letterSpacing: '-0.03em',
                                             color: '#8A8A8A'
                                         }}>
-                                            {/* Standard Description */}
-                                            <p>{section.description}</p>
 
-                                            {/* Conditional List Rendering */}
-                                            {section.listItems && (
-                                                <ul className="mt-2 ml-1">
+                                            {/* 1. Image (Conditional) */}
+                                            {section.image && (
+                                                <div className="mb-4 mt-2">
+                                                    <img
+                                                        src={section.image}
+                                                        alt={section.title}
+                                                        className="w-full h-auto rounded-lg object-cover"
+                                                    />
+                                                </div>
+                                            )}
+
+                                            {/* 2. Sub-Heading (Conditional) */}
+                                            {section.subHeading && (
+                                                <h4 className="text-black font-bold mb-2 text-lg">
+                                                    {section.subHeading}
+                                                </h4>
+                                            )}
+
+                                            {/* 3. Main Description (Conditional) */}
+                                            {section.description && (
+                                                <p className="mb-3">
+                                                    {section.description}
+                                                </p>
+                                            )}
+
+                                            {/* 4. List Items (Conditional) */}
+                                            {section.listItems && section.listItems.length > 0 && (
+                                                <ul className="mb-3 ml-1">
                                                     {section.listItems.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2">
-                                                            <span>•</span>
+                                                        <li key={i} className="flex items-start gap-2 mb-1">
+                                                            <span className="text-[#157DC1]">•</span>
                                                             <span>{item}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
                                             )}
+
+                                            {/* 5. End Description (Conditional - Explain the bullet points) */}
+                                            {section.endDescription && (
+                                                <p className="mt-2 text-sm italic text-gray-600 border-l-2 border-[#157DC1] pl-3">
+                                                    {section.endDescription}
+                                                </p>
+                                            )}
+
                                         </div>
                                     </div>
                                 </div>
