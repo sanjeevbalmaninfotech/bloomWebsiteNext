@@ -29,7 +29,7 @@ export default function GPUtilise() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 mt-8 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 mt-8 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16 xl:gap-20">
                     {services.map((service, index) => (
                         <div key={index} className="flex flex-col items-center text-center">
                             <div className="mb-3 flex items-center justify-center">

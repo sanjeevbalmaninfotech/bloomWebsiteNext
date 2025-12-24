@@ -7,13 +7,9 @@ export default function MiddleSection() {
     const [openIndex, setOpenIndex] = useState(-1);
 
     const features = [
-        "Sudden or ongoing pain that needs further investigation.",
-        "A recent injury or suspected fracture.",
-        "Abdominal or pelvic discomfort that requires more than a physical examination.",
-        "Chest symptoms, such as breathlessness or persistent discomfort.",
-        "Soft tissue lumps or swellings that need characterisation.",
-        "Musculoskeletal injuries, such as sports injuries or joint problems.",
-        "A known condition that requires monitoring.",
+        "A modern onsite imaging suite within easy reach of our clinicians.",
+        "Scans that support assessment of injuries, sudden pain, abdominal or pelvic concerns, chest symptoms, headaches, musculoskeletal issues and more, where clinically appropriate.",
+        "A focus on clarity, reassurance and safety, not scare tactics or unnecessary tests."
 
     ];
     const toggleSection = (index: number) => {
@@ -22,7 +18,7 @@ export default function MiddleSection() {
 
     const sectionsAccordion = [
         {
-            image: "",
+            image: "images/imagingimage1.jpg",
             title: "X-ray",
             subHeading: "Our onsite digital X-ray service means that, where appropriate, patients can often have their X-ray in Milton Keynes during the same visit as their clinical assessment.",
             description: "X-ray can be particularly useful when:",
@@ -138,7 +134,7 @@ export default function MiddleSection() {
                                 Our Onsite{" "}
                                 <span
                                     style={{
-                                        background: "linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)",
+                                        background: "linear-gradient(133.01deg, #49acac -11.36%, #5FC1A3 115%)",
                                         WebkitBackgroundClip: "text",
                                         WebkitTextFillColor: "transparent",
                                     }}
@@ -193,8 +189,7 @@ export default function MiddleSection() {
 
                                     {/* --- Accordion Content Body --- */}
                                     <div style={{
-                                        // IMPORTANT: Increased max-height to fit Image + Text. 
-                                        // If content is very long, use a larger number or calculate ref height.
+
                                         maxHeight: openIndex === index ? '1200px' : '0',
                                         overflow: 'hidden',
                                         transition: 'max-height 0.4s ease'
@@ -208,17 +203,27 @@ export default function MiddleSection() {
                                             color: '#8A8A8A'
                                         }}>
 
+
+                                            {/* {section.image && (
+                                                <div className="mb-4 mt-2">
+                                                    <img
+                                                        src={section.image}
+                                                        alt={section.title}
+                                                        className="w-3/4 md:w-1/2 h-auto rounded-lg object-cover"
+                                                    />
+                                                </div>
+                                            )} */}
+
                                             {/* 1. Image (Conditional) */}
                                             {section.image && (
                                                 <div className="mb-4 mt-2">
                                                     <img
                                                         src={section.image}
                                                         alt={section.title}
-                                                        className="w-full h-auto rounded-lg object-cover"
+                                                        className="w-full h-auto rounded-lg object-cover max-h-64"
                                                     />
                                                 </div>
                                             )}
-
                                             {/* 2. Sub-Heading (Conditional) */}
                                             {section.subHeading && (
                                                 <h4 className="text-black font-bold mb-2 text-lg">
@@ -268,7 +273,7 @@ export default function MiddleSection() {
                                     When Imaging{" "}
                                     <span
                                         style={{
-                                            background: "linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)",
+                                            background: "linear-gradient(133.01deg, #49acac -11.36%, #5FC1A3 115%)",
                                             WebkitBackgroundClip: "text",
                                             WebkitTextFillColor: "transparent",
                                         }}

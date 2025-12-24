@@ -29,7 +29,7 @@ export default function SafetyQualitySection() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="mt-8 flex flex-nowrap justify-between items-start gap-4 md:gap-6">
+                <div className="mt-8 flex flex-nowrap justify-between items-start gap-8 md:gap-12 lg:gap-16 xl:gap-20">
                     {imagingServices?.map((service, index) => (
                         <div
                             key={index}

@@ -29,7 +29,7 @@ export default function HowWorks() {
                 <>
                     <h1 className="font-semibold mb-1 md:mb-[10px] text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                         How It{' '}
-                        <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[#49acac] to-[#5FC1A3] bg-clip-text text-transparent">
                             Works
                         </span>
                     </h1>

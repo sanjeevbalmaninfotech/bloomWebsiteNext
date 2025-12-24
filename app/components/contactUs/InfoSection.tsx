@@ -18,34 +18,36 @@ const InfoSection = () => {
 
                     {/* --- LEFT: Opening Times (30%) --- */}
                     <div
-                        className="w-full lg:w-[30%] rounded-2xl p-8 text-white shadow-sm flex flex-col justify-between"
+                        className="w-full lg:w-[30%] rounded-2xl p-10 text-white shadow-sm flex flex-col justify-between"
                         style={{ background: 'linear-gradient(132.66deg, #157DC1 -11.36%, #5FC1A3 150.43%)' }}
                     >
                         <div>
                             {/* Heading: Axiforma, SemiBold, 20px */}
-                            <h2 className="font-axiforma text-[20px] font-semibold leading-[140%] mb-6">
+                            <h2 className="font-axiforma text-[22px] font-semibold leading-[140%] mb-6">
                                 Opening Times
                             </h2>
 
                             {/* Bullet Points: Axiforma, Medium, 15px */}
                             <ul className="space-y-4 mb-6">
-                                <li className="flex items-start gap-3 font-axiforma text-[15px] font-medium leading-[140%]">
+                                <li className="flex items-start gap-3 font-axiforma text-[18px] font-medium leading-[140%]">
                                     <span className="mt-[7px] w-1.5 h-1.5 bg-white rounded-full flex-shrink-0" />
                                     <span>
-                                        Urgent Care Centre: Open 24 hours a day, 7 days a week
+                                        Urgent Care Centre :<br />
+                                        Open 24 hours a day, 7 days a week
                                     </span>
                                 </li>
-                                <li className="flex items-start gap-3 font-axiforma text-[15px] font-medium leading-[140%]">
+                                <li className="flex items-start gap-3 font-axiforma text-[18px] font-medium leading-[140%]">
                                     <span className="mt-[7px] w-1.5 h-1.5 bg-white rounded-full flex-shrink-0" />
                                     <span>
-                                        GP Access : Available 8:00 am – 12:00 midnight
+                                        GP Access :<br />
+                                        Available 8:00 am – 12:00 midnight
                                     </span>
                                 </li>
                             </ul>
                         </div>
 
                         {/* Description: Axiforma, 15px (matches bullet size) */}
-                        <p className="font-axiforma text-[15px] leading-[140%] opacity-90">
+                        <p className="font-axiforma text-[17px] leading-[140%] opacity-90">
                             This ensures care is available when you need it, whether urgently or by planned appointment.
                         </p>
                     </div>
@@ -154,11 +156,11 @@ const InfoSection = () => {
                                 <span className="mt-[6px] w-[6px] h-[6px] bg-[#157DC1] rounded-full flex-shrink-0" />
                                 <span>Pay-and-display meters</span>
                             </li>
-                            <li className="pl-5 text-[#131313] font-normal">
-                                <span className="opacity-60 text-lg leading-none mr-2">◦</span>
+                            <li className="pl-5 text-[#157DC1] font-normal">
+                                <span className="opacity-60 text-lg  leading-none mr-2">◦</span>
                                 RingGo app
                             </li>
-                            <li className="pl-5 text-[#131313] font-normal">
+                            <li className="pl-5 text-[#157DC1] font-normal">
                                 <span className="opacity-60 text-lg leading-none mr-2">◦</span>
                                 Location code: 8694
                             </li>
@@ -171,28 +173,24 @@ const InfoSection = () => {
                         style={{ background: 'linear-gradient(132.66deg, #157DC1 -11.36%, #5FC1A3 150.43%)' }}
                     >
                         <div className="flex flex-col gap-6">
-                            {/* Phone Block - Stacked Column */}
+                            {/* Phone Block - Icon on top */}
                             <div>
-                                <div className="flex items-center gap-3 mb-2">
-                                    <Phone className="w-5 h-5" />
-                                    <h3 className="font-axiforma text-[20px] font-semibold leading-[140%]">
-                                        Call Us
-                                    </h3>
-                                </div>
-                                <p className="text-[18px] pl-8 font-medium">
+                                <Phone className="w-5 h-5 mb-3" />
+                                <h3 className="font-axiforma text-[20px] font-semibold leading-[140%] mb-2">
+                                    Call Us
+                                </h3>
+                                <p className="text-[18px] font-medium">
                                     01908 227 777
                                 </p>
                             </div>
 
-                            {/* Email Block - Stacked Column */}
+                            {/* Email Block - Icon on top */}
                             <div>
-                                <div className="flex items-center gap-3 mb-2">
-                                    <Mail className="w-5 h-5" />
-                                    <h3 className="font-axiforma text-[20px] font-semibold leading-[140%]">
-                                        E mail Us
-                                    </h3>
-                                </div>
-                                <p className="text-[18px] pl-8 font-medium break-all">
+                                <Mail className="w-5 h-5 mb-3" />
+                                <h3 className="font-axiforma text-[20px] font-semibold leading-[140%] mb-2">
+                                    E mail Us
+                                </h3>
+                                <p className="text-[18px] font-medium break-all">
                                     example@bloom-health.co.uk
                                 </p>
                             </div>
@@ -201,13 +199,12 @@ const InfoSection = () => {
                         {/* Description Section */}
                         <div className="mt-6">
                             <hr className="border-white/20 mb-4" />
-                            <p className="text-[15px] font-axiforma font-normal leading-[140%] opacity-90">
+                            <p className="text-[17px] font-axiforma font-normal leading-[140%] opacity-90">
                                 For non-urgent or more detailed enquiries, email is often the quickest
                                 way to receive a tailored response.
                             </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

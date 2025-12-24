@@ -26,7 +26,7 @@ export default function SpecialistConsultations() {
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                         Specialist{' '}
-                        <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[#157dc1] to-[#5fc1a3] bg-clip-text text-transparent">
                             Consultations
                         </span>
                     </h1>
@@ -65,7 +65,7 @@ export default function SpecialistConsultations() {
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                         Future{' '}
-                        <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[#157dc1] to-[#49acac] bg-clip-text text-transparent">
                             Planned Care Pathways
                         </span>
                     </h1>
@@ -83,7 +83,7 @@ export default function SpecialistConsultations() {
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                         A Collaborative Approach to{' '}
-                        <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-[#157dc1] to-[#49acac] bg-clip-text text-transparent">
                             Improving Access
                         </span>
                     </h1>

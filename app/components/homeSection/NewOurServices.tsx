@@ -4,28 +4,29 @@ import { ChevronRight, Activity, Syringe, Droplet, Stethoscope } from 'lucide-re
 const ServicesSection = () => {
     const services = [
         {
-            imageUrl: "/Walkins.svg",
+            imageUrl: "/Icons/Walkins.svg",
             title: "Urgent Care Centre & GP Walk-Ins",
             description: "24/7 access to immediate medical support. Walk in at any time for urgent treatment or GP consultations, with no appointments required and minimal waiting, providing fast, reassuring care when it matters most.",
         },
         {
-            imageUrl: "/Plannedcare.svg",
+            imageUrl: "/Icons/Diagnostics.svg",
             title: "Imaging & Screening",
             description: "Comprehensive diagnostic imaging and screening with rapid turnaround times and high-quality reports. Designed to support swift diagnosis and clear clinical pathways.",
         },
         {
-            icon: Droplet,
+            imageUrl: "/Icons/pathology.png",
             title: "Pathology & Blood Testing",
             description: "A complete range of blood tests and pathology services with accurate results, fast reporting, and seamless coordination with your clinician for timely care.",
         },
         {
-            imageUrl: "/Plannedcare.svg",
+            imageUrl: "/Icons/Plannedcare.svg",
             title: "Consultant Care",
             description: "Specialist-led assessments, diagnosis and treatment from leading consultants across multiple medical specialties, providing expert care tailored to your needs.",
         },
     ];
 
     return (
+
         <>
             <div className="w-full bg-white section-spacing px-4 md:px-8 lg:px-[120px]">
                 <div className="relative max-w-7xl mx-auto h-auto pb-16 rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-[#157DC1] to-[#5FC1A3]">

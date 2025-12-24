@@ -10,7 +10,7 @@ export default function Contact() {
             <ImagingScreeningSection />
             <InfoSection />
             <ContactSection />
-            <MainFooter />
+            {/* <MainFooter /> */}
         </>
     );
 }

@@ -25,7 +25,7 @@ export default function ImagingReferralSection() {
                 {/* Main Heading */}
                 <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                     Imaging{' '}
-                    <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent">
                         Referral Pathway
                     </span>
                 </h1>
