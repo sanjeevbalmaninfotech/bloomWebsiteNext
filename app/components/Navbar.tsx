@@ -5,13 +5,13 @@ import Link from "next/link";
 import { RegisterButton } from "./registerButton/RegisterButton";
 
 const Navbar = () => {
-  const [isDiscoverOpen, setIsDiscoverOpen] = useState(false);
+
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const discoverRef = useRef<HTMLDivElement | null>(null);
+
   const servicesRef = useRef<HTMLDivElement | null>(null);
-  const mobileDiscoverRef = useRef<HTMLDivElement | null>(null);
+
   const mobileServicesRef = useRef<HTMLDivElement | null>(null);
 
   // Close dropdowns when clicking outside
@@ -21,25 +21,19 @@ const Navbar = () => {
 
       // Only handle desktop dropdowns
       if (window.innerWidth >= 768) {
-        // Check if click is outside both refs
-        const clickedOutsideDiscover = discoverRef.current && !discoverRef.current.contains(target);
         const clickedOutsideServices = servicesRef.current && !servicesRef.current.contains(target);
 
         // Only close if clicked outside both (not switching between them)
-        if (clickedOutsideDiscover && clickedOutsideServices) {
-          setIsDiscoverOpen(false);
+        if (clickedOutsideServices) {
+
           setIsServicesOpen(false);
         }
       } else {
         // Handle mobile dropdowns
-        const clickedOutsideMobileDiscover = mobileDiscoverRef.current && !mobileDiscoverRef.current.contains(target);
+
         const clickedOutsideMobileServices = mobileServicesRef.current && !mobileServicesRef.current.contains(target);
 
-        // Only close if clicked outside both
-        if (clickedOutsideMobileDiscover && clickedOutsideMobileServices) {
-          setIsDiscoverOpen(false);
-          setIsServicesOpen(false);
-        }
+
       }
     }
 
@@ -62,7 +56,7 @@ const Navbar = () => {
   // Close mobile menu when clicking a link
   const handleLinkClick = () => {
     setIsMobileMenuOpen(false);
-    setIsDiscoverOpen(false);
+
     setIsServicesOpen(false);
   };
 
@@ -84,52 +78,17 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 mx-auto">
-            {/* Discover Bloom */}
-            <div className="relative" ref={discoverRef}>
-              <button
-                onClick={() => {
-                  setIsDiscoverOpen(!isDiscoverOpen);
-                  setIsServicesOpen(false);
-                }}
-                className="text-gray-700 hover:text-teal-600 font-medium flex items-center transition-colors"
-              >
-                Discover Bloom
-                <svg
-                  className={`ml-1 w-4 h-4 transition-transform ${isDiscoverOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+            <Link href="/" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
+              Home
+            </Link>
 
-              {isDiscoverOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50 border border-gray-100">
-                  <Link
-                    href="/about"
-                    onClick={handleLinkClick}
-                    className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    href="/team"
-                    onClick={handleLinkClick}
-                    className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
-                  >
-                    Our Team
-                  </Link>
-                </div>
-              )}
-            </div>
 
             {/* Services */}
             <div className="relative" ref={servicesRef}>
               <button
                 onClick={() => {
                   setIsServicesOpen(!isServicesOpen);
-                  setIsDiscoverOpen(false);
+
                 }}
                 className="text-gray-700 hover:text-teal-600 font-medium flex items-center transition-colors"
               >
@@ -159,6 +118,20 @@ const Navbar = () => {
                     className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                   >
                     Imaging & Screening
+                  </Link>
+                  <Link
+                    href="/ucc"
+                    onClick={handleLinkClick}
+                    className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                  >
+                    Urgent Care Centre
+                  </Link>
+                  <Link
+                    href="/plannedCare"
+                    onClick={handleLinkClick}
+                    className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                  >
+                    Planned Care (Coming Soon)
                   </Link>
                 </div>
               )}
@@ -205,52 +178,14 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="px-4 py-3 space-y-3">
-            {/* Mobile Discover */}
-            <div ref={mobileDiscoverRef}>
-              <button
-                onClick={() => {
-                  setIsDiscoverOpen(!isDiscoverOpen);
-                  setIsServicesOpen(false);
-                }}
-                className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2 transition-colors"
-              >
-                Discover Bloom
-                <svg
-                  className={`w-4 h-4 transition-transform ${isDiscoverOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
 
-              {isDiscoverOpen && (
-                <div className="pl-4 space-y-2">
-                  <Link
-                    href="/about"
-                    onClick={handleLinkClick}
-                    className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    href="/team"
-                    onClick={handleLinkClick}
-                    className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
-                  >
-                    Our Team
-                  </Link>
-                </div>
-              )}
-            </div>
 
             {/* Mobile Services */}
             <div ref={mobileServicesRef}>
               <button
                 onClick={() => {
                   setIsServicesOpen(!isServicesOpen);
-                  setIsDiscoverOpen(false);
+
                 }}
                 className="w-full text-left text-gray-700 hover:text-teal-600 font-medium flex justify-between items-center py-2 transition-colors"
               >

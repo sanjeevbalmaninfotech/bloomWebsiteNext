@@ -20,7 +20,7 @@ const NewsSection = () => {
                   <span
                     className="bg-clip-text text-transparent"
                     style={{
-                      backgroundImage: 'linear-gradient(90deg, #157DC1 0%, #5FC1A3 100%)'
+                      backgroundImage: 'linear-gradient( #157DC1 0%, #49acac )'
                     }}
                   >
                     Bloom
@@ -28,12 +28,11 @@ const NewsSection = () => {
                 </h1>
 
                 <p className="text-gray-600 text-sm sm:text-[15px] lg:text-[16px] leading-relaxed mb-6">
-                  At Bloom Healthcare, our superspecialist doctors provide the
-                  highest quality of care through a team-based, doctor-led model.
+                  News at Bloom brings you timely health stories, expert perspectives and seasonal advice, created to help you better understand the health issues affecting our community. Through clear, reliable information and thoughtful insights, we aim to support you and your family with care, confidence and informed decision-making throughout the year.
                 </p>
 
                 {/* Get More Button */}
-                <button
+                {/* <button
                   className="flex items-center justify-center gap-4 rounded-lg text-white hover:opacity-90 transition-opacity w-[172px] h-[46px]"
                   style={{
                     background: "linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)"
@@ -48,7 +47,7 @@ const NewsSection = () => {
                     alt="Arrow Right"
                     className="invert brightness-0 w-[20px] h-[20px]"
                   />
-                </button>
+                </button> */}
 
 
               </div>

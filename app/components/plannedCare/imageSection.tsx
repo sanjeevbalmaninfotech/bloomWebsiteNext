@@ -8,7 +8,7 @@ import { RegisterButton } from '../registerButton/RegisterButton';
 
 export default function ImagingScreeningSection() {
     return (
-        <div className="relative w-full h-[418px] overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img

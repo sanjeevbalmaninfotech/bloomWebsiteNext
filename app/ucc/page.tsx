@@ -4,6 +4,8 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 import { MainFooter } from "../components/footer/Footer";
+import ImageSection from "../components/Ucc/UccHeroImage";
+import TeamMemberCard from "../components/TeamsCard/TeamMemberCard";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -13,7 +15,7 @@ const UrgentCareBlock = () => {
     },
     {
       icon: "/INFECTION.svg",
-      title: "Infection diagnoses & antibiotic treatment",
+      title: "Infection diagnosis & antibiotic treatment",
     },
     {
       icon: "/RESPIRATORY.svg",
@@ -99,10 +101,10 @@ const UrgentCareBlock = () => {
         "Breathing difficulties, throat swelling, or widespread rash require urgent emergency treatment.",
     },
     {
-      icon: "/Icons/ChildrenUnderage.svg",
-      title: "Children Under the Age of 1",
+      icon: "/Icons/eye.svg",
+      title: "Sudden Vision Loss",
       description:
-        "Infants require paediatric specialist assessment in hospital emergency services.",
+        "A sudden loss or change in vision can be a sign of a serious eye or neurological emergency.",
     },
     {
       icon: "/Icons/MentalHealthCrisis.svg",
@@ -118,6 +120,26 @@ const UrgentCareBlock = () => {
     },
   ];
 
+  const teamMembers = [
+    {
+      id: 1,
+      name: 'Chris Larmour',
+      role: 'Lead Nurse',
+      imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop'
+    },
+    {
+      id: 2,
+      name: 'Sarah Mitchell',
+      role: 'Senior Doctor',
+      imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop'
+    },
+    {
+      id: 3,
+      name: 'David Chen',
+      role: 'Medical Director',
+      imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop'
+    }
+  ];
   /*
   const doctors = [
     {
@@ -141,51 +163,23 @@ const UrgentCareBlock = () => {
   ];
   */
 
-  const specialists = [
-    {
-      id: "ethan-brooks",
-      name: "Ethan-Brooks",
-      title: "Cardiologist",
-      specialties: ["Heart", "Cardiology"],
-      consultationFee: "£50",
-      experience: "10 yrs",
-      image:
-        "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
-    },
-    {
-      id: "hannah-cole",
-      name: "Hannah-Cole",
-      title: "Dermatologist",
-      specialties: ["Skin", "Cosmetics"],
-      consultationFee: "£60",
-      experience: "8 yrs",
-      image:
-        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
-    },
-    {
-      id: "samuel-okoye",
-      name: "Dr. Jane Smith",
-      title: "Dermatologist",
-      specialties: ["Skin", "Cosmetics"],
-      consultationFee: "£60",
-      experience: "8 yrs",
-      image:
-        "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
-    },
-    // add more doctors...
-  ];
+
 
   return (
     <>
       <Navbar />
       {/* Hero Image */}
-      <div className="w-full h-auto">
+      {/* <div className="w-full h-auto">
         <img
           src="/ucchero.png"
           alt="Medical Image"
           className="w-full h-auto object-cover object-center md:h-[500px] sm:h-[350px]"
         />
-      </div>
+        
+
+      </div> */}
+
+      <ImageSection />
 
       {/* What Sets Us Apart Section */}
       <div className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24">
@@ -244,6 +238,10 @@ const UrgentCareBlock = () => {
               {
                 title: "Fast Access, 24/7 Walk-In Care",
                 desc: "We are open around the clock, offering immediate walk-in access for urgent but non-life-threatening illnesses and injuries. We prioritise rapid triage and prompt assessment so you can get reassurance and a plan without long waits.",
+              },
+              {
+                title: "Walk In Access to GPs",
+                desc: "GPs would be able available from 8am to midnight as part of our Urgent Care Centre Services.",
               },
               {
                 title: "Hospital-Based Urgent Care with On-Site Diagnostics",
@@ -613,8 +611,8 @@ const UrgentCareBlock = () => {
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
               <span className="text-[#171717]">Meet Our </span>
-              <span className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent">
-                Urgent Care Doctors
+              <span className="bg-gradient-to-r from-[#157dc1] to-[#49acac] bg-clip-text text-transparent">
+                Urgent Care Team
               </span>
             </h2>
 
@@ -631,71 +629,13 @@ const UrgentCareBlock = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {specialists.map((specialist) => (
-              <div
-                key={specialist.id}
-                className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full"
-              >
-                <div className="pt-4 px-4 md:pt-6 md:px-6 flex-grow">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden bg-gray-200 flex-shrink-0">
-                      <img
-                        src={specialist.image}
-                        alt={specialist.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-semibold text-base md:text-lg mb-1 text-[#157DC1]">
-                        {specialist.name}
-                      </h3>
-                      <p className="text-gray-600 text-sm">
-                        {specialist.title}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-4">
-                    <p className="text-gray-600 text-sm">
-                      {specialist.specialties.join(" | ")}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
-                    <div>
-                      <p className="text-xs text-gray-500 mb-1">
-                        Consultation Fee:
-                      </p>
-                      <p className="font-bold text-lg text-[#157DC1]">
-                        {specialist.consultationFee}
-                      </p>
-                    </div>
-
-                    <div className="text-right">
-                      <p className="text-xs text-gray-500 mb-1">Experience:</p>
-                      <p className="font-bold text-lg text-[#157DC1]">
-                        {specialist.experience}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Button */}
-                <div className="px-4 pb-4">
-                  <div
-                    className="text-center text-white flex items-center justify-center w-full"
-                    style={{
-                      background:
-                        "linear-gradient(133.01deg, #157DC1 -11.36%, #49acac 115%)",
-                      borderRadius: "8px",
-                      padding: "12px",
-                      height: "48px",
-                    }}
-                  >
-                    Make An Enquiry
-                  </div>
-                </div>
-              </div>
+            {teamMembers.map((member) => (
+              <TeamMemberCard
+                key={member.id}
+                name={member.name}
+                role={member.role}
+                imageUrl={member.imageUrl}
+              />
             ))}
           </div>
         </div>

@@ -56,7 +56,7 @@ export default function ImagingScreeningSection() {
                                 fontWeight: 400,
                             }}
                         >
-                            Need something cleared up? Here are our most frequently asked questions.
+                            Find us easily, contact our team, and get the information you need to plan your visit.
                         </p>
 
 

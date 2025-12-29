@@ -134,7 +134,7 @@ export default function MiddleSection() {
                                 Our Onsite{" "}
                                 <span
                                     style={{
-                                        background: "linear-gradient(133.01deg, #49acac -11.36%, #5FC1A3 115%)",
+                                        background: "linear-gradient( #157dc1, #49acac )",
                                         WebkitBackgroundClip: "text",
                                         WebkitTextFillColor: "transparent",
                                     }}
@@ -154,7 +154,7 @@ export default function MiddleSection() {
                     <>
                         <div className="max-w-3xl   bg-white mt-8">
                             {sectionsAccordion.map((section, index) => (
-                                <div key={index} className="border-b" style={{
+                                <div key={index} className="border-b mt-4" style={{
                                     borderImage: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
                                     borderBottom: openIndex === index ? '1px solid' : '1px solid #e5e5e5'
                                 }}>
@@ -166,7 +166,7 @@ export default function MiddleSection() {
                                         <span style={{
                                             fontFamily: 'Axiforma, sans-serif',
                                             fontWeight: 500,
-                                            fontSize: '15px',
+                                            fontSize: '22px',
                                             lineHeight: '24px',
                                             letterSpacing: '-0.03em',
                                             background: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)' : '',
@@ -273,7 +273,7 @@ export default function MiddleSection() {
                                     When Imaging{" "}
                                     <span
                                         style={{
-                                            background: "linear-gradient(133.01deg, #49acac -11.36%, #5FC1A3 115%)",
+                                            background: "linear-gradient( #157dc1 , #49acac )",
                                             WebkitBackgroundClip: "text",
                                             WebkitTextFillColor: "transparent",
                                         }}

@@ -78,7 +78,7 @@ export default function ContactSection() {
                                             }}
                                         />
                                         <span className="font-[family-name:var(--font-1)] font-normal text-[16px] leading-[26px] text-[#171717]">
-                                            07949 301632
+                                            01908 22 7777
                                         </span>
                                     </div>
 

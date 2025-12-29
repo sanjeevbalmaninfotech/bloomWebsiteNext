@@ -23,9 +23,13 @@ export default function GPsUtiliseSection() {
     ];
 
     return (
-        <div className="bg-white py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
+        <div className="bg-white  px-6   mt-8 ">
             <div className="max-w-7xl mx-auto">
                 {/* Main Heading */}
+                <div>
+
+
+                </div>
                 <h1 className="font-semibold mb-2 md:mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                     How GPs Can Utilise{' '}
                     <span className="bg-gradient-to-r from-[#157dc1] to-[#49acac] bg-clip-text text-transparent">
@@ -43,7 +47,7 @@ export default function GPsUtiliseSection() {
                 </div>
 
                 {/* Benefits List */}
-                <ul className="space-y-3 md:space-y-4 mt-4 mb-6 md:mb-8 pl-5 list-disc">
+                <ul className="space-y-3 md:space-y-4 mt-4 mb-4  pl-5 list-disc">
                     {benefits.map((benefit, index) => (
                         <li
                             key={index}

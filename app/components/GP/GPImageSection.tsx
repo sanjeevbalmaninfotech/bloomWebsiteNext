@@ -10,7 +10,8 @@ export default function ImageSection() {
                     alt="Information For GPs"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-cyan-800/80 to-transparent"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-cyan-800/80 to-transparent"></div> */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/95 to-transparent"></div>
             </div>
 
             {/* Content */}

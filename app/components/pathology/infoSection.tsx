@@ -182,7 +182,7 @@ export default function InfoSection() {
 
 
 
-                <>  <h1 className="font-semibold mb-1 md:mb-[10px] mt-4 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
+                <>  <h1 className="font-semibold mb-1 md:mb-[10px] mt-8 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
                     We Can Perform Rapid{' '}
                     <span className="bg-gradient-to-r from-[#157DC1] to-[#5FC1A3] bg-clip-text text-transparent">
                         Assessments for
@@ -200,7 +200,7 @@ export default function InfoSection() {
                         </p> */}
                         <div className="max-w-3xl   bg-white">
                             {sectionsAccordion.map((section, index) => (
-                                <div key={index} className="border-b" style={{
+                                <div key={index} className="border-b mt-4" style={{
                                     borderImage: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
                                     borderBottom: openIndex === index ? '1px solid' : '1px solid #e5e5e5'
                                 }}>
@@ -212,7 +212,7 @@ export default function InfoSection() {
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 500,
-                                                fontSize: '15px',
+                                                fontSize: '22px',
                                                 lineHeight: '24px',
                                                 letterSpacing: '-0.03em',
                                                 background: openIndex === index
@@ -322,7 +322,7 @@ export default function InfoSection() {
 
                         <div className="max-w-3xl  bg-white">
                             {sections.map((section, index) => (
-                                <div key={index} className="border-b" style={{
+                                <div key={index} className="border-b mt-4" style={{
                                     borderImage: openNewIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
                                     borderBottom: openNewIndex === index ? '1px solid' : '1px solid #e5e5e5'
                                 }}>
@@ -334,7 +334,7 @@ export default function InfoSection() {
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 500,
-                                                fontSize: '15px',
+                                                fontSize: '22px',
                                                 lineHeight: '24px',
                                                 letterSpacing: '-0.03em',
                                                 background: openNewIndex === index

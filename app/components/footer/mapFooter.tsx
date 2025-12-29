@@ -1,5 +1,5 @@
 
-import {  Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 export default function MapFooter() {
 
     return (
@@ -61,7 +61,7 @@ export default function MapFooter() {
                                     href="tel:07949301632"
                                     className="hover:text-sky-200 transition-colors text-base"
                                 >
-                                    07949 301632
+                                    01908 22 7777
                                 </a>
                             </div>
 

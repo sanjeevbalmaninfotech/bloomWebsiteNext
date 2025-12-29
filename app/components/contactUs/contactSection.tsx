@@ -19,19 +19,18 @@ const ContactSection = () => {
                         Contact Us
                     </h2>
 
-                    <div className="text-[15px] font-medium leading-[200%] capitalize">
+                    <div className="text-[15px] font-medium leading-[130%] ">
                         {/* First Heading/Paragraph - Darker Color */}
                         <p className="text-[#8A8A8A] mb-6">
-                            For More Complex Questions Or Requests, Please Complete Our Enquiry Form.
-                            Providing Detailed Information Helps Us Direct Your Enquiry To The Right
-                            Team And Respond More Efficiently.
+                            For more complex questions or requests, please complete our enquiry form. Providing detailed information helps us direct your enquiry to the right team and respond more efficiently.
+                            We aim to respond within 24 hours, though response times may be slightly longer during periods of high demand.
                         </p>
 
                         {/* Second Heading/Paragraph - Lighter Grey Color */}
-                        <p className="text-[#171717]">
+                        {/* <p className="text-[#171717]">
                             We Aim To Respond Within 24 Hours, Though Response Times May Be Slightly
                             Longer During Periods Of High Demand.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/* ================= RIGHT SIDE: Form ================= */}
@@ -125,7 +124,7 @@ const ContactSection = () => {
                         </div>
 
                         {/* Row 5: Terms Checkbox */}
-                        <div className="flex items-center gap-3">
+                        {/* <div className="flex items-center gap-3">
                             <input
                                 type="checkbox"
                                 id="terms"
@@ -134,7 +133,7 @@ const ContactSection = () => {
                             <label htmlFor="terms" className="text-sm font-medium text-gray-700 cursor-pointer select-none">
                                 I accept the <span className="underline">Terms</span>
                             </label>
-                        </div>
+                        </div> */}
 
                         {/* Submit Button */}
                         <div>
