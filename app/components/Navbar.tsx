@@ -154,7 +154,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden ml-auto">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-700 hover:text-teal-600 transition-colors"
@@ -203,18 +203,32 @@ const Navbar = () => {
               {isServicesOpen && (
                 <div className="pl-4 space-y-2">
                   <Link
-                    href="/services/consultation"
+                    href="/pathology"
                     onClick={handleLinkClick}
                     className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
                   >
-                    Consultation
+                    Pathology
                   </Link>
                   <Link
-                    href="/services/therapy"
+                    href="/imaging"
                     onClick={handleLinkClick}
                     className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
                   >
-                    Therapy
+                    Imaging & Screening
+                  </Link>
+                  <Link
+                    href="/ucc"
+                    onClick={handleLinkClick}
+                    className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
+                  >
+                    Urgent Care Centre
+                  </Link>
+                  <Link
+                    href="/plannedCare"
+                    onClick={handleLinkClick}
+                    className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
+                  >
+                    Planned Care (Coming Soon)
                   </Link>
                 </div>
               )}
@@ -227,6 +241,9 @@ const Navbar = () => {
             >
               Careers
             </Link>
+            <Link href="/GP" className="block py-2 text-gray-700 hover:text-teal-600 font-medium transition-colors">
+              For GPs
+            </Link>
             <Link
               href="/contact"
               onClick={handleLinkClick}
@@ -235,11 +252,9 @@ const Navbar = () => {
               Contact
             </Link>
 
-            <Link href="/register" onClick={handleLinkClick}>
-              <div className="w-full bg-gradient-to-r from-cyan-400 to-teal-400 text-white px-6 py-3 rounded-lg text-center shadow-md hover:shadow-lg transition-shadow">
-                Register Your Interest
-              </div>
-            </Link>
+            <div onClick={handleLinkClick} className="mt-4">
+              <RegisterButton />
+            </div>
           </div>
         </div>
       )}
