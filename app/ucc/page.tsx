@@ -129,14 +129,14 @@ const UrgentCareBlock = () => {
     },
     {
       id: 2,
-      name: 'Sarah Mitchell',
-      role: 'Senior Doctor',
+      name: 'Andy Marfleet',
+      role: 'Radiographer',
       imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop'
     },
     {
       id: 3,
-      name: 'David Chen',
-      role: 'Medical Director',
+      name: 'Dr Shindo Francis',
+      role: 'Emergency Medicine Consultant',
       imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop'
     }
   ];
