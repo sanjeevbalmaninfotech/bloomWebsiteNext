@@ -166,13 +166,13 @@ const ConsentPopup: React.FC = () => {
                                             handleToggle(category.id);
                                         }}
                                         disabled={category.locked}
-                                        className={`w-14 h-7 rounded-full transition-colors duration-300 relative ${toggleStates[category.id]
-                                            ? "bg-emerald-400"
-                                            : "bg-gray-300"
-                                            } ${category.locked
-                                                ? "opacity-50 cursor-not-allowed"
-                                                : "cursor-pointer"
-                                            }`}
+                                        className={`w-14 h-7 rounded-full transition-colors duration-300 relative ${category.locked ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+                                        style={{
+                                            background: toggleStates[category.id]
+                                                ? "linear-gradient(90deg, #157DC1 0%, #49acac 100%)"
+                                                : "#d1d5db" // bg-gray-300 fallback
+                                        }}
+
                                     >
                                         <div
                                             className={`absolute top-1 w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-300 ${toggleStates[category.id] ? "left-8" : "left-1"
@@ -197,7 +197,11 @@ const ConsentPopup: React.FC = () => {
                 <div className="px-8 py-6 flex justify-end border-t border-gray-100 flex-shrink-0">
                     <button
                         onClick={handleAcceptAll}
-                        className="px-8 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors shadow-md"
+                        className="px-8 py-3 -500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors shadow-md"
+                        style={{
+                            background: 'linear-gradient( #157DC1, #49acac)',
+
+                        }}
                     >
                         Accept All
                     </button>
@@ -205,21 +209,26 @@ const ConsentPopup: React.FC = () => {
             </div>
 
             <style>{`
-        .scrollbar-custom::-webkit-scrollbar {
-          width: 8px;
-        }
-        .scrollbar-custom::-webkit-scrollbar-track {
-          background: #f1f5f9;
-          border-radius: 10px;
-        }
-        .scrollbar-custom::-webkit-scrollbar-thumb {
-          background: #49acac;
-          border-radius: 10px;
-        }
-        .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-          background: #49acac;
-        }
-      `}</style>
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+  }
+
+  /* Scrollbar Thumb with Gradient */
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #157DC1 0%, #49acac 100%);
+    border-radius: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(0deg, #157DC1 0%, #49acac 100%);
+  }
+`}</style>
+
         </div>
     );
 };

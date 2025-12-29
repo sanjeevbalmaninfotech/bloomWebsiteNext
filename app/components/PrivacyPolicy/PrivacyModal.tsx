@@ -70,7 +70,7 @@ export default function PrivacyModal() {
                         onClick={handleCustomize}
                         className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
                         style={{
-                            background: 'linear-gradient(180deg, #157DC1 0%, #5FC1A3 100%)',
+                            background: 'linear-gradient( #157DC1, #49acac)',
                             width: '123px',
                             height: '31px',
                             borderRadius: '6.74px',
@@ -84,7 +84,7 @@ export default function PrivacyModal() {
                         onClick={handleAccept}
                         className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
                         style={{
-                            background: 'linear-gradient(180deg, #157DC1 0%, #5FC1A3 100%)',
+                            background: 'linear-gradient( #157DC1, #49acac)',
                             width: '123px',
                             height: '31px',
                             borderRadius: '6.74px',
@@ -98,7 +98,7 @@ export default function PrivacyModal() {
                         onClick={handleReject}
                         className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
                         style={{
-                            background: 'linear-gradient(180deg, #157DC1 0%, #5FC1A3 100%)',
+                            background: 'linear-gradient( #157DC1, #49acac)',
                             width: '123px',
                             height: '31px',
                             borderRadius: '6.74px',
