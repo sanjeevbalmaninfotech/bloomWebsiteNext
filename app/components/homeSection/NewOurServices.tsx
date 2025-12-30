@@ -2,7 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 const ServicesSection = () => {
-    const services = [
+    const homePageServices = [
         {
             imageUrl: "/Icons/Walkins.svg",
             titleLine1: "Private Urgent Care Centre &",
@@ -67,7 +67,7 @@ const ServicesSection = () => {
 
                     {/* 2. Services Grid: Isme mt-12 ya mt-16 diya hai taaki heading se thoda niche rahe */}
                     <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-stretch justify-center gap-8 md:gap-0 w-full px-4 md:px-10">
-                        {services.map((service, index) => (
+                        {homePageServices.map((service, index) => (
                             <React.Fragment key={index}>
                                 {/* Service Card */}
                                 <div className="flex flex-col items-start gap-[15px] text-white md:px-2 lg:px-2 flex-1 md:max-w-[280px] lg:max-w-none">
@@ -96,10 +96,11 @@ const ServicesSection = () => {
                                             style={{ width: "34px", height: "34px" }}
                                         />
                                     </button>
+
                                 </div>
 
                                 {/* Vertical Divider */}
-                                {index < services.length - 1 && (
+                                {index < homePageServices.length - 1 && (
                                     <div className="hidden md:flex mx-4 lg:mx-8">
                                         <div
                                             className="w-[1.5px] self-stretch"

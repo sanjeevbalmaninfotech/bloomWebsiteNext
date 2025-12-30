@@ -13,7 +13,7 @@ const ImpactSection = () => {
 
             <section className=" mx-auto  py-4 bg-white antialiased">
                 {/* Row 1: 45% Text | 55% Image */}
-                <div className="flex flex-col md:flex-row items-start gap-4 mb-2">
+                <div className="flex flex-col md:flex-row items-start gap-8 mb-2">
                     {/* Left Column (45%) */}
                     <div className="md:w-[40%] w-full">
                         <h2

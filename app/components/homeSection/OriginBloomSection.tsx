@@ -95,7 +95,7 @@ const OriginBloomSection = () => {
                     </div>
 
                     {/* TEXT CONTENT SECTION */}
-                    <div className="w-full xl:w-[45%] flex flex-col gap-6">
+                    <div className="w-full xl:w-[45%] flex flex-col gap-1 sm:gap-1 md:gap-2 lg:gap-2 xl:gap-1">
                         <div className="flex flex-col gap-4 text-gray-700">
                             <p className="font-normal text-[14px] leading-[1.7] text-justify xl:text-left">
                                 Bloom Health was created from a clear belief: exceptional healthcare must also be available healthcare. Care should not be fragmented or difficult to navigate, it should be timely, compassionate and built around the needs of people, not processes. This vision took shape through the lived experiences of its founders, Chairman Jashan Sandhu and CEO Ravinder Singh Punia, whose journeys, though different, were united by service, integrity and a deep commitment to improving healthcare in the UK.
