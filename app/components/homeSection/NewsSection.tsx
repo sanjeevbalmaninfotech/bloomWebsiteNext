@@ -9,13 +9,13 @@ const NewsSection = () => {
       id: 1,
       date: "02, Jan, 2026",
       title: "Winter Falls, Trips and Seasonal Injuries: Why This Time of Year Is Riskier Than We Realise",
-      link: "#"
+      link: "/blogs2"
     },
     {
       id: 2,
       date: "02, Jan, 2026",
       title: "Post-Holiday Recovery: How to Get Your Energy Back After the Festive Season",
-      link: "#"
+      link: "/blogs3"
     }
   ];
 
@@ -76,61 +76,59 @@ const NewsSection = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 {/* 2. Map through the array instead of [1, 2] */}
                 {articles.map((article) => (
-                  <div
-                    key={article.id}
-                    className="bg-blue-50 rounded-lg px-8 py-12 hover:shadow-md transition-shadow cursor-pointer"
-                  >
-                    <div className="space-y-3">
-                      <div className="text-sm text-gray-600">{article.date}</div>
+                  <Link href={article.link} key={article.id}>
+                    <div className="bg-blue-50 rounded-lg px-8 py-12 hover:shadow-md transition-shadow cursor-pointer">
+                      <div className="space-y-3">
+                        <div className="text-sm text-gray-600">{article.date}</div>
 
-                      <h3 className="font-semibold text-[22px] text-gray-900 leading-tight">
-                        {article.title}
-                      </h3>
+                        <h3 className="font-semibold text-[22px] text-gray-900 leading-tight">
+                          {article.title}
+                        </h3>
 
-                      <span className="inline-block text-blue-600 text-sm font-medium pt-2">
-                        See More
-                      </span>
+                        <span className="inline-block text-blue-600 text-sm font-medium pt-2">
+                          See More
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
             </div>
 
-            {/* RIGHT LARGE CARD */}
+
             <div className="h-full min-h-[400px]">
-              <div className="bg-[#157dc1] rounded-lg overflow-hidden w-full h-full flex flex-col">
+              <Link href="/blogs">
+                <div className="bg-[#157dc1] rounded-lg overflow-hidden w-full h-full flex flex-col cursor-pointer hover:opacity-95 transition-opacity">
 
-                {/* IMAGE - 40% height */}
-                <div className="relative w-full h-[50%] flex-shrink-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=400&fit=crop"
-                    alt="Featured News"
-                    className="w-full h-full object-cover"
-                  />
-
-
-                </div>
-
-                {/* CONTENT - 60% height */}
-                <div className="px-4 py-1  h-[50%] flex flex-col justify-center">
-
-                  {/* Date and Category - Same Line with Gap */}
-                  <div className="flex items-center gap-6 mb-1 lg:mb-1">
-                    <span className="text-white text-[24px] font-semibold">
-                      15, Jan, 2026
-                    </span>
-
+                  {/* IMAGE - 40% height */}
+                  <div className="relative w-full h-[50%] flex-shrink-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=400&fit=crop"
+                      alt="Featured News"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
-                  <h2 className="font-semibold text-[24px] text-white mb-4 lg:mb-6 leading-tight">
-                    What Is the "Super Flu" and Why This Winter Has Put the UK Healthcare System Under Pressure
-                  </h2>
-                  <p className="text-[15px] text-white opacity-90 leading-relaxed">
-                    Many people in the UK are seeing something strange as winter 2025 approaches: flu appears to be widespread. Workplace sick days are increasing, local hospitals and surgeries are feeling the strain. Health services are referring to this as one of the most difficult flu seasons in recent memory because influenza infections are increasing earlier and more quickly than usual.
-                  </p>
+                  {/* CONTENT - 60% height */}
+                  <div className="px-4 py-1 h-[50%] flex flex-col justify-center">
+
+                    {/* Date and Category - Same Line with Gap */}
+                    <div className="flex items-center gap-6 mb-1 lg:mb-1">
+                      <span className="text-white text-[24px] font-semibold">
+                        15, Jan, 2026
+                      </span>
+                    </div>
+
+                    <h2 className="font-semibold text-[24px] text-white mb-4 lg:mb-6 leading-tight">
+                      What Is the "Super Flu" and Why This Winter Has Put the UK Healthcare System Under Pressure
+                    </h2>
+                    <p className="text-[15px] text-white opacity-90 leading-relaxed">
+                      Many people in the UK are seeing something strange as winter 2025 approaches: flu appears to be widespread. Workplace sick days are increasing, local hospitals and surgeries are feeling the strain. Health services are referring to this as one of the most difficult flu seasons in recent memory because influenza infections are increasing earlier and more quickly than usual.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

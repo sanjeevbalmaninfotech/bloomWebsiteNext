@@ -1,5 +1,5 @@
+import BlogsImageSection from "../components/blogs/blog2/BlogsImageSection";
 import InfoSection from "../components/blogs/blog2/InfoSection";
-import BlogsImgSection from "../components/blogs/BlogsImgSection";
 import { MainFooter } from "../components/footer/Footer";
 import Navbar from "../components/Navbar";
 
@@ -7,10 +7,7 @@ export default function BlogsPage() {
     return (
         <div>
             <Navbar />
-            <BlogsImgSection
-                imageUrl="/images/blogs/blog2.jpeg"
-                altText="Medical imaging professional reviewing scans"
-            />
+            <BlogsImageSection />
             <InfoSection />
             <MainFooter />
         </div>

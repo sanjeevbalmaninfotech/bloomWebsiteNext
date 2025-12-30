@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import BulletPoints from '../BulletPoints';
 
 const FluArticle = () => {
     return (
@@ -13,28 +14,7 @@ const FluArticle = () => {
             </Head>
 
             <section className=" mx-auto  antialiased bg-white">
-                <div className="flex items-center gap-4 text-[#000000] mb-6">
-
-                    {/* Category Item */}
-                    <div className="flex items-center gap-x-2">
-                        {/* 8px Dot - Added -translate-y-[1px] for optical centering */}
-                        <div className="h-[8px] w-[8px] rounded-full bg-[#000000] shrink-0" />
-
-                        <span className="font-['Axiforma'] text-[14px] font-normal leading-[150%] tracking-[0%]">
-                            Category
-                        </span>
-                    </div>
-
-                    {/* Read Time Item */}
-                    <div className="flex items-center gap-x-2">
-                        {/* 8px Dot */}
-                        <div className="h-[8px] w-[8px] rounded-full bg-[#000000] shrink-0" />
-
-                        <span className="font-['Axiforma'] text-[14px] font-normal leading-[150%] tracking-[0%]">
-                            10 min read
-                        </span>
-                    </div>
-                </div>                {/* Main Heading */}
+                <BulletPoints />
                 <h1
                     className="font-semibold text-[36px] leading-[130%] text-[#000000] mb-2"
                     style={{ fontFamily: "'Axiforma', sans-serif" }}

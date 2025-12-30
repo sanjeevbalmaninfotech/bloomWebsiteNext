@@ -70,7 +70,7 @@ export default function BottomFooter() {
                             <ul className="space-y-2">
                                 <li>
                                     <Link
-                                        href="/about"
+                                        href="/blogs"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
                                         Blogs
@@ -124,12 +124,17 @@ export default function BottomFooter() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        href="/"
+                                    <button
+                                        onClick={() =>
+                                            window.open(
+                                                "https://www.google.com/maps/search/?api=1&query=163-175+Grafton+Gate,+Milton+Keynes,+UK,+MK9+1AE",
+                                                "_blank"
+                                            )
+                                        }
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
                                         Visit Us
-                                    </Link>
+                                    </button>
                                 </li>
 
                             </ul>
