@@ -19,7 +19,7 @@ export default function UccFAQSection() {
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
             <span className="text-[#171717]">Frequently Asked </span>
             <span className="bg-gradient-to-r from-[#157DC1] to-[#49acac] bg-clip-text text-transparent">
@@ -36,16 +36,16 @@ export default function UccFAQSection() {
           >
             Find answers to common questions about our services, treatments, appointments, and patient care options to help you make informed health decisions.
           </p>
-        </div>
+        </div> */}
 
         {/* FAQ Accordion */}
-        <div className="space-y-4">
+        {/* <div className="space-y-4">
           {homePageFAQ?.map((faq, index) => (
             <div
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
-              {/* Question Header */}
+       
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-4 md:px-6 py-4 md:py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
@@ -62,7 +62,7 @@ export default function UccFAQSection() {
                 </span>
               </button>
 
-              {/* Answer Content */}
+             
               {openIndex === index && (
                 <div className="px-4 md:px-6 pb-4 md:pb-5">
                   <p
@@ -78,7 +78,7 @@ export default function UccFAQSection() {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

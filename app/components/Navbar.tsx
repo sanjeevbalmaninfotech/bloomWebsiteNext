@@ -110,7 +110,7 @@ const Navbar = () => {
                     onClick={handleLinkClick}
                     className="block px-4 py-2 text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
                   >
-                    Pathology
+                    Pathology & Blood Testing
                   </Link>
                   <Link
                     href="/imaging"
@@ -207,7 +207,7 @@ const Navbar = () => {
                     onClick={handleLinkClick}
                     className="block py-2 text-gray-600 hover:text-teal-600 transition-colors"
                   >
-                    Pathology
+                    Pathology & Blood Testing
                   </Link>
                   <Link
                     href="/imaging"
@@ -258,6 +258,38 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
+
+      <div className="flex items-center justify-end p-2 overflow-hidden">
+        <span
+          className="font-semibold text-[16px] leading-[140%] tracking-normal whitespace-nowrap roll-text"
+          style={{
+            fontFamily: 'Axiforma',
+            background: 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
+        >
+          Opening on 15th January!
+        </span>
+
+        <style jsx>{`
+    @keyframes rollRightToLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-700%);
+      }
+    }
+
+    .roll-text {
+      animation: rollRightToLeft 30s linear infinite;
+    }
+  `}</style>
+      </div>
+
     </nav>
   );
 };

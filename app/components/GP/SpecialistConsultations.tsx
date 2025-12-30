@@ -21,7 +21,7 @@ export default function SpecialistConsultations() {
     return (
         <>
             {/* Specialist Consultations Section */}
-            <div className="bg-gray-50 py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
+            <div className=" py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
                 <div className="max-w-7xl mx-auto">
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
@@ -33,12 +33,11 @@ export default function SpecialistConsultations() {
 
                     {/* Description */}
                     <p className="text-gray-500 mb-8 md:mb-12 text-base sm:text-lg md:text-xl leading-relaxed tracking-tight font-axiforma">
-                        Our growing consultant network provides timely assessment across multiple specialties. GPs may signpost patients to Bloom Health. Our team helps patients find the appropriate consultant for their condition.
-                    </p>
+                        Our growing consultant network provides timely assessment across multiple specialties. </p>
 
                     {/* Cards Section Heading */}
                     <h2 className="text-black mb-2 md:mb-2 text-base sm:text-lg md:text-xl leading-relaxed tracking-tight font-axiforma">
-                        How GPs can refer patients for imaging
+                        GPs may signpost Self-Pay or Insured Patients to Bloom Health when:
                     </h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -60,7 +59,7 @@ export default function SpecialistConsultations() {
             </div>
 
             {/* Future Planned Care Pathways Section 1 */}
-            <div className="py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
+            <div className=" px-6 md:px-12  lg:px-[120px]">
                 <div className="max-w-7xl mx-auto">
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
@@ -72,7 +71,7 @@ export default function SpecialistConsultations() {
 
                     {/* Description */}
                     <p className="text-gray-500  text-base sm:text-lg md:text-xl leading-relaxed tracking-tight font-axiforma">
-                        Bloom Health is steadily expanding into planned care and day-case pathways. These services will be introduced gradually, prioritising safety, governance and close alignment with local clinical needs. We aim to continue supporting GPs with high-quality specialist pathways that integrate smoothly with primary care.
+                        Bloom Health Hospital is steadily expanding into planned care and day-case pathways. These services will be introduced gradually, prioritising safety, governance and close alignment with local clinical needs. We aim to continue supporting GPs with high-quality specialist pathways that integrate smoothly with primary care.
                     </p>
                 </div>
             </div>
@@ -90,7 +89,7 @@ export default function SpecialistConsultations() {
 
                     {/* Description */}
                     <p className="text-[#8A8A8A] mb-8 md:mb-2 font-normal text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
-                        Our mission is to enhance availability, reduce delays, and support the healthcare community of Milton Keynes. By offering reliable urgent care, efficient diagnostics and clear communication with GP practices, Bloom Health strives to :
+                        Our mission is to enhance availability, reduce delays, and support the healthcare community of Milton Keynes. By offering reliable, private urgent care, efficient diagnostics and clear communication with GP practices.
                     </p>
 
                     <section className="w-full py-4">

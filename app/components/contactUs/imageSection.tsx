@@ -49,15 +49,7 @@ export default function ImagingScreeningSection() {
                         </p> */}
 
                         {/* Description */}
-                        <p
-                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
-                            style={{
-                                fontFamily: 'Axiforma, sans-serif',
-                                fontWeight: 400,
-                            }}
-                        >
-                            Find us easily, contact our team, and get the information you need to plan your visit.
-                        </p>
+
 
 
                     </div>

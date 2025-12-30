@@ -56,13 +56,13 @@ export default function MapFooter() {
 
                         <div className="space-y-4 pt-2">
                             <div className="flex items-center gap-3">
-                                <Phone size={18} className="text-sky-300 flex-shrink-0" />
+                                {/* <Phone size={18} className="text-sky-300 flex-shrink-0" />
                                 <a
                                     href="tel:07949301632"
                                     className="hover:text-sky-200 transition-colors text-base"
                                 >
                                     01908 22 7777
-                                </a>
+                                </a> */}
                             </div>
 
                             <div className="flex items-center gap-3">

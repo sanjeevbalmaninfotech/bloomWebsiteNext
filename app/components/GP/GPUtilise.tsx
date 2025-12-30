@@ -1,7 +1,7 @@
 export default function GPUtilise() {
 
     const services = [
-        { icon: "/GP/WalkInAccess.svg", title: "Routine and advanced blood tests" },
+        { icon: "/GP/WalkInAccess.svg", title: "Routine and advanced pathology tests" },
         { icon: "/GP/selfReferral.svg", title: "Fast turnaround times" },
         { icon: "/GP/RoutineBlood.svg", title: "The ability for patients to attend with a GP request form or written referral" },
         { icon: "/GP/PatientsAttend.svg", title: "Walk-in access for many investigations" },
@@ -20,7 +20,7 @@ export default function GPUtilise() {
                 {/* Heading Section */}
                 <div className="max-w-3xl  mb-4 md:mb-4">
                     <h1 className="text-white font-semibold leading-tight tracking-tight text-2xl sm:text-3xl md:text-4xl font-axiforma">
-                        How GPs Can Utilise Bloom Health
+                        Blood Tests & Pathology Services
                     </h1>
                     <p className="text-gray-100 font-normal leading-relaxed tracking-tight text-base text-[15px] md:text-xl font-axiforma">
                         Results can be securely shared with GP practices to support continuity and avoid repeat testing.

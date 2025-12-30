@@ -1,5 +1,5 @@
-import { RegisterButton } from "../registerYourInterest/registerYourInterest";
 
+import { RegisterButton } from '../registerButton/RegisterButton';
 export default function ImageSection() {
     return (
         <div className="relative w-full h-screen overflow-hidden">

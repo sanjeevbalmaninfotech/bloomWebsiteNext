@@ -32,15 +32,15 @@ export default function PrivacyModal() {
     if (!isVisible) return null;
 
     return (
-        <div className="fixed bottom-6 left-6 z-50">
-            <div className="bg-white rounded-3xl shadow-2xl max-w-[520px] w-full p-6">
+        <div className="fixed bottom-4 left-4 right-4 z-50 md:left-6 md:right-auto md:bottom-6 md:w-auto">
+            <div className="bg-white rounded-3xl shadow-2xl max-w-[520px] w-full p-4 md:p-6 mx-auto">
                 {/* Title */}
                 <h1
                     className="text-center mb-6"
                     style={{
                         fontFamily: 'Axiforma, sans-serif',
                         fontWeight: 600,
-                        fontSize: '17px',
+                        fontSize: '22px',
                         lineHeight: '24px',
                         letterSpacing: '0%',
                         color: '#000000'
@@ -55,9 +55,9 @@ export default function PrivacyModal() {
                     style={{
                         fontFamily: 'Axiforma, sans-serif',
                         fontWeight: 500,
-                        fontSize: '12px',
-                        lineHeight: '24px',
-                        letterSpacing: '0%',
+                        fontSize: '15px',
+                        lineHeight: '30px',
+                        letterSpacing: '130%',
                         color: '#000000'
                     }}
                 >
@@ -68,44 +68,56 @@ export default function PrivacyModal() {
                 <div className="flex gap-4 justify-center flex-wrap">
                     <button
                         onClick={handleCustomize}
-                        className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
+                        className="transition-all  active:scale-100 text-white font-semibold text-xs  bg-gradient-to-r from-[#157DC1] to-[#49acac] w-full sm:w-[123px]"
                         style={{
-                            background: 'linear-gradient( #157DC1, #49acac)',
-                            width: '123px',
-                            height: '31px',
+                            height: '45px',
                             borderRadius: '6.74px',
                             padding: '8.09px 16.17px'
                         }}
                     >
-                        Customize
+                        <span
+                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            style={{ fontFamily: 'Axiforma, sans-serif' }}
+                        >
+                            Customize
+                        </span>
+
                     </button>
 
                     <button
                         onClick={handleAccept}
-                        className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
+                        className="transition-all  active:scale-100 text-white font-semibold text-xs  bg-gradient-to-r from-[#157DC1] to-[#49acac] w-full sm:w-[123px]"
                         style={{
-                            background: 'linear-gradient( #157DC1, #49acac)',
-                            width: '123px',
-                            height: '31px',
+                            height: '45px',
                             borderRadius: '6.74px',
                             padding: '8.09px 16.17px'
                         }}
                     >
-                        Accept All
+                        <span
+                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            style={{ fontFamily: 'Axiforma, sans-serif' }}
+                        >
+                            Accept All
+                        </span>
+
                     </button>
 
                     <button
                         onClick={handleReject}
-                        className="transition-all hover:scale-105 hover:shadow-lg active:scale-100 text-white font-semibold text-xs"
+                        className="transition-all  active:scale-100 text-white font-semibold text-xs  bg-gradient-to-r from-[#157DC1] to-[#49acac] w-full sm:w-[123px]"
                         style={{
-                            background: 'linear-gradient( #157DC1, #49acac)',
-                            width: '123px',
-                            height: '31px',
+                            height: '45px',
                             borderRadius: '6.74px',
                             padding: '8.09px 16.17px'
                         }}
                     >
-                        Reject All
+                        <span
+                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            style={{ fontFamily: 'Axiforma, sans-serif' }}
+                        >
+                            Reject All
+                        </span>
+
                     </button>
                 </div>
             </div>

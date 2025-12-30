@@ -23,26 +23,23 @@ export default function ImageSection() {
                             Information For GPs
                         </h1>
                         <p className="font-axiforma font-semibold text-white text-lg sm:text-xl md:text-[22px] leading-[42px] tracking-[-0.02em] capitalize mt-1">
-                            Working in Partnership with Primary Care Across Milton Keynes
+                            Working to support Primary Care Across Milton Keynes
                         </p>
 
 
                         {/* Description 1 */}
                         <p className="text-gray-100 font-axiforma
                 text-base text-[15px] leading-relaxed tracking-tight">
-                            Bloom Health is designed to support the vital work delivered by GP practices throughout
+                            Bloom Health Hospital is designed to support the vital work delivered by GP practices throughout
                             Milton Keynes. We provide rapid access to urgent care, diagnostics and specialist opinion,
                             helping to ease pressure on primary care, improve continuity, and ensure patients receive
-                            timely assessment when they need it most.
+                            timely, affordable assessment when they need it most.
                         </p>
 
                         {/* Description 2 */}
                         <p className="text-gray-100 font-axiforma
                 text-base text-[15px] leading-relaxed tracking-tight">
-                            Our role is complementary. We recognise the NHS as the backbone of local healthcare, and
-                            our services exist to add capacity, improve access, and offer convenience for patients and
-                            their GPs, particularly when speed of diagnosis or review can make a meaningful difference.
-                        </p>
+                            Our role is complementary. We recognise the NHS as the backbone of local healthcare, and our services exist to add capacity, improve access, and offer convenience for patients who are willing to pay or have insurance, particularly when speed of diagnosis or review can make a meaningful difference.</p>
                         <div className="mt-6">
                             <RegisterButton />
                         </div>

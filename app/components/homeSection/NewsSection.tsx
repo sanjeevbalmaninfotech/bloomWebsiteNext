@@ -3,12 +3,28 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 const NewsSection = () => {
+
+  const articles = [
+    {
+      id: 1,
+      date: "02, Jan, 2026",
+      title: "Winter Falls, Trips and Seasonal Injuries: Why This Time of Year Is Riskier Than We Realise",
+      link: "#"
+    },
+    {
+      id: 2,
+      date: "02, Jan, 2026",
+      title: "Post-Holiday Recovery: How to Get Your Energy Back After the Festive Season",
+      link: "#"
+    }
+  ];
+
   return (
     <>
       <section className="w-full py-12 px-6 sm:py-16 sm:px-12 lg:py-[60px] lg:px-[120px] bg-white">
         <div className="max-w-[1440px] mx-auto">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ">
 
             {/* LEFT SECTION */}
             <div className="flex flex-col justify-between h-full">
@@ -27,8 +43,12 @@ const NewsSection = () => {
                   </span>
                 </h1>
 
-                <p className="text-gray-600 text-sm sm:text-[15px] lg:text-[16px] leading-relaxed mb-6">
-                  News at Bloom brings you timely health stories, expert perspectives and seasonal advice, created to help you better understand the health issues affecting our community. Through clear, reliable information and thoughtful insights, we aim to support you and your family with care, confidence and informed decision-making throughout the year.
+                <p className="text-gray-600 text-sm sm:text-[15px] lg:text-[16px] leading-relaxed mb-2">
+                  News at Bloom brings you timely health stories, expert perspectives and seasonal advice, created to help you better understand the health issues affecting our community. From winter illnesses and injury prevention to wellbeing trends and everyday health concerns, our content is shaped by real experiences and trusted clinical insight.
+                </p>
+
+                <p className="text-gray-600 text-sm sm:text-[15px] lg:text-[16px] leading-relaxed mb-2">
+                  Through clear, reliable information and thoughtful guidance, we aim to support you and your family with care, confidence and informed decision-making. Whether you are looking to stay well, manage symptoms, or simply understand your health better, News at Bloom is here to help you feel informed, reassured and supported throughout the year.
                 </p>
 
                 {/* Get More Button */}
@@ -54,23 +74,21 @@ const NewsSection = () => {
 
               {/* 2x2 NEWS CARDS */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                {[1, 2].map((i) => (
+                {/* 2. Map through the array instead of [1, 2] */}
+                {articles.map((article) => (
                   <div
-                    key={i}
-                    className="bg-blue-50 rounded-lg p-5 hover:shadow-md transition-shadow"
+                    key={article.id}
+                    className="bg-blue-50 rounded-lg px-8 py-12 hover:shadow-md transition-shadow cursor-pointer"
                   >
                     <div className="space-y-3">
-                      <div className="text-sm text-gray-600">25, Feb, 2025</div>
+                      <div className="text-sm text-gray-600">{article.date}</div>
 
-                      <h3 className="text-lg font-semibold text-gray-900 leading-snug">
-                        <span className="font-bold">Bloom Hosts</span>
-                        <br />
-                        Multi-Stakeholder Panel on World Obesity Day to Address the
-                        Rising Obesity Crisis and Its Health Impacts
+                      <h3 className="font-semibold text-[22px] text-gray-900 leading-tight">
+                        {article.title}
                       </h3>
 
                       <span className="inline-block text-blue-600 text-sm font-medium pt-2">
-                        News
+                        See More
                       </span>
                     </div>
                   </div>
@@ -80,42 +98,40 @@ const NewsSection = () => {
             </div>
 
             {/* RIGHT LARGE CARD */}
-            <div className="h-full min-h-[600px]">
-              <div className="bg-[#1e4a5f] rounded-lg overflow-hidden w-full h-full flex flex-col">
+            <div className="h-full min-h-[400px]">
+              <div className="bg-[#157dc1] rounded-lg overflow-hidden w-full h-full flex flex-col">
 
-                {/* IMAGE */}
-                <div className="relative w-full h-80 flex-shrink-0">
+                {/* IMAGE - 40% height */}
+                <div className="relative w-full h-[50%] flex-shrink-0">
                   <img
                     src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=400&fit=crop"
                     alt="Featured News"
                     className="w-full h-full object-cover"
                   />
 
-                  <div className="absolute bottom-4 left-4 flex items-center space-x-3">
-                    <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
-                      25, Feb, 2025
-                    </span>
-                    <span className="bg-white text-gray-900 text-sm font-medium px-4 py-1.5 rounded">
-                      Press release
-                    </span>
-                  </div>
+
                 </div>
 
-                {/* CONTENT */}
-                <div className="p-6 lg:p-8 flex-1 flex flex-col justify-center">
-                  <h2 className="font-semibold text-2xl lg:text-[28px] text-white mb-4 lg:mb-6 leading-tight">
-                    Bloom Hosts Multi-Stakeholder Panel on World Obesity Day to Address the Rising Obesity Crisis and Its Health Impacts
+                {/* CONTENT - 60% height */}
+                <div className="px-4 py-1  h-[50%] flex flex-col justify-center">
+
+                  {/* Date and Category - Same Line with Gap */}
+                  <div className="flex items-center gap-6 mb-1 lg:mb-1">
+                    <span className="text-white text-[24px] font-semibold">
+                      15, Jan, 2026
+                    </span>
+
+                  </div>
+
+                  <h2 className="font-semibold text-[24px] text-white mb-4 lg:mb-6 leading-tight">
+                    What Is the "Super Flu" and Why This Winter Has Put the UK Healthcare System Under Pressure
                   </h2>
-                  <p className="text-sm lg:text-[15px] text-white opacity-90 leading-relaxed">
-                    HCA Healthcare UK has announced that it has treated a metastatic lung cancer
-                    patient with tumour-infiltrating lymphocyte (TIL) therapy for the first time as part of a
-                    clinical trial at its research arm, Sarah Cannon Research Institute UK.
+                  <p className="text-[15px] text-white opacity-90 leading-relaxed">
+                    Many people in the UK are seeing something strange as winter 2025 approaches: flu appears to be widespread. Workplace sick days are increasing, local hospitals and surgeries are feeling the strain. Health services are referring to this as one of the most difficult flu seasons in recent memory because influenza infections are increasing earlier and more quickly than usual.
                   </p>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </section>

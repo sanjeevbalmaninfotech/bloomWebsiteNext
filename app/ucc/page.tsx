@@ -6,6 +6,9 @@ import Navbar from "../components/Navbar";
 import { MainFooter } from "../components/footer/Footer";
 import ImageSection from "../components/Ucc/UccHeroImage";
 import TeamMemberCard from "../components/TeamsCard/TeamMemberCard";
+import FooterImage from "../components/footer/FooterImage";
+import UccFAQSection from "../components/footer/UccFAQSection";
+import { uccPageFAQ } from "../constants/FAQs";
 
 const UrgentCareBlock = () => {
   const services = [
@@ -114,13 +117,19 @@ const UrgentCareBlock = () => {
     },
     {
       icon: "/Icons/CallEmergency.svg",
-      title: "Any Life-Threatening Emergency -Call 999",
+      title: "Any Life-Threatening Emergency - Call 999",
       description:
         "If you are unsure, call 999 or visit A&E for immediate help.",
     },
   ];
 
   const teamMembers = [
+    {
+      id: 3,
+      name: 'Dr. Shindo Francis',
+      role: 'Urgent Care Center Clinical Lead',
+      imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop'
+    },
     {
       id: 1,
       name: 'Chris Larmour',
@@ -133,12 +142,7 @@ const UrgentCareBlock = () => {
       role: 'Radiographer',
       imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop'
     },
-    {
-      id: 3,
-      name: 'Dr Shindo Francis',
-      role: 'Emergency Medicine Consultant',
-      imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop'
-    }
+
   ];
   /*
   const doctors = [
@@ -245,7 +249,7 @@ const UrgentCareBlock = () => {
               },
               {
                 title: "Hospital-Based Urgent Care with On-Site Diagnostics",
-                desc: "As part of Bloom Health Hospital, we can arrange X-rays, ultrasound, CT scans, POCT and blood tests on-site, with extended hours and on-call availability for urgent cases. This means fewer delays, fewer referrals elsewhere, and quicker answers.",
+                desc: "As part of Bloom Health Hospital, we can arrange X-rays, ultrasound, CT scans, POCT and pathology tests on-site, with extended hours and on-call availability for urgent cases. This means fewer delays, fewer referrals elsewhere, and quicker answers.",
               },
               {
                 title: "A Patient-Centred, Comfortable Environment",
@@ -346,12 +350,12 @@ const UrgentCareBlock = () => {
                   <span
                     className="bg-clip-text text-transparent"
                     style={{
-                      background: "linear-gradient(133.01deg, #157DC1 -11.36%, #49acac  115%)",
+                      background: "linear-gradient( #157DC1, #49acac)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent"
                     }}
                   >
-                    Bloom UCC
+                    Bloom Urgent Care
                   </span>
                 </h2>
                 <h3
@@ -379,7 +383,9 @@ const UrgentCareBlock = () => {
                   delivering fast, reliable care for non-life-threatening
                   conditions. Our focus is on providing safe, efficient,
                   patient-centred treatment with access to modern hospital
-                  facilities - <strong>24 hours a day</strong>.
+                  facilities -<strong className="text-black font-bold">24 hours a day</strong>
+
+
                 </p>
               </div>
 
@@ -556,7 +562,7 @@ const UrgentCareBlock = () => {
       {/* What to Expect Section */}
       <div
         className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
-        style={{ backgroundColor: "rgba(245, 245, 245, 1)" }}
+
       >
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
@@ -641,6 +647,10 @@ const UrgentCareBlock = () => {
         </div>
       </div>
 
+      <div>
+        <FooterImage />
+        <UccFAQSection faqData={uccPageFAQ} />
+      </div>
       <MainFooter />
     </>
   );

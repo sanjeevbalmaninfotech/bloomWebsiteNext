@@ -41,18 +41,18 @@ const OriginBloomSection = () => {
                                     </h3>
 
                                     <p
-                                        className="text-[#8A8A8A] text-[21px] font-bold leading-[100%] tracking-[0px] mt-1"
+                                        className="text-[#8A8A8A] text-[24px] font-semibold leading-[100%] tracking-[0px] mt-1"
                                         style={{ fontFamily: 'Axiforma, sans-serif' }}
                                     >
-                                        Mr. Ravinder Punia
+                                        Ravinder Punia
                                     </p>
 
-                                    <div
+                                    {/* <div
                                         className="w-full h-[2px] mb-4 mt-4"
-                                        style={{ backgroundImage: "linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)" }}
-                                    ></div>
-                                    <p className="text-[#8A8A8A] text-[16px] font-normal leading-none italic tracking-[0]">
-                                        “ Healthcare should work around patients, not the other way around.”
+                                        style={{ backgroundImage: "linear-gradient( #157DC1 , #49acac )" }}
+                                    ></div> */}
+                                    <p className="text-[#8A8A8A] text-[16px] font-normal leading-[150%] tracking-[0.3px] mt-[30px]">
+                                        “ Healthcare should work around patients, not the other way around. ”
                                     </p>
                                 </div>
                             </div>
@@ -68,17 +68,17 @@ const OriginBloomSection = () => {
                                     </h3>
 
                                     <p
-                                        className="text-[#8A8A8A] text-[21px] font-bold leading-[100%] tracking-[0px] mt-1"
+                                        className="text-[#8A8A8A] text-[24px] font-semibold  leading-[100%] tracking-[0px] mt-1"
                                         style={{ fontFamily: 'Axiforma, sans-serif' }}
                                     >
-                                        Mr. Jashan Sandhu
+                                        Jashan Sandhu
                                     </p>
 
-                                    <div
+                                    {/* <div
                                         className="w-full h-[2px] mb-4 mt-4"
                                         style={{ backgroundImage: "linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)" }}
-                                    ></div>
-                                    <p className="text-[#8A8A8A] text-[16px] font-normal leading-none italic">
+                                    ></div> */}
+                                    <p className="text-[#8A8A8A] text-[16px] font-normal leading-[150%] tracking-[0.3px] mt-[30px]">
                                         “ My vision is to make excellent healthcare easier to access, without delay or complexity. ”
                                     </p>
                                 </div>

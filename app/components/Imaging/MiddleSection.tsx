@@ -12,6 +12,14 @@ export default function MiddleSection() {
         "A focus on clarity, reassurance and safety, not scare tactics or unnecessary tests."
 
     ];
+    const imagingSectionDescription = [
+        "Sudden or ongoing pain that needs further investigation",
+        "A recent injury or suspected fracture",
+        "Abdominal or pelvic discomfort that requires more than a physical examination",
+        "Chest symptoms, such as breathlessness or persistent discomfort", "Soft tissue lumps or swellings that need characterisation", "Musculoskeletal injuries, such as sports injuries or joint problems", "A known condition that requires monitoring"
+
+
+    ];
     const toggleSection = (index: number) => {
         setOpenIndex(openIndex === index ? -1 : index);
     };
@@ -114,7 +122,7 @@ export default function MiddleSection() {
 
                                         {/* Feature Text */}
                                         <p
-                                            className="text-[#171717] text-[18px] leading-[28px] tracking-[-0.18px] flex-1"
+                                            className="text-[#8A8A8A] text-[17.2px] leading-[28px] tracking-[-0.18px] flex-1 align-middle"
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 400,
@@ -122,6 +130,7 @@ export default function MiddleSection() {
                                         >
                                             {feature}
                                         </p>
+
                                     </li>
                                 ))}
                             </ul>
@@ -298,7 +307,7 @@ export default function MiddleSection() {
 
                                 {/* Features List */}
                                 <ul className="space-y-4">
-                                    {features.map((feature, index) => (
+                                    {imagingSectionDescription.map((feature, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             {/* Custom Gradient Bullet */}
                                             <span
@@ -310,14 +319,15 @@ export default function MiddleSection() {
 
                                             {/* Feature Text */}
                                             <p
-                                                className="text-[#171717] text-[18px] leading-[28px] tracking-[-0.18px] flex-1"
+                                                className="text-[#8A8A8A] text-[17.2px] leading-[28px] tracking-[-0.18px] flex-1 align-middle"
                                                 style={{
-                                                    fontFamily: 'Axiforma, sans-serif',
+                                                    fontFamily: 'Font 1, sans-serif',
                                                     fontWeight: 400,
                                                 }}
                                             >
                                                 {feature}
                                             </p>
+
                                         </li>
                                     ))}
                                 </ul>

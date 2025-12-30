@@ -28,21 +28,21 @@ const HospitalHeroSlider = () => {
           <div className="max-w-4xl ">
 
             {/* Heading - 40px, SemiBold, White */}
-            <h1 className="font-axiforma font-semibold text-white text-[40px] leading-[50px] tracking-[-0.02em] capitalize">
-              Complete Healthcare
+            <h1 className="font-axiforma font-semibold text-white text-[22px] leading-[22px] md:text-[22px] md:leading-[22px] tracking-[-0.02em] capitalize">
+              Affordable Healthcare
             </h1>
 
             {/* Sub Heading - 68px, SemiBold, Gradient */}
-            <p className="font-axiforma font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#157dc1] to-[#49acac] text-[68px] leading-[60px] tracking-[-0.02em] capitalize">
-              At One Place
+            <p className="font-axiforma font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#157dc1] to-[#49acac] text-[40px] leading-[40px] md:text-[40px] md:leading-[40px] tracking-[-0.02em] capitalize">
+              In One Place
             </p>
 
             {/* Description 1 */}
-            <p className="text-gray-100 font-axiforma text-[16px] max-w-2xl leading-relaxed tracking-tight mt-3">
-              24/7 Private Urgent Care | Walk-In GP | Comprehensive Diagnostics | Consultant Specialists.  </p>
+            <p className="text-gray-100 font-axiforma text-[16px] md:text-[22px] max-w-2xl leading-relaxed tracking-tight mt-3">
+              24/7 Private Urgent Care | Walk-In GP | Comprehensive Diagnostics | Consultant Specialists  </p>
 
-            <p className="text-gray-100 font-axiforma text-[16px] max-w-2xl leading-relaxed tracking-tight mt-1">
-              All in one modern hospital designed around your needs.</p>
+            <p className="text-gray-100 font-axiforma text-[16px] md:text-[22px] max-w-2xl leading-relaxed tracking-tight mt-1">
+              All in one modern hospital designed around your needs</p>
 
             <div className="mt-6">
               <RegisterButton />

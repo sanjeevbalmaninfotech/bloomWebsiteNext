@@ -16,7 +16,7 @@ export default function ButtonTalkToTeam() {
   align-middle 
   font-axiforma
   transition-all 
-  hover:bg-[#5FC1A3]
+  
 ">
                 Talk to our Team
             </button>

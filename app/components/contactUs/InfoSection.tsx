@@ -72,7 +72,7 @@ const InfoSection = () => {
                             {/* RIGHT SIDE: Description & Directions */}
                             <div className="md:w-[70%]">
                                 <p className="font-jakarta font-normal text-[15px] leading-[140%] text-[#131313] mb-6">
-                                    Bloom Health is centrally located in Milton Keynes city centre, directly
+                                    Bloom Health Hospital is centrally located in Milton Keynes city centre, directly
                                     opposite the Santander building, making us easy to find and access
                                 </p>
 

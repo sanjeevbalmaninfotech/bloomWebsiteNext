@@ -4,23 +4,23 @@ export default function WhoSpecialist() {
 
     const steps = [
         {
-            title: "Patients needing consultant assessment after symptoms or tests.",
+            title: "Needing consultant assessment after symptoms or tests.",
             description: ""
         },
         {
-            title: "People on long NHS waiting lists seeking a faster alternative.",
+            title: "On long NHS waiting lists seeking a faster alternative.",
             description: ""
         },
         {
-            title: "Patients requiring continuity after a Bloom Health Urgent Care visit.",
+            title: "Requiring continuity after a Bloom Health Urgent Care visit.",
             description: ""
         },
         {
-            title: "Individuals wanting private specialist opinions in Milton Keynes.",
+            title: "Wanting private specialist opinions in Milton Keynes.",
             description: ""
         },
         {
-            title: "Anyone wanting clearer answers about ongoing or complex symptoms.",
+            title: "Wanting clearer answers about ongoing or complex symptoms.",
             description: ""
         }
     ];
@@ -36,7 +36,7 @@ export default function WhoSpecialist() {
         },
         {
             title: "Consultants",
-            description: "Clinicians interested in joining Bloom Health can reach out confidentiallys."
+            description: "Clinicians interested in joining Bloom Health can reach out on info@bloomhealth.co.uk."
         },
 
 
@@ -56,7 +56,7 @@ export default function WhoSpecialist() {
 
                     {/* Subheading */}
                     <p className="text-gray-700 mb-5 md:mb-7 text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
-                        Specialist Care will support:
+                        Specialist Care will support Self-Pay or Insured Patients:
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">

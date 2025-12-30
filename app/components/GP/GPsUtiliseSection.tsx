@@ -36,10 +36,21 @@ export default function GPsUtiliseSection() {
                         Bloom Health
                     </span>
                 </h1>
+                <div className="mb-4">
+                    <h3
+                        className="text-lg md:text-xl"
+                        style={{
+                            fontFamily: "Axiforma, sans-serif",
+                            color: "rgba(23, 23, 23, 1)",
+                        }}
+                    >
+                        For Self-Pay and Insured Patients
+                    </h3>
+                </div>
 
                 <div className="space-y-3 md:space-y-4">
                     <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
-                        There is no contract or agreement required, and patients can simply walk in for urgent care or GP support. Specialist appointments can be arranged directly by the patient through our reception team. We work to ensure all relevant findings, reports and results can be shared back with their GP practice for continuity of care. GPs may direct patients to Bloom Health when they would benefit from:
+                        There is no contract or agreement required, and patients can simply walk in for urgent care or GP support. Specialist appointments can be arranged directly by the patient through our reception team. We work to ensure all relevant findings, reports and results can be shared back with their GP practice for continuity of care. GPs may direct patients to Bloom Health where they would benefit from:
                     </p>
                     {/* <p className="text-gray-700 text-sm sm:text-base leading-relaxed tracking-tight">
                        

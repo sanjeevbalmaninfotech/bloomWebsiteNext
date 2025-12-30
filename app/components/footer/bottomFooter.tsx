@@ -30,46 +30,47 @@ export default function BottomFooter() {
                             <ul className="space-y-2">
                                 <li>
                                     <Link
-                                        href="/services/cardiology"
+                                        href="/ucc"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
-                                        Diagnostics
+                                        Urgent Care Centre
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/services/urgent-care"
+                                        href="/imaging"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
-                                        Urgent Care
+                                        Imaging & Screening
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/services/outpatient"
+                                        href="/pathology"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
-                                        Outpatient
+                                        Pathology & Blood Testing
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        href="/plannedCare"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Planned Care (Coming Soon)
+                                    </Link>
+                                </li>
+
                             </ul>
                         </div>
 
                         {/* Important Info */}
                         <div>
-                            <h3 className="heading-small mb-4">Important info</h3>
+                            <h3 className="heading-small mb-4">Bloom Health</h3>
                             <ul className="space-y-2">
                                 <li>
                                     <Link
                                         href="/about"
-                                        className="text-gray-300 hover:text-white transition-colors"
-                                    >
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href="/blogs"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
                                         Blogs
@@ -85,21 +86,53 @@ export default function BottomFooter() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/news"
+                                        href="/GP"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
-                                        News & Events
+                                        For GPs
                                     </Link>
                                 </li>
+
                             </ul>
                         </div>
 
                         {/* Contact */}
                         <div>
-                            <h3 className="heading-small mb-4">Contact</h3>
-                            <div className="space-y-3">
-                                <p className="text-gray-300">24 / 7 Walk-in Centre</p>
-                            </div>
+                            <h3 className="heading-small mb-4">Contact Us</h3>
+                            <ul className="space-y-2">
+                                {/* <li>
+                                    <Link
+                                        href="/"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Call Us
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Mail Us
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >  Submit An Enquiry
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Visit Us
+                                    </Link>
+                                </li>
+
+                            </ul>
                         </div>
 
                         <>

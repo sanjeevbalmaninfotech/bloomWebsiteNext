@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(-1); // First question open by default
+  const [openIndex, setOpenIndex] = useState(-1);
 
   const faqs = [
     {
@@ -44,7 +44,7 @@ export default function FAQSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="heading-large text-red-900 mb-4">
-            Frequently Asked Questions Section
+            Frequently Asked Questionsfff Section
           </h2>
           <p className="text-paragraph text-gray-600 max-w-3xl mx-auto">
             Find answers to common questions about our services, treatments, appointments, and patient care options to help you make informed health decisions.

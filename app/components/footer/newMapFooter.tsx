@@ -70,16 +70,16 @@ export default function ContactSection() {
 
                                     {/* Phone */}
                                     <div className="flex items-start gap-4">
-                                        <Phone
+                                        {/* <Phone
                                             className="w-[20px] h-[20px] mt-[2.25px] flex-shrink-0"
                                             strokeWidth={1.13}
                                             style={{
                                                 stroke: 'url(#gradient2)'
                                             }}
-                                        />
-                                        <span className="font-[family-name:var(--font-1)] font-normal text-[16px] leading-[26px] text-[#171717]">
+                                        /> */}
+                                        {/* <span className="font-[family-name:var(--font-1)] font-normal text-[16px] leading-[26px] text-[#171717]">
                                             01908 22 7777
-                                        </span>
+                                        </span> */}
                                     </div>
 
                                     {/* Email */}

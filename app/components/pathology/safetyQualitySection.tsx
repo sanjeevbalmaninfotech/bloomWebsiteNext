@@ -1,11 +1,11 @@
 export default function SafetyQualitySection() {
 
     const services = [
-        { icon: "/Icons/pathology/SafetyQuality.svg", title: "All samples are collected by experienced clinicians." },
-        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Proper labelling, handling and storage." },
-        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Compliance with strict pre-analytical and laboratory quality standards." },
-        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Collaboration with accredited UK laboratories." },
-        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Use of trusted, validated diagnostic technology." },
+        { icon: "/Icons/pathology/SafetyQuality.svg", title: "All samples are collected by experienced clinicians" },
+        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Proper labelling, handling and storage" },
+        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Compliance with strict pre-analytical and laboratory quality standards" },
+        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Collaboration with accredited UK laboratories" },
+        { icon: "/Icons/pathology/SafetyQuality.svg", title: "Use of trusted, validated diagnostic technology" },
 
     ];
 
@@ -23,7 +23,7 @@ export default function SafetyQualitySection() {
                         Safety & Quality
                     </h1>
                     <p className="text-gray-100 font-normal leading-relaxed tracking-tight text-base sm:text-lg md:text-xl font-axiforma">
-                        Your safety and the accuracy of your results are paramount.
+                        Your safety and the accuracy of your results are paramount
                     </p>
                 </div>
 

@@ -14,9 +14,6 @@ import BottomFooter from "./bottomFooter";
 const CombineFooter = () => {
   return (
     <>
-      <FooterImage />
-      <UccFAQSection />
-
 
       <NewMapFooter />
       <BottomFooter />

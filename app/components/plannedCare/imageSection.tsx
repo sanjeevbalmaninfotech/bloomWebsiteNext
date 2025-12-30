@@ -2,7 +2,7 @@
 
 
 import React from 'react';
-import { RegisterButton } from '../registerButton/RegisterButton';
+import { RegisterButton } from "../registerYourInterest/registerYourInterest";
 
 
 
@@ -27,10 +27,11 @@ export default function ImagingScreeningSection() {
             {/* Content */}
             <div className="relative h-full flex items-center px-6 md:px-12 lg:px-[120px]">
                 <div className="max-w-7xl mx-auto w-full">
-                    <div className="max-w-2xl space-y-1">
+                    <div className="max-w-2xl space-y-3">
+
                         {/* Heading */}
                         <h1
-                            className="text-white text-[28px] sm:text-[32px] md:text-[40px] leading-[36px] sm:leading-[42px] md:leading-[50px] tracking-[-0.02em] capitalize"
+                            className="text-white text-[28px] sm:text-[32px] md:text-[40px] leading-tight tracking-[-0.02em] capitalize"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 600,
@@ -41,7 +42,7 @@ export default function ImagingScreeningSection() {
 
                         {/* Subheading */}
                         <p
-                            className="text-white text-[16px] sm:text-[18px] md:text-[20px] leading-[24px] sm:leading-[32px] md:leading-[50px] tracking-[-0.02em] capitalize"
+                            className="text-white text-[16px] sm:text-[18px] md:text-[20px] leading-snug tracking-[-0.02em] capitalize"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 500,
@@ -52,7 +53,7 @@ export default function ImagingScreeningSection() {
 
                         {/* Description */}
                         <p
-                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
+                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[-0.02em]"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 400,
@@ -60,8 +61,9 @@ export default function ImagingScreeningSection() {
                         >
                             Many health concerns need more than an initial assessment. Some conditions require specialist expertise, further investigation, or ongoing management. Our Specialist Care service is being developed to give patients access to experienced consultants across key medical areas, without the long waits often experienced elsewhere.
                         </p>
+
                         <p
-                            className="text-gray-100 text-[14px] mt-2 sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
+                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[-0.02em]"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 400,
@@ -73,10 +75,13 @@ export default function ImagingScreeningSection() {
                         {/* Register Button */}
                         <div className="pt-2">
                             <RegisterButton />
+
                         </div>
+
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

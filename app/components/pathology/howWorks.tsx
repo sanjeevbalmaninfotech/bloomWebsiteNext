@@ -36,7 +36,7 @@ export default function HowWorks() {
 
                     {/* Subheading */}
                     <p className="text-gray-700 mb-5 md:mb-7 text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
-                        We’ve designed the process to be simple and supportive.
+                        We’ve designed the process to be simple and affordable
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">

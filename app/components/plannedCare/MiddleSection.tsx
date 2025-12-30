@@ -8,10 +8,10 @@ export default function MiddleSection() {
     const [openIndex, setOpenIndex] = useState(-1);
 
     const features = [
-        "Provide faster access to expert opinion than traditional waiting lists.",
-        "Offer clear follow-up pathways after urgent care or diagnostics.",
-        "Support patients who want private specialist input for reassurance or ongoing symptoms.",
-        "Use onsite diagnostics: CT, X-ray, Ultrasound, Echo and pathological tests to streamline the journey."
+        "Provide faster access to expert opinion than traditional waiting lists",
+        "Offer clear follow-up pathways after urgent care or diagnostics",
+        "Support patients who want private specialist input for reassurance or ongoing symptoms",
+        "Use onsite diagnostics: CT, X-ray, Ultrasound, Echo and pathological tests to streamline the journey"
 
 
     ];
@@ -23,11 +23,11 @@ export default function MiddleSection() {
         },
         {
             title: "Consultant-led expertise",
-            description: "For symptoms that require a deeper look or ongoing specialist management."
+            description: "For symptoms that require a deeper look or ongoing specialist management"
         },
         {
             title: "An end-to-end experience",
-            description: "With onsite CT, Ultrasound, X-ray, Echo and pathological tests, investigations can often be arranged quickly and safely when required. Having access to these facilities enables us to close the loop and provide end to end Diagnosis for you in a timely span."
+            description: "With onsite CT, Ultrasound, X-ray, Echo and pathological tests, investigations can often be arranged quickly and safely when required. Having access to these facilities enables us to close the loop and provide end to end diagnosis for you in a timely span."
         },
         {
             title: "Clarity and peace of mind",
@@ -35,7 +35,7 @@ export default function MiddleSection() {
         },
         {
             title: "Support after Urgent Care",
-            description: "For those seen in our Urgent Care Centre who need specialist follow-up, we aim to build a pathway that avoids the usual delays. Our aim is to support the NHS by giving patients another safe and reliable option, not replace it."
+            description: "For those seen in our Urgent Care Centre who need specialist follow-up, we aim to build a pathway that avoids the usual delays."
         }
     ];
 
@@ -138,7 +138,7 @@ export default function MiddleSection() {
 
                                         {/* Feature Text */}
                                         <p
-                                            className="text-[#171717] text-[18px] leading-[28px] tracking-[-0.18px] flex-1"
+                                            className="text-[#8A8A8A] text-[17.2px] leading-[28px] tracking-[-0.18px] flex-1 align-middle"
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 400,
@@ -146,6 +146,7 @@ export default function MiddleSection() {
                                         >
                                             {feature}
                                         </p>
+
                                     </li>
                                 ))}
                             </ul>
@@ -209,7 +210,7 @@ export default function MiddleSection() {
 
                                     }}
                                 >
-                                    Specialist care isn’t a luxury – it’s often essential.
+                                    Specialist care isn’t a luxury - it’s often essential.
                                 </h3>
                                 {/* Subheading */}
                                 <p className="text-gray-700 mb-5 md:mb-7 text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">

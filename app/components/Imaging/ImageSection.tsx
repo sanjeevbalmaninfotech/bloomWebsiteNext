@@ -25,10 +25,10 @@ export default function ImagingScreeningSection() {
             {/* Content */}
             <div className="relative h-full flex items-center px-6 md:px-12 lg:px-[120px]">
                 <div className="max-w-7xl mx-auto w-full">
-                    <div className="max-w-2xl space-y-1">
+                    <div className="max-w-3xl space-y-3">
                         {/* Heading */}
                         <h1
-                            className="text-white text-[28px] sm:text-[32px] md:text-[40px] leading-[36px] sm:leading-[42px] md:leading-[50px] tracking-[-0.02em] capitalize"
+                            className="text-white text-[28px] sm:text-[32px] md:text-[40px] leading-tight tracking-[-0.02em] capitalize"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 600,
@@ -38,19 +38,18 @@ export default function ImagingScreeningSection() {
                         </h1>
 
                         {/* Subheading */}
-                        <p
-                            className="text-white text-[16px] sm:text-[18px] md:text-[20px] leading-[24px] sm:leading-[32px] md:leading-[50px] tracking-[-0.02em] capitalize"
+                        <p className="text-white text-[16px] sm:text-[18px] md:text-[20px] leading-snug tracking-[-0.02em] capitalize"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 500,
                             }}
                         >
-                            Modern medical imaging and scans, all under one roof in Milton Keynes
+                            Affordable medical imaging and scans, all under one roof in Milton Keynes
                         </p>
 
                         {/* Description */}
                         <p
-                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
+                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[-0.02em]"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
                                 fontWeight: 400,

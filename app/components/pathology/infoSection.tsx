@@ -103,7 +103,7 @@ export default function InfoSection() {
 
                     {/* Subheading */}
                     <p className="text-gray-700 mb-5 md:mb-7 text-sm sm:text-base leading-relaxed tracking-tight font-axiforma">
-                        Bloom Health Hospital provides two pathways for fast and dependable testing:
+                        Bloom Health Hospital provides two pathways for fast and dependable testing for Self-Pay and Insured Patients:
                     </p>
 
                     <h2

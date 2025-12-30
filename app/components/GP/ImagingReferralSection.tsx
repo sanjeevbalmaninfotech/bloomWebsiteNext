@@ -42,7 +42,7 @@ export default function ImagingReferralSection() {
 
                 {/* Cards Section Heading */}
                 <h2 className="text-black mb-6 md:mb-8 text-base sm:text-lg md:text-xl leading-relaxed tracking-tight font-axiforma">
-                    How GPs can refer patients for imaging
+                    How GPs can refer Self-Pay or Insured Patients for Imaging
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">

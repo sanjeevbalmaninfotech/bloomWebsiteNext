@@ -5,8 +5,8 @@ const ServicesSection = () => {
     const services = [
         {
             imageUrl: "/Icons/Walkins.svg",
-            titleLine1: "Urgent Care Centre &",
-            titleLine2: "GP Walk-Ins",
+            titleLine1: "Private Urgent Care Centre &",
+            titleLine2: "Walk-In GP",
             description: "24/7 access to immediate medical support. Walk in at any time for urgent treatment or GP consultations, with no appointments required and minimal waiting, providing fast, reassuring care when it matters most.",
             route: "/ucc"
         },
@@ -70,17 +70,17 @@ const ServicesSection = () => {
                         {services.map((service, index) => (
                             <React.Fragment key={index}>
                                 {/* Service Card */}
-                                <div className="flex flex-col items-center gap-[15px] text-white md:px-5 lg:px-6 flex-1 md:max-w-[280px] lg:max-w-none">
+                                <div className="flex flex-col items-start gap-[15px] text-white md:px-2 lg:px-2 flex-1 md:max-w-[280px] lg:max-w-none">
                                     <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-2">
                                         <img src={service.imageUrl} alt={service.titleLine1} className="w-full h-full" />
                                     </div>
 
-                                    <h3 className="font-semibold text-lg sm:text-[18px] leading-[1.2] tracking-[-0.02em] capitalize text-center mb-3">
+                                    <h3 className="font-semibold text-lg sm:text-[18px] leading-[1.2] tracking-[-0.02em] capitalize text-left mb-3 w-full">
                                         {service.titleLine1} <br />
                                         {service.titleLine2}
                                     </h3>
 
-                                    <p className="font-normal text-sm sm:text-[15px] leading-[20px] tracking-[-0.03em] text-left text-white/90 mb-4">
+                                    <p className="font-normal text-sm sm:text-[15px] leading-[20px] tracking-[-0.03em] text-left text-white/90 mb-4 w-full">
                                         {service.description}
                                     </p>
 

@@ -26,7 +26,7 @@ export default function ImageSection() {
                             Pathology and Blood Testing
                         </h1>
                         <p className="font-axiforma font-semibold text-white text-[20px] leading-[22px] tracking-[-0.02em] capitalize mt-1">
-                            Fast, reliable and comprehensive tests.
+                            Fast, affordable and comprehensive tests.
                         </p>
 
 
