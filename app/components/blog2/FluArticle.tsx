@@ -53,7 +53,7 @@ const FluArticle = () => {
 
                 {/* 2nd Heading */}
                 <h2
-                    className="font-medium text-[22px] leading-[200%] text-[#000000] mb-2"
+                    className="font-medium text-[22px] leading-[200%] text-[#000000] "
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     Why Winter Increases the Risk?

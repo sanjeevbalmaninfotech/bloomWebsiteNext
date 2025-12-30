@@ -14,7 +14,7 @@ const HealthcareNeedSection = () => {
             <section className=" mx-auto py-2 bg-white antialiased">
                 {/* Main Heading */}
                 <h2
-                    className="font-semibold text-[36px] leading-[150%] text-[#000000] mb-2"
+                    className="font-semibold text-[36px] leading-[150%] text-[#000000] "
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     When a Fall Needs Medical Attention
@@ -58,7 +58,7 @@ const HealthcareNeedSection = () => {
 
                 {/* 2nd Description Block */}
                 <div
-                    className="font-normal text-[15px] leading-[200%] text-[#8A8A8A] space-y-1"
+                    className="font-normal text-[15px] leading-[200%] text-[#8A8A8A] "
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     <p>

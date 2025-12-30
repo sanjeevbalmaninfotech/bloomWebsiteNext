@@ -14,7 +14,7 @@ const HealthcareNeedSection = () => {
             <section className=" mx-auto py-2 bg-white antialiased">
                 {/* Main Heading */}
                 <h2
-                    className="font-semibold text-[36px] leading-[150%] text-[#000000] mb-2"
+                    className="font-semibold text-[36px] leading-[150%] text-[#000000] mb-1"
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     A Changing Healthcare Need
@@ -55,7 +55,7 @@ const HealthcareNeedSection = () => {
 
                 {/* 2nd Heading */}
                 <h3
-                    className="font-medium text-[22px] leading-[200%] text-[#000000] mt-4 mb-4"
+                    className="font-medium text-[22px] leading-[200%] text-[#000000] mt-2 mb-1"
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     Looking Ahead

@@ -55,7 +55,7 @@ const FluArticle = () => {
 
                 {/* 2nd Heading */}
                 <h2
-                    className="font-medium text-[22px] leading-[200%] text-[#000000] mb-4"
+                    className="font-medium text-[22px] leading-[200%] text-[#000000] mb-1"
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     What’s Behind This Year’s Flu Surge?
@@ -63,7 +63,7 @@ const FluArticle = () => {
 
                 {/* 2nd Description (Multiple Paragraphs) */}
                 <div
-                    className="font-normal text-[15px] leading-[150%] text-[#8A8A8A] space-y-6"
+                    className="font-normal text-[15px] leading-[150%] text-[#8A8A8A] space-y-2"
                     style={{ fontFamily: "'Axiforma', sans-serif" }}
                 >
                     <p>
