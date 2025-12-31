@@ -22,7 +22,7 @@ const TermsPage = () => {
                     Last updated: 02-01-2026
                 </p>
 
-                {/* --- Section 1: Introduction --- */}
+                {/* --- Section 1: Introduction ---  */}
                 <section className="mb-5">
                     <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         1. Introduction
