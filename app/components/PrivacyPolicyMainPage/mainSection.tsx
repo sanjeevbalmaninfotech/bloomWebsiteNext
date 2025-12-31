@@ -19,7 +19,7 @@ const privacyPolicyMainSection = () => {
                 </p>
                 {/* Date Section */}
                 <p className="font-['Axiforma'] font-semibold text-[18px] leading-[100%] tracking-[0%] capitalize text-[#000000] mb-8">
-                    Last updated: 27-11-2025
+                    Last updated: 02-01-2026
                 </p>
 
                 {/* --- Section 0: Introduction --- */}
