@@ -19,8 +19,7 @@ export default function ImagingReferralSection() {
     ];
 
     return (
-        <div className="pb-120 px-6 md:pb-12 md:pt-2 md:px-4 lg:pb-12 lg:pt-[10px] lg:px-[120px]">
-
+        <div className="pb-12 pt-4 px-4 md:pb-12 md:pt-2 md:px-4 lg:pb-12 lg:pt-[10px] lg:px-[120px]">
             <div className="max-w-7xl mx-auto">
                 {/* Main Heading */}
                 <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">
