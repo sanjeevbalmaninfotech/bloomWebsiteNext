@@ -4,7 +4,7 @@ interface BlogsImageSectionProps {
     priority?: boolean; // Set to true if the image is at the very top of the page
 }
 
-export default function BlogsImageSection({
+export default function BlogsImgSection({
     imageUrl,
     altText,
     priority = false

@@ -20,7 +20,7 @@ export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardP
             <img
                 src={imageUrl}
                 alt={name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-top"
             />
 
             {/* Gradient Overlay */}
@@ -32,7 +32,7 @@ export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardP
             />
 
             {/* Text Content - Bottom Left */}
-            <div className="absolute bottom-0 left-0 p-4 sm:p-5 md:p-6 text-white">
+            <div className="absolute bottom-0 left-0 p-4 sm:p-5 md:p-3 text-white">
                 <h3
                     className="font-semibold text-base sm:text-lg"
                     style={{
@@ -43,7 +43,7 @@ export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardP
                     {name}
                 </h3>
                 <p
-                    className="font-medium text-sm sm:text-[15px] mt-1"
+                    className="font-medium text-sm sm:text-[15px] mt-[2px]"
                     style={{
                         lineHeight: '1.33',
                         letterSpacing: '0',

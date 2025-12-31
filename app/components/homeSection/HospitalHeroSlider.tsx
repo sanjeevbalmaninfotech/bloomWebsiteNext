@@ -42,7 +42,7 @@ const HospitalHeroSlider = () => {
               24/7 Private Urgent Care | Walk-In GP | Comprehensive Diagnostics | Consultant Specialists  </p>
 
             <p className="text-gray-100 font-axiforma text-[16px] md:text-[22px] max-w-2xl leading-relaxed tracking-tight mt-1">
-              All in one modern hospital designed around your needs</p>
+              All in one modern hospital designed around your needs.</p>
 
             <div className="mt-6">
               <RegisterButton />

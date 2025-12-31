@@ -13,7 +13,7 @@ export default function GPUtilise() {
         <div
             className="w-full py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]"
             style={{
-                background: "linear-gradient(134.4deg, #157DC1 -11.36%, #49acac  143.43%)",
+                background: "linear-gradient( #157DC1, #49acac)",
             }}
         >
             <div className="max-w-7xl mx-auto">

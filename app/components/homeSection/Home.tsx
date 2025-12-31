@@ -11,6 +11,7 @@ import PrivacyModal from "../PrivacyPolicy/PrivacyModal";
 import FooterImage from "../footer/FooterImage";
 import UccFAQSection from "../footer/UccFAQSection";
 import { homePageFAQ } from '@/app/constants/FAQs';
+import OurTeamSection from "./OurTeamSection";
 
 
 export const HomeSection = () => {
@@ -23,7 +24,7 @@ export const HomeSection = () => {
 
       <NewOurServices />
       <OriginBloomSection />
-
+      <OurTeamSection />
       <NewsSection />
       <PrivacyModal />
       <div>
