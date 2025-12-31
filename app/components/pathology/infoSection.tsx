@@ -320,7 +320,7 @@ export default function InfoSection() {
 
                         </>
 
-                        <div className="max-w-3xl  bg-white">
+                        <div className="max-w-3xl bg-white px-4 md:px-0">
                             {sections.map((section, index) => (
                                 <div key={index} className="border-b mt-4" style={{
                                     borderImage: openNewIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
@@ -328,14 +328,14 @@ export default function InfoSection() {
                                 }}>
                                     <button
                                         onClick={() => toggleNewSection(index)}
-                                        className="w-full py-4 px-2 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                                        className="w-full py-4 px-0 flex items-center justify-between hover:bg-gray-50 transition-colors text-left"
                                     >
                                         <span
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 500,
-                                                fontSize: '22px',
-                                                lineHeight: '24px',
+                                                fontSize: '18px',
+                                                lineHeight: '22px',
                                                 letterSpacing: '-0.03em',
                                                 background: openNewIndex === index
                                                     ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)'
@@ -344,6 +344,7 @@ export default function InfoSection() {
                                                 WebkitTextFillColor: openNewIndex === index ? 'transparent' : '#171717',
                                                 backgroundClip: openNewIndex === index ? 'text' : 'unset'
                                             }}
+                                            className="md:text-[22px] md:leading-[24px]"
                                         >
                                             {section.title}
                                         </span>
@@ -353,6 +354,7 @@ export default function InfoSection() {
                                             height="24"
                                             viewBox="0 0 24 24"
                                             fill="none"
+                                            className="flex-shrink-0 ml-2"
                                             style={{
                                                 transform: openNewIndex === index ? 'rotate(0deg)' : 'rotate(-90deg)',
                                                 transition: 'transform 0.3s ease'
@@ -376,11 +378,11 @@ export default function InfoSection() {
                                         }}
                                     >
                                         {Array.isArray(section.items) ? (
-                                            <ul className="pb-4 px-2 space-y-2">
+                                            <ul className="pb-4 px-0 space-y-2">
                                                 {(section.items as string[]).map((item, itemIndex) => (
                                                     <li
                                                         key={itemIndex}
-                                                        className="flex items-center"
+                                                        className="flex items-start text-left"
                                                         style={{
                                                             fontFamily: 'Axiforma, sans-serif',
                                                             fontWeight: 500,
@@ -390,19 +392,19 @@ export default function InfoSection() {
                                                             color: '#8A8A8A'
                                                         }}
                                                     >
-                                                        <span className="mr-3 flex-shrink-0" style={{
+                                                        <span className="mr-3 flex-shrink-0 mt-2" style={{
                                                             width: '6px',
                                                             height: '6px',
                                                             borderRadius: '50%',
                                                             backgroundColor: '#8A8A8A'
                                                         }}></span>
-                                                        {item}
+                                                        <span className="flex-1">{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
                                         ) : section.items ? (
                                             <p
-                                                className="pb-4 px-2"
+                                                className="pb-4 px-0 text-left"
                                                 style={{
                                                     fontFamily: 'Axiforma, sans-serif',
                                                     fontWeight: 500,

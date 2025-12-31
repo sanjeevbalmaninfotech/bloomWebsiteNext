@@ -29,15 +29,15 @@ export default function SafetyQualitySection() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="mt-8 flex flex-nowrap justify-between items-start gap-8 md:gap-12 lg:gap-16 xl:gap-20">
+                <div className="mt-8 flex flex-wrap md:flex-nowrap justify-between items-start gap-4 md:gap-8 lg:gap-12 xl:gap-16">
                     {imagingServices?.map((service, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-start text-left min-w-0 flex-1"
-                        /* flex-1 se sabhi items barabar jagah lenge */
+                            className="flex flex-col items-start text-left min-w-0 flex-1 basis-[calc(50%-0.5rem)] md:basis-auto"
+                        /* Mobile par 2 columns, desktop par full row */
                         >
                             <div className="mb-2 flex items-start justify-start">
-                                <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-start">
+                                <div className="w-12 h-12 md:w-15 md:h-15 flex items-center justify-start">
                                     <img
                                         src={service.icon}
                                         alt=""
@@ -46,7 +46,7 @@ export default function SafetyQualitySection() {
                                 </div>
                             </div>
 
-                            <p className="text-white text-[15px] leading-tight mt-1 font-axiforma break-words">
+                            <p className="text-white text-sm md:text-[15px] leading-tight mt-1 font-axiforma break-words">
                                 {service.title}
                             </p>
                         </div>

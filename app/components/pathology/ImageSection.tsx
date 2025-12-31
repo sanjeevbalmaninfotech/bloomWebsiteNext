@@ -11,7 +11,7 @@ export default function ImageSection() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
-                    src="\images\pathologyHeroImage.png"
+                    src="\images\pathologyHeroImage.jpg" //"C:\project\bloomWebsiteNext\public\images\pathologyHeroImage.jpg"
                     alt="Information For GPs"
                     className="w-full h-full object-cover"
                 />

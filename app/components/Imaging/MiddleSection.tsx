@@ -161,32 +161,35 @@ export default function MiddleSection() {
 
                     </>
                     <>
-                        <div className="max-w-3xl   bg-white mt-8">
+                        <div className="max-w-3xl bg-white mt-8 px-4 md:px-0">
                             {sectionsAccordion.map((section, index) => (
                                 <div key={index} className="border-b mt-4" style={{
                                     borderImage: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
                                     borderBottom: openIndex === index ? '1px solid' : '1px solid #e5e5e5'
                                 }}>
-                                    {/* --- Header / Button (Remains mostly same) --- */}
+                                    {/* --- Header / Button --- */}
                                     <button
                                         onClick={() => toggleSection(index)}
-                                        className="w-full py-4 px-2 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                                        className="w-full py-4 px-0 flex items-center justify-between hover:bg-gray-50 transition-colors text-left"
                                     >
                                         <span style={{
                                             fontFamily: 'Axiforma, sans-serif',
                                             fontWeight: 500,
-                                            fontSize: '22px',
-                                            lineHeight: '24px',
+                                            fontSize: '18px',
+                                            lineHeight: '22px',
                                             letterSpacing: '-0.03em',
                                             background: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)' : '',
                                             WebkitBackgroundClip: openIndex === index ? 'text' : 'unset',
                                             WebkitTextFillColor: openIndex === index ? 'transparent' : '#171717',
                                             backgroundClip: openIndex === index ? 'text' : 'unset'
-                                        }}>
+                                        }}
+                                            className="md:text-[22px] md:leading-[24px]"
+                                        >
                                             {section.title}
                                         </span>
 
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            className="flex-shrink-0 ml-2"
                                             style={{
                                                 transform: openIndex === index ? 'rotate(0deg)' : 'rotate(-90deg)',
                                                 transition: 'transform 0.3s ease'
@@ -198,12 +201,11 @@ export default function MiddleSection() {
 
                                     {/* --- Accordion Content Body --- */}
                                     <div style={{
-
                                         maxHeight: openIndex === index ? '1200px' : '0',
                                         overflow: 'hidden',
                                         transition: 'max-height 0.4s ease'
                                     }}>
-                                        <div className="pb-4 px-2" style={{
+                                        <div className="pb-4 px-0" style={{
                                             fontFamily: 'Axiforma, sans-serif',
                                             fontWeight: 500,
                                             fontSize: '15px',
@@ -211,18 +213,6 @@ export default function MiddleSection() {
                                             letterSpacing: '-0.03em',
                                             color: '#8A8A8A'
                                         }}>
-
-
-                                            {/* {section.image && (
-                                                <div className="mb-4 mt-2">
-                                                    <img
-                                                        src={section.image}
-                                                        alt={section.title}
-                                                        className="w-3/4 md:w-1/2 h-auto rounded-lg object-cover"
-                                                    />
-                                                </div>
-                                            )} */}
-
                                             {/* 1. Image (Conditional) */}
                                             {section.image && (
                                                 <div className="mb-4 mt-2">
@@ -233,39 +223,39 @@ export default function MiddleSection() {
                                                     />
                                                 </div>
                                             )}
+
                                             {/* 2. Sub-Heading (Conditional) */}
                                             {section.subHeading && (
-                                                <h4 className="text-black font-bold mb-2 text-lg">
+                                                <h4 className="text-black font-bold mb-2 text-base md:text-lg">
                                                     {section.subHeading}
                                                 </h4>
                                             )}
 
                                             {/* 3. Main Description (Conditional) */}
                                             {section.description && (
-                                                <p className="mb-3">
+                                                <p className="mb-3 text-left">
                                                     {section.description}
                                                 </p>
                                             )}
 
                                             {/* 4. List Items (Conditional) */}
                                             {section.listItems && section.listItems.length > 0 && (
-                                                <ul className="mb-3 ml-1">
+                                                <ul className="mb-3 ml-0 space-y-2">
                                                     {section.listItems.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2 mb-1">
-                                                            <span className="text-[#157DC1]">•</span>
-                                                            <span>{item}</span>
+                                                        <li key={i} className="flex items-start gap-2">
+                                                            <span className="text-[#157DC1] mt-1 flex-shrink-0">•</span>
+                                                            <span className="text-left flex-1">{item}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
                                             )}
 
-                                            {/* 5. End Description (Conditional - Explain the bullet points) */}
+                                            {/* 5. End Description (Conditional) */}
                                             {section.endDescription && (
-                                                <p className="mt-2 text-sm italic text-gray-600 border-l-2 border-[#157DC1] pl-3">
+                                                <p className="mt-2 text-sm italic text-gray-600 border-l-2 border-[#157DC1] pl-3 text-left">
                                                     {section.endDescription}
                                                 </p>
                                             )}
-
                                         </div>
                                     </div>
                                 </div>
