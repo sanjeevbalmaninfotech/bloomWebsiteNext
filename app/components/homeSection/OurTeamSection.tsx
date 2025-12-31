@@ -8,31 +8,31 @@ export default function OurTeamSection() {
             id: 3,
             name: 'Dr Ram M Mailapalli',
             role: 'Board Member',
-            imageUrl: '/staff/ram.png'
+            imageUrl: '/staff/RAM.png'
         },
         {
             id: 4,
             name: 'Rupe Dhaliwal',
             role: 'Chief of Staff',
-            imageUrl: '/staff/rupe.jpg'
+            imageUrl: '/staff/RUPE.png'
         },
         {
             id: 5,
             name: 'Roopa Karia',
             role: 'Chief Pharmacist',
-            imageUrl: '/staff/fateh.jpg'
+            imageUrl: '/staff/ROOPA.png'
         },
         {
             id: 1,
             name: 'Fateh Sandhu',
             role: 'Commercial Coordinator',
-            imageUrl: '/staff/fateh.jpg' // "C:\project\bloomWebsiteNext\public\staff\fateh.jpg"
+            imageUrl: '/staff/FATEH.png' // "C:\project\bloomWebsiteNext\public\staff\fateh.jpg"
         },
         {
             id: 2,
             name: 'Sanya Kajla',
             role: 'Consultant Paediatrician',
-            imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop'
+            imageUrl: '/staff/SANYA.png'
         },
 
     ];

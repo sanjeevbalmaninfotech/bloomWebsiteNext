@@ -128,19 +128,19 @@ const UrgentCareBlock = () => {
       id: 3,
       name: 'Dr. Shindo Francis',
       role: 'Urgent Care Center Clinical Lead',
-      imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop'
+      imageUrl: '/staff/Shindo.jpg'
     },
     {
       id: 1,
       name: 'Chris Larmour',
       role: 'Lead Nurse',
-      imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop'
+      imageUrl: '/staff/Chris.jpg'
     },
     {
       id: 2,
       name: 'Andy Marfleet',
       role: 'Radiographer',
-      imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop'
+      imageUrl: '/staff/Andy.jpg'
     },
 
   ];

@@ -92,6 +92,31 @@ export default function BottomFooter() {
                                         For GPs
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link
+                                        href="/termsAndConditions"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Terms & Conditions
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/privacyPolicy"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/privacyPolicy"
+                                        className="text-gray-300 hover:text-white transition-colors"
+                                    >
+                                        Cookies Policy
+                                    </Link>
+                                </li>
+
 
                             </ul>
                         </div>

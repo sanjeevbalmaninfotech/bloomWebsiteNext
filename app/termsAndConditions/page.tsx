@@ -1,8 +1,12 @@
+import Navbar from "../components/Navbar";
+import TermsPage from "../components/termsAndConditions/TermsPage";
+
 
 export default function TermsAndConditions() {
     return (
         <div>
-            <h1>Terms and Conditions</h1>
+            <Navbar />
+            <TermsPage />
         </div>
     );
 }   
