@@ -8,7 +8,7 @@ export default function OurTeamSection() {
             id: 3,
             name: 'Dr Ram M Mailapalli',
             role: 'Board Member',
-            imageUrl: '/staff/RAM.png'
+            imageUrl: '/images/RAM.png'
         },
         {
             id: 4,
