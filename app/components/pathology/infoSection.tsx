@@ -320,7 +320,7 @@ export default function InfoSection() {
 
                         </>
 
-                        <div className="max-w-3xl bg-white px-4 md:px-0">
+                        <div className="max-w-3xl bg-white">
                             {sections.map((section, index) => (
                                 <div key={index} className="border-b mt-4" style={{
                                     borderImage: openNewIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
@@ -328,7 +328,7 @@ export default function InfoSection() {
                                 }}>
                                     <button
                                         onClick={() => toggleNewSection(index)}
-                                        className="w-full py-4 px-0 flex items-center justify-between hover:bg-gray-50 transition-colors text-left"
+                                        className="w-full py-4 px-2 flex items-center justify-between hover:bg-gray-50 transition-colors"
                                     >
                                         <span
                                             style={{
@@ -342,7 +342,9 @@ export default function InfoSection() {
                                                     : '',
                                                 WebkitBackgroundClip: openNewIndex === index ? 'text' : 'unset',
                                                 WebkitTextFillColor: openNewIndex === index ? 'transparent' : '#171717',
-                                                backgroundClip: openNewIndex === index ? 'text' : 'unset'
+                                                backgroundClip: openNewIndex === index ? 'text' : 'unset',
+                                                textAlign: 'left',
+                                                display: 'block'
                                             }}
                                             className="md:text-[22px] md:leading-[24px]"
                                         >
@@ -378,18 +380,19 @@ export default function InfoSection() {
                                         }}
                                     >
                                         {Array.isArray(section.items) ? (
-                                            <ul className="pb-4 px-0 space-y-2">
+                                            <ul className="pb-4 px-2 space-y-2" style={{ textAlign: 'left' }}>
                                                 {(section.items as string[]).map((item, itemIndex) => (
                                                     <li
                                                         key={itemIndex}
-                                                        className="flex items-start text-left"
+                                                        className="flex items-start"
                                                         style={{
                                                             fontFamily: 'Axiforma, sans-serif',
                                                             fontWeight: 500,
                                                             fontSize: '15px',
                                                             lineHeight: '24px',
                                                             letterSpacing: '-0.03em',
-                                                            color: '#8A8A8A'
+                                                            color: '#8A8A8A',
+                                                            textAlign: 'left'
                                                         }}
                                                     >
                                                         <span className="mr-3 flex-shrink-0 mt-2" style={{
@@ -398,20 +401,21 @@ export default function InfoSection() {
                                                             borderRadius: '50%',
                                                             backgroundColor: '#8A8A8A'
                                                         }}></span>
-                                                        <span className="flex-1">{item}</span>
+                                                        <span style={{ textAlign: 'left' }}>{item}</span>
                                                     </li>
                                                 ))}
                                             </ul>
                                         ) : section.items ? (
                                             <p
-                                                className="pb-4 px-0 text-left"
+                                                className="pb-4 px-2"
                                                 style={{
                                                     fontFamily: 'Axiforma, sans-serif',
                                                     fontWeight: 500,
                                                     fontSize: '15px',
                                                     lineHeight: '24px',
                                                     letterSpacing: '-0.03em',
-                                                    color: '#8A8A8A'
+                                                    color: '#8A8A8A',
+                                                    textAlign: 'left'
                                                 }}
                                             >
                                                 {section.items as string}
