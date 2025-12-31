@@ -6,12 +6,12 @@ export default function ImageSection() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200"
+                    src="images/GPHero.jpg"
                     alt="Information For GPs"
                     className="w-full h-full object-cover"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-cyan-800/80 to-transparent"></div> */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/95 to-transparent"></div>
+
             </div>
 
             {/* Content */}

@@ -1,25 +1,22 @@
 
 import React from 'react';
 import { RegisterButton } from '../registerButton/RegisterButton';
+import OpeningDateSection from '../OpeningDateSection/OpeningDateSection';
 
 
 
 export default function ImagingScreeningSection() {
     return (
-        <div className="relative w-full h-[418px] overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden">
             {/* Background Image with Overlay */}
+            <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070"
+                    src="images/imgScrHero.jpg"
                     alt="Medical imaging professional reviewing scans"
                     className="w-full h-full object-cover"
                 />
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background: 'linear-gradient(270deg, rgba(0, 0, 0, 0) -0.14%, rgba(0, 0, 0, 0.8) 42.21%)',
-                    }}
-                />
+
             </div>
 
             {/* Content */}

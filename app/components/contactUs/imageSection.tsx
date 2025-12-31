@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { RegisterButton } from '../registerButton/RegisterButton';
+import OpeningDateSection from '../OpeningDateSection/OpeningDateSection';
 
 
 
@@ -8,6 +9,7 @@ export default function ImagingScreeningSection() {
     return (
         <div className="relative w-full h-[418px] overflow-hidden">
             {/* Background Image with Overlay */}
+            <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
                     src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070"
@@ -17,7 +19,7 @@ export default function ImagingScreeningSection() {
                 <div
                     className="absolute inset-0"
                     style={{
-                        background: 'linear-gradient(270deg, rgba(0, 0, 0, 0) -0.14%, rgba(0, 0, 0, 0.8) 42.21%)',
+                        background: 'linear-gradient( rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) )',
                     }}
                 />
             </div>
@@ -49,7 +51,15 @@ export default function ImagingScreeningSection() {
                         </p> */}
 
                         {/* Description */}
-
+                        <p
+                            className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
+                            style={{
+                                fontFamily: 'Axiforma, sans-serif',
+                                fontWeight: 400,
+                            }}
+                        >
+                            Find us easily, contact our team, and get the information you need to plan your visit.
+                        </p>
 
 
                     </div>

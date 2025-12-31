@@ -1,8 +1,13 @@
+'use client';
+
+import OpeningDateSection from "../OpeningDateSection/OpeningDateSection";
 import { RegisterButton } from "../registerButton/RegisterButton";
 
 export default function ImageSection() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
+
+            <OpeningDateSection />
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
@@ -14,7 +19,8 @@ export default function ImageSection() {
                     className="absolute inset-0"
                     style={{
                         background: `linear-gradient( 270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%,  rgba(0, 0, 0, 0.55) 70.45%,  rgba(0, 0, 0, 0.8) 100%    )`,
-                    }} />
+                    }}
+                />
             </div>
 
             {/* Content */}
@@ -29,17 +35,14 @@ export default function ImageSection() {
                             Fast, affordable and comprehensive tests.
                         </p>
 
-
                         {/* Description 1 */}
                         <p className="text-gray-100 font-axiforma text-[15px] leading-relaxed tracking-tight">
-
-                            At Bloom Health, we know that when you’re unwell, worried about symptoms, or simply want clarity about your health, getting answers quickly makes all the difference. Our integrated Pathology & Testing service brings together on-site point-of-care testing (POCT) and an extensive accredited laboratory network, giving you access to an exceptionally wide range of tests, all in one place.
+                            At Bloom Health, we know that when you're unwell, worried about symptoms, or simply want clarity about your health, getting answers quickly makes all the difference. Our integrated Pathology & Testing service brings together on-site point-of-care testing (POCT) and an extensive accredited laboratory network, giving you access to an exceptionally wide range of tests, all in one place.
                         </p>
 
                         {/* Description 2 */}
                         <p className="text-gray-100 font-axiforma text-[15px] leading-relaxed tracking-tight">
-
-                            Whether  tests are needed as part of an urgent care visit, a specialist consultation, or a routine health check, our pathology services are designed to provide clear insights and support informed next steps in your care.
+                            Whether tests are needed as part of an urgent care visit, a specialist consultation, or a routine health check, our pathology services are designed to provide clear insights and support informed next steps in your care.
                         </p>
                         <div className="mt-6">
                             <RegisterButton />
@@ -47,6 +50,8 @@ export default function ImageSection() {
                     </div>
                 </div>
             </div>
+
+            {/* Animation Styles */}
 
         </div>
     );

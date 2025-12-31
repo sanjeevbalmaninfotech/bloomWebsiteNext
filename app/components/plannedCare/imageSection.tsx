@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { RegisterButton } from "../registerYourInterest/registerYourInterest";
+import OpeningDateSection from '../OpeningDateSection/OpeningDateSection';
 
 
 
@@ -10,6 +11,7 @@ export default function ImagingScreeningSection() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
             {/* Background Image with Overlay */}
+            <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
                     src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070"

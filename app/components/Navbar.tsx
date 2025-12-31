@@ -181,6 +181,7 @@ const Navbar = () => {
 
 
             {/* Mobile Services */}
+
             <div ref={mobileServicesRef}>
               <button
                 onClick={() => {
@@ -233,7 +234,9 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-
+            <Link href="/" className="block py-2 text-gray-700 hover:text-teal-600 font-medium transition-colors">
+              Home
+            </Link>
             <Link
               href="/careers"
               onClick={handleLinkClick}
@@ -260,7 +263,7 @@ const Navbar = () => {
       )}
 
 
-      <div className="flex items-center justify-end p-2 overflow-hidden">
+      {/* <div className="flex items-center justify-end p-2 overflow-hidden">
         <span
           className="font-semibold text-[16px] leading-[140%] tracking-normal whitespace-nowrap roll-text"
           style={{
@@ -288,7 +291,7 @@ const Navbar = () => {
       animation: rollRightToLeft 30s linear infinite;
     }
   `}</style>
-      </div>
+      </div> */}
 
     </nav>
   );

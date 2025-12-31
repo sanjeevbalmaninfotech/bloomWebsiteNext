@@ -1,18 +1,18 @@
 
+import OpeningDateSection from '../OpeningDateSection/OpeningDateSection';
 import { RegisterButton } from '../registerButton/RegisterButton';
 export default function ImageSection() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
             {/* Background Image with Overlay */}
+            <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
                     src="/images/ucc/uccHero.jpg"
                     alt="Information For GPs"
                     className="w-full h-full object-cover"
                 />
-                {/* <div className="absolute inset-0 bg-gradient-to-r from-teal-900/90 via-cyan-800/80 to-transparent"></div> */}
-                {/* <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_100%)]"></div> */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/95 to-transparent"></div>
+
             </div>
 
             {/* Content */}

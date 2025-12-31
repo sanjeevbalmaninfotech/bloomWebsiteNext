@@ -160,13 +160,13 @@ const InfoSection = () => {
                         style={{ background: 'linear-gradient(132.66deg, #157DC1 -11.36%, #5FC1A3 150.43%)' }}
                     >
                         <div className="flex flex-col gap-6">
-                            <div>
+                            {/* <div>
                                 <Phone className="w-8 h-8 mb-3" />
                                 <h3 className="font-axiforma text-[20px] font-semibold leading-[140%] mb-2">
                                     Call Us
                                 </h3>
                                 <p className="text-[18px] font-medium">01908 227 777</p>
-                            </div>
+                            </div> */}
 
                             <div>
                                 <Mail className="w-8 h-8 mb-3" />

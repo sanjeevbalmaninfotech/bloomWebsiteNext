@@ -11,7 +11,7 @@ import UccFAQSection from "../components/footer/UccFAQSection";
 import { uccPageFAQ } from "../constants/FAQs";
 
 const UrgentCareBlock = () => {
-  const services = [
+  const uccServices = [
     {
       icon: "/TREATMENT.svg",
       title: "Treatment of minor emergencies (sprains, cuts, fractures)",
@@ -299,12 +299,30 @@ const UrgentCareBlock = () => {
       <div
         className="w-full py-12 md:py-16"
         style={{
-          background: "linear-gradient(134.4deg, #157DC1 -11.36%, #49acac  143.43%)",
+          background: "linear-gradient( #157DC1 , #49acac )",
         }}
       >
         <div className="px-4 md:px-8 lg:px-16 xl:px-24 max-w-[1920px] mx-auto">
+
+          {/* Added Heading Section */}
+          <div className="max-w-7xl mx-auto">
+            <h2
+              className="text-white text-left mb-8 md:mb-12"
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                fontWeight: "600",
+                fontSize: "36px",
+                lineHeight: "48px",
+                letterSpacing: "-0.72px",
+                verticalAlign: "middle"
+              }}
+            >
+              What We Treat
+            </h2>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 md:gap-8 max-w-7xl mx-auto">
-            {services.map((service, index) => (
+            {uccServices.map((service, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center text-center"
@@ -487,45 +505,65 @@ const UrgentCareBlock = () => {
       <div
         className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"
         style={{
-          background:
-            "linear-gradient(133.24deg, #157DC1 -11.36%, #49acac 136.67%)",
+          background: "linear-gradient(#157DC1 , #49acac )",
         }}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
+
+          {/* NEW HEADER SECTION */}
+          <div className="bg-white rounded-2xl p-6 md:p-10 mb-8 md:mb-12">
             <p
-              className="text-white text-sm md:text-base mb-2"
-              style={{ fontFamily: "Axiforma, sans-serif" }}
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                fontWeight: "400",
+                fontSize: "15px",
+                lineHeight: "24px",
+                letterSpacing: "-0.45px",
+                color: "#171717",
+                verticalAlign: "middle"
+              }}
             >
               Important Information for Patients
             </p>
 
             <h2
-              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 max-w-5xl"
-              style={{ fontFamily: "Axiforma, sans-serif" }}
+              className="my-1"
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                fontWeight: "600",
+                fontSize: "36px",
+                lineHeight: "1.2", // Adjusting 'm' spacing to a standard visual equivalent
+                letterSpacing: "0px",
+                color: "#E7000B",
+                verticalAlign: "middle"
+              }}
             >
-              Conditions Requiring Emergency Care (Not Treated Here)
+              Conditions Not Treated Here
             </h2>
 
             <p
-              className="text-white text-sm md:text-base max-w-5xl"
-              style={{ fontFamily: "Axiforma, sans-serif" }}
+              style={{
+                fontFamily: "Axiforma, sans-serif",
+                fontWeight: "400",
+                fontSize: "15px",
+                lineHeight: "24px",
+                letterSpacing: "-0.45px",
+                color: "#8A8A8A",
+                verticalAlign: "middle"
+              }}
             >
-              Our Urgent Care Centre is designed for non-life-threatening
-              illnesses and injuries. For your safety, the conditions below
-              require A&E or emergency services and cannot be treated at urgent
-              care.
+              Our Urgent Care Centre is designed for non-life-threatening illnesses and injuries. For your safety, the conditions below require A&E or emergency services and cannot be treated at urgent care.
             </p>
           </div>
+
+          {/* YOUR EXISTING GRID */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             {conditions.map((condition, index) => {
               const isLastItem = index === conditions.length - 1;
-
               return (
                 <div
                   key={index}
-                  className={`bg-white rounded-lg p-4 md:p-6 ${isLastItem ? "border-3 border-[#DC2626]" : ""
-                    }`}
+                  className={`bg-white  rounded-2xl p-4 md:p-6 ${isLastItem ? "border-5 border-[#DC2626]" : ""}`}
                   style={{ boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)" }}
                 >
                   <div className="flex gap-3 md:gap-4">
@@ -558,7 +596,6 @@ const UrgentCareBlock = () => {
           </div>
         </div>
       </div>
-
       {/* What to Expect Section */}
       <div
         className="w-full py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 xl:px-24"

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { RegisterButton } from "../registerButton/RegisterButton";
 import { slides } from "@/app/constants/homePage";
+import OpeningDateSection from "../OpeningDateSection/OpeningDateSection";
 
 const HospitalHeroSlider = () => {
 
@@ -9,17 +10,14 @@ const HospitalHeroSlider = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background Image with Overlay */}
+      <OpeningDateSection />
       <div className="absolute inset-0">
         <img
-          src="\images\pathologyHeroImage.png"
+          src="\images\homePageImage.jpg"
           alt="Information For GPs"
           className="w-full h-full object-cover"
         />
-        <div
-          className="absolute inset-0"
-          style={{
-            background: `linear-gradient( 270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 35%,  rgba(0, 0, 0, 0.55) 70.45%,  rgba(0, 0, 0, 0.8) 100% )`,
-          }} />
+
       </div>
 
       {/* Content */}
@@ -50,7 +48,9 @@ const HospitalHeroSlider = () => {
           </div>
         </div>
       </div>
+
     </div>
+
   );
 };
 
