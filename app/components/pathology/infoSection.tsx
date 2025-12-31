@@ -198,7 +198,7 @@ export default function InfoSection() {
                         >
                             We can perform rapid assessments for :
                         </p> */}
-                        <div className="max-w-3xl   bg-white">
+                        <div className="max-w-3xl bg-white">
                             {sectionsAccordion.map((section, index) => (
                                 <div key={index} className="border-b mt-4" style={{
                                     borderImage: openIndex === index ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%) 1' : 'none',
@@ -212,16 +212,19 @@ export default function InfoSection() {
                                             style={{
                                                 fontFamily: 'Axiforma, sans-serif',
                                                 fontWeight: 500,
-                                                fontSize: '22px',
-                                                lineHeight: '24px',
+                                                fontSize: '18px',
+                                                lineHeight: '22px',
                                                 letterSpacing: '-0.03em',
                                                 background: openIndex === index
                                                     ? 'linear-gradient(133.01deg, #157DC1 -11.36%, #5FC1A3 115%)'
                                                     : '',
                                                 WebkitBackgroundClip: openIndex === index ? 'text' : 'unset',
                                                 WebkitTextFillColor: openIndex === index ? 'transparent' : '#171717',
-                                                backgroundClip: openIndex === index ? 'text' : 'unset'
+                                                backgroundClip: openIndex === index ? 'text' : 'unset',
+                                                textAlign: 'left',
+                                                display: 'block'
                                             }}
+                                            className="md:text-[22px] md:leading-[24px]"
                                         >
                                             {section.title}
                                         </span>
@@ -231,6 +234,7 @@ export default function InfoSection() {
                                             height="24"
                                             viewBox="0 0 24 24"
                                             fill="none"
+                                            className="flex-shrink-0 ml-2"
                                             style={{
                                                 transform: openIndex === index ? 'rotate(0deg)' : 'rotate(-90deg)',
                                                 transition: 'transform 0.3s ease'
@@ -248,7 +252,6 @@ export default function InfoSection() {
 
                                     <div
                                         style={{
-                                            // Increased maxHeight to accommodate the list
                                             maxHeight: openIndex === index ? '300px' : '0',
                                             overflow: 'hidden',
                                             transition: 'max-height 0.3s ease'
@@ -260,18 +263,19 @@ export default function InfoSection() {
                                             fontSize: '15px',
                                             lineHeight: '24px',
                                             letterSpacing: '-0.03em',
-                                            color: '#8A8A8A'
+                                            color: '#8A8A8A',
+                                            textAlign: 'left'
                                         }}>
                                             {/* Standard Description */}
-                                            <p>{section.description}</p>
+                                            <p style={{ textAlign: 'left' }}>{section.description}</p>
 
                                             {/* Conditional List Rendering */}
                                             {section.listItems && (
-                                                <ul className="mt-2 ml-1">
+                                                <ul className="mt-2 ml-0" style={{ textAlign: 'left' }}>
                                                     {section.listItems.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2">
-                                                            <span>•</span>
-                                                            <span>{item}</span>
+                                                        <li key={i} className="flex items-start gap-2" style={{ textAlign: 'left' }}>
+                                                            <span className="text-[#157DC1] flex-shrink-0">•</span>
+                                                            <span style={{ textAlign: 'left' }}>{item}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
