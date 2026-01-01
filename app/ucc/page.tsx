@@ -134,13 +134,13 @@ const UrgentCareBlock = () => {
       id: 1,
       name: 'Chris Larmour', // comment added 
       role: 'Lead Nurse',
-      imageUrl: '/images/Chris.jpg'
+      imageUrl: '/staff/CHRIS.jpg'
     },
     {
       id: 2,
       name: 'Andy Marfleet',
       role: 'Radiographer',
-      imageUrl: '/images/Andy.jpg'
+      imageUrl: '/staff/ANDY.jpg'
     },
 
   ];
