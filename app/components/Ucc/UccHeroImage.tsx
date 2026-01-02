@@ -20,10 +20,10 @@ export default function ImageSection() {
                 <div className="max-w-7xl mx-auto w-full">
                     <div className="max-w-2xl space-y-4">
                         {/* Heading */}
-                        <h1 className="font-axiforma font-semibold text-white text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-[38px] tracking-[-0.02em] capitalize">
+                        <h1 className="font-axiforma font-semibold text-white text-[22px] sm:text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-[38px] tracking-[-0.02em] capitalize">
                             Private Urgent Care Centre
                         </h1>
-                        <p className="font-axiforma font-semibold text-white text-lg sm:text-xl md:text-[22px] leading-[42px] tracking-[-0.02em] capitalize mt-1">
+                        <p className="font-axiforma font-semibold text-white text-lg sm:text-xl md:text-[22px] leading-snug md:leading-[42px] tracking-[-0.02em] capitalize mt-1">
                             Hospital-based urgent care with on-site diagnostics, open 24/7
                         </p>
 

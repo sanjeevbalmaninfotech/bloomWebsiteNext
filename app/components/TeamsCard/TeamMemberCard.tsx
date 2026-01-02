@@ -9,10 +9,10 @@ type TeamMemberCardProps = {
 export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardProps) {
     return (
         <div
-            className="relative overflow-hidden w-full rounded-2xl"
+            className="relative overflow-hidden rounded-2xl group"
             style={{
-                aspectRatio: '380 / 300', // Maintains the original proportions
-                maxWidth: '380px',
+                width: '220px',
+                height: '220px',
                 margin: '0 auto', // Centers the card if container is wider
             }}
         >
@@ -20,7 +20,7 @@ export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardP
             <img
                 src={imageUrl}
                 alt={name}
-                className="w-full h-full object-top"
+                className="w-full h-full object-cover object-top "
             />
 
             {/* Gradient Overlay */}
