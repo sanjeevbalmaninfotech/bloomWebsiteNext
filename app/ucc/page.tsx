@@ -554,6 +554,12 @@ const UrgentCareBlock = () => {
             >
               Our Urgent Care Centre is designed for non-life-threatening illnesses and injuries. For your safety, the conditions below require A&E or emergency services and cannot be treated at urgent care.
             </p>
+
+            <p className="font-light italic text-xs text-[14px] text-[#8A8A8A] leading-6 tracking-[-0.45px] align-middle">
+              * This list is inclusive, not exhaustive.
+            </p>
+
+
           </div>
 
           {/* YOUR EXISTING GRID */}

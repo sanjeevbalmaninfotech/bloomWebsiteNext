@@ -164,7 +164,7 @@ export default function MiddleSection() {
                                         WebkitTextFillColor: "transparent",
                                     }}
                                 >
-                                    (Coming Soon)
+                                    - In Development
                                 </span>
                             </h1>
 

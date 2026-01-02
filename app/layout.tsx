@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     apple: "/favicon-apple.png",
     shortcut: "/favicon.svg",
   },
+  // Verification field added here
+  verification: {
+    google: "520pCrfzVNTDJrewt0NdpQRwopCdf8g5REDRf_gtA0k"
+  },
 };
 
 export default function RootLayout({

@@ -113,9 +113,9 @@ const SpecialtySlider = () => {
                                     {item.title}
                                 </h3>
 
-                                <h3 className="font-medium text-[18px] leading-[24px] tracking-[-0.45px] text-black align-middle">
+                                {/* <h3 className="font-medium text-[18px] leading-[24px] tracking-[-0.45px] text-black align-middle">
                                     (Coming Soon)
-                                </h3>
+                                </h3> */}
 
 
                                 <p className="font-normal text-[15px] leading-[24px] tracking-[-0.45px] text-black align-middle mt-4">
