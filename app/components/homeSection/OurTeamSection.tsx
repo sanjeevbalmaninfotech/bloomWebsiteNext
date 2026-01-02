@@ -31,7 +31,7 @@ export default function OurTeamSection() {
         {
             id: 2,
             name: 'Sanya Kajla',
-            role: 'Consultant Paediatrician',
+            role: 'Patient Experience Lead',
             imageUrl: '/staff/SANYA.png'
         },
 
