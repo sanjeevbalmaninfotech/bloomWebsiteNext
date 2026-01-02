@@ -24,12 +24,12 @@ export default function TeamMemberCard({ name, role, imageUrl }: TeamMemberCardP
             />
 
             {/* Gradient Overlay */}
-            <div
+            {/* <div
                 className="absolute inset-0"
                 style={{
                     background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, #000000 100%)',
                 }}
-            />
+            /> */}
 
             {/* Text Content - Bottom Left */}
             <div className="absolute bottom-0 left-0 p-4 sm:p-5 md:p-3 text-white">
