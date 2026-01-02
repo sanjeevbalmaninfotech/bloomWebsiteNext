@@ -38,8 +38,8 @@ export default function OurTeamSection() {
     ];
     return (
 
-        <section className="w-full bg-gradient-to-r from-[#157dc1] to-[#49acac] py-12  lg:py-20">
-            <div className="container mx-auto px-4 md:px-8 lg:px-16 ">
+        <section className="w-full bg-gradient-to-r from-[#157dc1] to-[#49acac] py-10 ">
+            <div className="container mx-auto px-4 md:px-8 lg:px-10 ">
 
                 {/* Header Section: Centered */}
                 <div className="mb-10 flex items-center justify-center text-center">

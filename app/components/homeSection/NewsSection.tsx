@@ -103,7 +103,7 @@ const NewsSection = () => {
 
                   {/* IMAGE - 40% height */}
                   <div className="relative w-full h-[50%] flex-shrink-0">
-                    <img
+                    <img // // src="/images/homePagenews.avif"
                       src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=400&fit=crop"
                       alt="Featured News"
                       className="w-full h-full object-cover"

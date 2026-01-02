@@ -491,7 +491,7 @@ const UrgentCareBlock = () => {
             <div className="lg:w-1/2 flex">
               <div className="w-full rounded-lg overflow-hidden">
                 <img
-                  src="/uccside.png"
+                  src="/images/ucc/UccSideImage.jpg"
                   alt="Medical professional with patient"
                   className="w-full h-full object-cover"
                 />

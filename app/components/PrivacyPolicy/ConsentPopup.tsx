@@ -100,12 +100,11 @@ const ConsentPopup: React.FC = () => {
         <div className="fixed inset-0 bg-black/80  flex items-center justify-center p-4 z-50">
 
             <div
-                className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl flex flex-col"
-                style={{ height: "600px" }}
+                className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl flex flex-col max-h-[90vh] md:h-[600px]"
             >
                 {/* Header */}
                 <div className="p-8 pb-4 flex-shrink-0">
-                    <h2 className="text-[36px] font-bold text-gray-900 mb-6">
+                    <h2 className="text-[24px] md:text-[36px] font-bold text-gray-900 mb-6">
                         Customise Consent Preferences
                     </h2>
                     <div className="h-px bg-gray-200"></div>

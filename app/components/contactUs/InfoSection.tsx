@@ -125,16 +125,19 @@ const InfoSection = () => {
                             There is convenient council-operated parking located:
                         </p>
 
-                        <ul className="space-y-2 mb-6">
-                            <li className="flex items-start gap-2 font-axiforma text-[15px] leading-[140%] text-[#157DC1] font-medium">
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-2 mb-6">
+                            <li className="flex items-start gap-2 font-axiforma text-[14px] leading-[110%] text-[#157DC1] font-medium">
                                 <span className="mt-[6px] w-[6px] h-[6px] bg-[#157DC1] rounded-full flex-shrink-0" />
                                 <span>Directly outside and surrounding the building</span>
                             </li>
-                            <li className="flex items-start gap-2 font-axiforma text-[15px] leading-[140%] text-[#157DC1] font-medium">
+
+                            <li className="flex items-start gap-2 font-axiforma text-[14px] leading-[110%] text-[#157DC1] font-medium">
                                 <span className="mt-[6px] w-[6px] h-[6px] bg-[#157DC1] rounded-full flex-shrink-0" />
                                 <span>Offering step-free access straight into our reception</span>
                             </li>
                         </ul>
+
+
 
                         <p className="font-axiforma text-[15px] leading-[140%] text-[#131313] mb-3">
                             Parking payment options include:

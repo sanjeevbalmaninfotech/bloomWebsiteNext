@@ -110,7 +110,7 @@ export default function BottomFooter() {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/privacyPolicy"
+                                        href="/cookiePolicy"
                                         className="text-gray-300 hover:text-white transition-colors"
                                     >
                                         Cookies Policy

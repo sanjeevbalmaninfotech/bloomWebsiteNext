@@ -12,16 +12,11 @@ export default function ImagingScreeningSection() {
             <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070"
+                    src="/images/contactHeroImage.jpg"
                     alt="Medical imaging professional reviewing scans"
                     className="w-full h-full object-cover"
                 />
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background: 'linear-gradient( rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) )',
-                    }}
-                />
+
             </div>
 
             {/* Content */}
@@ -51,7 +46,7 @@ export default function ImagingScreeningSection() {
                         </p> */}
 
                         {/* Description */}
-                        <p
+                        {/* <p
                             className="text-gray-100 text-[14px] sm:text-[15px] md:text-[16px] leading-[140%] tracking-[-0.02em]"
                             style={{
                                 fontFamily: 'Axiforma, sans-serif',
@@ -59,7 +54,7 @@ export default function ImagingScreeningSection() {
                             }}
                         >
                             Find us easily, contact our team, and get the information you need to plan your visit.
-                        </p>
+                        </p> */}
 
 
                     </div>

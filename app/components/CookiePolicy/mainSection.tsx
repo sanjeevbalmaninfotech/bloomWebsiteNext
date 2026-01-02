@@ -4,10 +4,10 @@ export default function CookiePolicyMainSection() {
 
     return (
         // Section Padding: Top/Bottom 60px, Left/Right 120px
-        <div className="min-h-screen bg-white py-[80px] px-[120px] selection:bg-blue-100">
+        <div className="min-h-screen bg-white px-6 py-8 lg:px-[120px] lg:py-[80px] selection:bg-blue-100">
             <div className=" mx-auto">
 
-                <h1 className="font-['Axiforma'] font-semibold text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
+                <h1 className="font-['Axiforma'] font-semibold text-[24px] lg:text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
                     Bloom Health Hospitals Ltd – Cookie & Tracking Policy
                 </h1>
 
@@ -22,7 +22,7 @@ export default function CookiePolicyMainSection() {
                 </p>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         1. What Are Cookies?
                     </h2>
 
@@ -38,13 +38,13 @@ export default function CookiePolicyMainSection() {
 
                 <section className="mb-5">
                     {/* Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         2. Types of Cookies We Use
                     </h2>
 
                     {/* a) Essential Cookies */}
                     <div className="space-y-1 mb-2">
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             a) Essential Cookies
                         </h3>
                         <p className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -69,7 +69,7 @@ export default function CookiePolicyMainSection() {
 
                     {/* b) Performance & Analytics Cookies */}
                     <div className="space-y-1 mb-2">
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             b) Performance & Analytics Cookies
                         </h3>
                         <p className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-2">
@@ -103,7 +103,7 @@ export default function CookiePolicyMainSection() {
 
                     {/* c) Advertising & Remarketing Cookies */}
                     <div className="space-y-1 mb-2">
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             c) Advertising & Remarketing Cookies
                         </h3>
                         <p className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-2">
@@ -134,7 +134,7 @@ export default function CookiePolicyMainSection() {
 
                     {/* d) Email Marketing Tracking */}
                     <div className="space-y-1 mb-2">
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             d) Email Marketing Tracking
                         </h3>
                         <p className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-2">
@@ -160,7 +160,7 @@ export default function CookiePolicyMainSection() {
 
                     {/* e) Social Media Pixels */}
                     <div className="space-y-1 mb-2">
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             e) Social Media Pixels
                         </h3>
                         <p className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-2">
@@ -185,7 +185,7 @@ export default function CookiePolicyMainSection() {
                 </section>
                 <section className="mb-5">
                     {/* 3. How We Use Data Collected Through Cookies */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         3. How We Use Data Collected Through Cookies
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -212,7 +212,7 @@ export default function CookiePolicyMainSection() {
                     </div>
 
                     {/* 4. Email Marketing & Tracking */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         4. Email Marketing & Tracking
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -240,7 +240,7 @@ export default function CookiePolicyMainSection() {
                     </div>
 
                     {/* 5. Third-Party Cookies */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         5. Third-Party Cookies
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -268,7 +268,7 @@ export default function CookiePolicyMainSection() {
                     </div>
 
                     {/* 6. Managing Your Cookie Preferences */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         6. Managing Your Cookie Preferences
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -294,7 +294,7 @@ export default function CookiePolicyMainSection() {
                     </div>
 
                     {/* 7. Changes to This Policy */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         7. Changes to This Policy
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -303,7 +303,7 @@ export default function CookiePolicyMainSection() {
                 </section>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         10. Contact Details
                     </h2>
 

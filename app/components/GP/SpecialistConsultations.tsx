@@ -77,7 +77,7 @@ export default function SpecialistConsultations() {
             </div>
 
             {/* Future Planned Care Pathways Section 2 */}
-            <div className="bg-gray-50 py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
+            <div className=" py-12 px-6 md:py-16 md:px-12 lg:py-[60px] lg:px-[120px]">
                 <div className="max-w-7xl mx-auto">
                     {/* Main Heading */}
                     <h1 className="font-semibold mb-2 text-2xl sm:text-3xl md:text-4xl leading-tight tracking-tight font-axiforma">

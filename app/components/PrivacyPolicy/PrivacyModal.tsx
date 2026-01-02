@@ -36,13 +36,12 @@ export default function PrivacyModal() {
             <div className="bg-white rounded-3xl shadow-2xl max-w-[520px] w-full p-4 md:p-6 mx-auto">
                 {/* Title */}
                 <h1
-                    className="text-center mb-6"
+                    className="text-center mb-6 text-[18px] md:text-[22px]"
                     style={{
                         fontFamily: 'Axiforma, sans-serif',
                         fontWeight: 600,
-                        fontSize: '22px',
-                        lineHeight: '24px',
-                        letterSpacing: '0%',
+                        lineHeight: '1.2',
+                        letterSpacing: '0',
                         color: '#000000'
                     }}
                 >
@@ -51,13 +50,12 @@ export default function PrivacyModal() {
 
                 {/* Description */}
                 <p
-                    className="mb-8"
+                    className="mb-8 text-[14px] md:text-[15px]"
                     style={{
                         fontFamily: 'Axiforma, sans-serif',
                         fontWeight: 500,
-                        fontSize: '15px',
-                        lineHeight: '30px',
-                        letterSpacing: '130%',
+                        lineHeight: '1.5',
+                        letterSpacing: 'normal',
                         color: '#000000'
                     }}
                 >
@@ -76,7 +74,7 @@ export default function PrivacyModal() {
                         }}
                     >
                         <span
-                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            className="text-sm md:text-base font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
                             style={{ fontFamily: 'Axiforma, sans-serif' }}
                         >
                             Customize
@@ -94,7 +92,7 @@ export default function PrivacyModal() {
                         }}
                     >
                         <span
-                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            className="text-sm md:text-base font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
                             style={{ fontFamily: 'Axiforma, sans-serif' }}
                         >
                             Accept All
@@ -112,7 +110,7 @@ export default function PrivacyModal() {
                         }}
                     >
                         <span
-                            className="text-base sm:text-lg lg:text-xl xl:text-[17px] font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
+                            className="text-sm md:text-base font-medium leading-[1.6] tracking-[-0.02em] text-center capitalize"
                             style={{ fontFamily: 'Axiforma, sans-serif' }}
                         >
                             Reject All

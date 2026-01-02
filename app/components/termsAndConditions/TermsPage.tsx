@@ -4,17 +4,17 @@ import React from 'react';
 const TermsPage = () => {
     return (
         // Section Padding: Top/Bottom 60px, Left/Right 120px
-        <div className="min-h-screen bg-white py-[80px] px-[120px] selection:bg-blue-100">
+        <div className="min-h-screen bg-white px-6 py-8 lg:px-[120px] lg:py-[80px] selection:bg-blue-100">
             <div className=" mx-auto">
 
                 {/* Typo Info: Terms And Conditions */}
-                <p className="font-['Axiforma'] font-medium text-[22px] leading-[100%] tracking-[0%] capitalize text-[#000000] mb-2">
+                <p className="font-['Axiforma'] font-medium text-[18px] lg:text-[22px] leading-[100%] tracking-[0%] capitalize text-[#000000] mb-2">
                     Terms And Conditions
                 </p>
 
                 {/* Heading: Bloom Health Hospitals Ltd */}
-                <h1 className="font-['Axiforma'] font-semibold text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
-                    Bloom Health Hospitals Ltd – Website And Services Terms
+                <h1 className="font-['Axiforma'] font-semibold text-[24px] lg:text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
+                    Bloom Health Hospitals Ltd - Website And Services Terms
                 </h1>
 
                 {/* Date Section */}
@@ -24,7 +24,7 @@ const TermsPage = () => {
 
                 {/* --- Section 1: Introduction ---  */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         1. Introduction
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] space-y-1">
@@ -42,7 +42,7 @@ const TermsPage = () => {
 
                 {/* --- Section 2: About Us --- */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         2. About Us
                     </h2>
 
@@ -64,7 +64,7 @@ const TermsPage = () => {
 
                 {/* --- Section 3: . Website Use & Information --- */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         3. Website Use & Information
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -76,7 +76,7 @@ const TermsPage = () => {
                 </section>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         4. Appointments, Booking & Walk In Services
                     </h2>
 
@@ -92,9 +92,9 @@ const TermsPage = () => {
 
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         <section className="mb-3">
-                            <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                            <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                                 5.Payments & Fees
                             </h2>
                             <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -116,7 +116,7 @@ const TermsPage = () => {
                 </section>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         6. Cancellation & Refund Policy
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -133,7 +133,7 @@ const TermsPage = () => {
                 </section>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         7. Patient Obligations & Clinical Responsibility
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -152,7 +152,7 @@ const TermsPage = () => {
 
                 {/* Online Services, Data & Consent */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         8.Online Services, Data & Consent
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -164,7 +164,7 @@ const TermsPage = () => {
 
                 {/* 9. External Links & Third-Party Content */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         9. External Links & Third-Party Content
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -175,7 +175,7 @@ const TermsPage = () => {
                 </section>
                 {/* 10. Limitation of Liability */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         10. Limitation of Liability
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -196,7 +196,7 @@ const TermsPage = () => {
                 </section>
                 {/* 11. Changes to Terms */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         11. Changes to Terms
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -205,7 +205,7 @@ const TermsPage = () => {
                 </section>
 
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
 
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -214,7 +214,7 @@ const TermsPage = () => {
                 </section>
                 {/* 12. Governing Law & Jurisdiction */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         12. Governing Law & Jurisdiction
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -223,7 +223,7 @@ const TermsPage = () => {
                 </section>
                 {/* 13. Dispute Resolution */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         13. Contact Information
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">

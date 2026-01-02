@@ -2,13 +2,13 @@
 const privacyPolicyMainSection = () => {
     return (
         // Section Padding: Top/Bottom 60px, Left/Right 120px
-        <div className="min-h-screen bg-white py-[80px] px-[120px] selection:bg-blue-100">
+        <div className="min-h-screen bg-white px-6 py-8 lg:px-[120px] lg:py-[80px] selection:bg-blue-100">
             <div className=" mx-auto">
 
 
 
                 {/* Heading: Bloom Health Hospitals Ltd */}
-                <h1 className="font-['Axiforma'] font-semibold text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
+                <h1 className="font-['Axiforma'] font-semibold text-[24px] lg:text-[36px] leading-[110%] tracking-[0%] text-[#000000] mb-4">
                     PRIVACY POLICY – BLOOM HEALTH HOSPITALS LTD
                 </h1>
 
@@ -19,7 +19,7 @@ const privacyPolicyMainSection = () => {
                 </p>
                 {/* Date Section */}
                 <p className="font-['Axiforma'] font-semibold text-[18px] leading-[100%] tracking-[0%] capitalize text-[#000000] mb-8">
-                    Last updated: 02-01-2026
+                    Last updated: 27-11-2025
                 </p>
 
                 {/* --- Section 0: Introduction --- */}
@@ -41,7 +41,7 @@ const privacyPolicyMainSection = () => {
 
                 {/* --- Section 1: Introduction --- */}
                 <section className="mb-5">
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1 space-y-1">
                         1. Who We Are
                     </h2>
 
@@ -65,7 +65,7 @@ const privacyPolicyMainSection = () => {
 
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         2. Personal Data We Collect
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-4">
@@ -73,7 +73,7 @@ const privacyPolicyMainSection = () => {
                     </div>
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             a) Identity And Contact Information
                         </h3>
@@ -108,7 +108,7 @@ const privacyPolicyMainSection = () => {
                     {/* New Content from Screenshot */}
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             b) Medical And Health Information (Special Category Data)
                         </h3>
 
@@ -144,7 +144,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             c) Appointment And Service Information
 
@@ -177,7 +177,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             d) Website & Technical Data
 
@@ -216,7 +216,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             e) Marketing & Communication Preferences
 
@@ -252,7 +252,7 @@ const privacyPolicyMainSection = () => {
 
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         3. Legal Basis for Processing
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-1">
@@ -261,7 +261,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             Healthcare Provision
                         </h3>
@@ -294,7 +294,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className=" mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-2">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-2">
 
                             Consent
 
@@ -337,7 +337,7 @@ const privacyPolicyMainSection = () => {
                     </div>
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Legal Obligations
                         </h3>
 
@@ -378,7 +378,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Legitimate Interests
                         </h3>
 
@@ -418,7 +418,7 @@ const privacyPolicyMainSection = () => {
 
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         4. How We Use Your Information
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-1">
@@ -429,7 +429,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Healthcare Delivery
                         </h3>
 
@@ -460,7 +460,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Administrative & Operational
                         </h3>
 
@@ -490,7 +490,7 @@ const privacyPolicyMainSection = () => {
                     </div>
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             Marketing
 
@@ -554,7 +554,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
 
                             Analytics & Digital Tracking
 
@@ -599,7 +599,7 @@ const privacyPolicyMainSection = () => {
                 {/*  section number 5 */}
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         5. Sharing Your Information
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-1">
@@ -610,7 +610,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Healthcare Providers
                         </h3>
 
@@ -642,7 +642,7 @@ const privacyPolicyMainSection = () => {
 
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Technology & Service Partners
                         </h3>
 
@@ -673,7 +673,7 @@ const privacyPolicyMainSection = () => {
                     </div>
                     <div className="space-y-1 mb-2">
                         {/* b) Medical And Health Information */}
-                        <h3 className="font-['Axiforma'] font-normal text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
+                        <h3 className="font-['Axiforma'] font-normal text-[18px] lg:text-[22px] leading-[200%] tracking-[0%] text-justify text-[#000000]">
                             Regulatory Bodies
                         </h3>
                         <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] ">
@@ -689,7 +689,7 @@ const privacyPolicyMainSection = () => {
 
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         6. Data Retention
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-1">
@@ -732,7 +732,7 @@ const privacyPolicyMainSection = () => {
                 {/* section 7 */}
                 <section className="mb-5">
                     {/* Existing Section Header */}
-                    <h2 className="font-['Axiforma'] font-semibold text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
+                    <h2 className="font-['Axiforma'] font-semibold text-[20px] lg:text-[28px] leading-[150%] tracking-[0%] text-justify text-[#000000] mb-1">
                         7. Your Rights Under GDPR
                     </h2>
                     <div className="font-['Axiforma'] font-normal text-[15px] leading-[150%] tracking-[0%] text-justify text-[#8A8A8A] mb-1">

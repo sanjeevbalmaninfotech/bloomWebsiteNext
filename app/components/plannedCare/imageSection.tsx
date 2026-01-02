@@ -14,16 +14,11 @@ export default function ImagingScreeningSection() {
             <OpeningDateSection />
             <div className="absolute inset-0">
                 <img
-                    src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070"
+                    src="/images/PlannedCareHero.jpg"
                     alt="Medical imaging professional reviewing scans"
                     className="w-full h-full object-cover"
                 />
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background: 'linear-gradient(270deg, rgba(0, 0, 0, 0) -0.14%, rgba(0, 0, 0, 0.8) 42.21%)',
-                    }}
-                />
+
             </div>
 
             {/* Content */}
